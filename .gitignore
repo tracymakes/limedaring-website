@@ -9,6 +9,7 @@ staticfiles
 *.jpeg
 *.jpg
 .env*
+.build*
 settings_local.py
 post-double.py
 labels

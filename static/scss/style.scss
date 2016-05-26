@@ -1,0 +1,35 @@
+// bootstrap variable overrides
+$font-family-sans-serif:     'Open Sans', Helvetica, Arial, sans-serif !default;
+$font-family-serif:          "freight-text-pro", Georgia, "Times New Roman", Times, serif !default;
+$font-family-base:           $font-family-serif !default;
+$headings-font-weight:       300 !default;
+$font-size-base:             1.3rem !default;
+
+$body-color:                 #666 !default;
+$headings-color:             #111 !default;
+$enable-rounded:             true !default;
+$border-radius:              0 !default;
+
+$brand-primary-dark:         #8a9a0f !default;
+$brand-primary:              #a5bb00 !default;
+$brand-secondary:            #e6c24d !default;
+
+$link-color:                 $brand-primary-dark;
+
+$btn-border-radius:          0;
+//$btn-secondary-color:        #fff;
+//$btn-secondary-border:       #fff !default;
+$btn-font-weight:            400 !default;
+$btn-padding-x:              1.2rem;
+$btn-padding-y:              1rem;
+
+//$grid-gutter-width:          4rem !default; // 30px
+
+// Fonts I like
+// Mrs Onion
+// Drina
+
+
+// bootstrap and font-awesome 
+@import "bootstrap";
+@import "font-awesome";

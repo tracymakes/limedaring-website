@@ -3,6 +3,7 @@ $font-family-sans-serif:     'Open Sans', Helvetica, Arial, sans-serif !default;
 $font-family-serif:          "freight-text-pro", Georgia, "Times New Roman", Times, serif !default;
 $font-family-base:           $font-family-serif !default;
 $headings-font-weight:       300 !default;
+//$headings-line-height:       1.6;
 $font-size-base:             1.3rem !default;
 
 $body-color:                 #666 !default;
@@ -13,6 +14,7 @@ $border-radius:              0 !default;
 $brand-primary-dark:         #8a9a0f !default;
 $brand-primary:              #a5bb00 !default;
 $brand-secondary:            #e6c24d !default;
+$gray-lightish:              #aaa;
 
 $link-color:                 $brand-primary-dark;
 
@@ -33,3 +35,151 @@ $btn-padding-y:              1rem;
 // bootstrap and font-awesome 
 @import "bootstrap";
 @import "font-awesome";
+
+/* EXTENDABLE PROPERTIES */
+
+.caps-letterspaced {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.heading-link-text-color {
+    a {
+        color: $headings-color;
+        &:hover {
+            color: $brand-primary-dark;
+            text-decoration: none;
+        }
+    }
+}
+
+.sm-header {
+    @extend .caps-letterspaced;
+    @extend .heading-link-text-color;
+    font-size: 0.8rem;
+    font-family: $font-family-sans-serif;
+    font-weight: 400;
+    margin: 1em 0;
+}
+
+/* PROPERTIES */
+
+html {
+    border-top: 5px solid #EFD465;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+body {
+    background: url(../images/topleft.png) top left no-repeat;
+    background-size: 50% 50%;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    border-width: 5px;
+    border-color: $gray-lighter;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h1,h2,h3,h4,h5 {
+    @extend .heading-link-text-color;
+}
+
+/* UNIVERSAL ELEMENTS */
+
+#main-nav {
+    @extend .caps-letterspaced;
+    @extend .heading-link-text-color;
+    font-size: 0.7rem;
+    font-family: $font-family-sans-serif;
+    letter-spacing: 0.2em;
+    li {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+#footer {
+    @extend .caps-letterspaced;
+    @extend .heading-link-text-color;
+    font-size: 0.8rem;
+    font-family: $font-family-sans-serif;
+    margin-bottom: 4em;
+    hr {
+        margin-bottom: 1.5em !important;
+    }
+    a {
+        color: $gray-light;
+        font-size: 0.7rem;
+    }
+}
+
+/* HOME */
+
+#index {
+    hr {
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+    #footer {
+        .social-media {
+            display: none;
+        }
+    }
+}
+
+.intro {
+    margin: 5em 0;
+    h1 {
+        font-style: italic;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-align: right;
+    }
+    .subheader h2 {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: $body-color;
+    }
+}
+
+.index-contact {
+    margin-top: 3em;
+}
+
+.recent-writing {
+    margin-bottom: 3em;
+    h4 {
+        font-style: italic;
+    }
+}
+
+.recent-speaking {
+    li {
+        margin: 0.5em 0;
+    }
+    span {
+        color: $gray-lightish;
+        &.date {
+            font-size: 0.8rem;
+            font-family: $font-family-sans-serif;
+        }
+        &.location {
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+    }
+    h4 {
+        display: inline;
+        font-size: 1.1rem;
+        padding: 0 1em;
+    }
+}

@@ -1,10 +1,74 @@
 {% extends "base.html" %}
 
+{% block bodyclass %}
+<body id="index">
+{% endblock bodyclass %}
+
+{% block intro %}
+<div class="row">
+    <h1 class="col-md-4">Tracy Osborn</h1>
+    <div class="subheader col-md-8">
+        {% block subheader %}
+        <h2>is an outdoorsy designer, developer, author, and entreprenerd living in Toronto, Ontario.</h2>
+        {% endblock %}
+    </div>
+</div>
+{% endblock intro %}
+
 {% block content %}
+<hr/>
 
+<div class="row">
+    <div class="col-md-4">
+        <h3 class="sm-header"><a href="/work.html">Projects</a></h3>
+        <a href="">
+            <img src="http://placehold.it/350x250">
+        </a>
 
-<h1>Index</h1>
-<input type="button" value="button input">
-
+        <div class="index-contact">
+            <h3 class="sm-header"><a href="/contact.html">Contact Me</a></h3>
+            <ul class="list-inline social-media">
+                <li><a href="//twitter.com/hellowebapp"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="//facebook.com/hellowebapp"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="//github.com/hellowebapp"><i class="fa fa-github"></i></a></li>
+                <li><a href="mailto:tracy@limedaring.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="recent-writing">
+            <h3 class="sm-header"><a href="/writing.html">Recent Writing</a></h3>
+            <ul class="list-unstyled">
+                <h4><a href="">Case Study: Hello Web App</a></h4>
+                <p>In 2011, I taught myself how to code Python and Django to launch my startup, WeddingLovely. I got something working, but over the years of working with Python and Django, I became more and more frustrated about how programming in general was taught.</p>
+            </ul>
+        </div>
+        <div class="recent-speaking">
+            <h3 class="sm-header"><a href="/speaking.html">Upcoming Speaking Engagements</a></h3>
+            <ul class="list-unstyled">
+                <li>
+                    <span class="date">6/27/16</span>
+                    <h4>GitHub CodeConf</h4>
+                    <span class="location">Los Angeles, CA</span>
+                </li>
+                <li>
+                    <span class="date">7/16/16</span>
+                    <h4>PyGotham</h4>
+                    <span class="location">New York City, NY</span>
+                </li>
+                <li>
+                    <span class="date">7/17/16</span>
+                    <h4>DjangoCon US</h4>
+                    <span class="location">Philadelphia, PA</span>
+                </li>
+                <li>
+                    <span class="date">8/18/16</span>
+                    <h4>Abstractions</h4>
+                    <span class="location">Pittsburgh, PA</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 {% endblock content %}

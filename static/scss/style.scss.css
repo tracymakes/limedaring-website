@@ -5337,3 +5337,105 @@ a.bg-danger:focus, a.bg-danger:hover {
 .fa-bluetooth-b:before { content: $fa-var-bluetooth-b; }
 .fa-percent:before { content: $fa-var-percent; }
 */
+/* EXTENDABLE PROPERTIES */
+.caps-letterspaced, .sm-header, #main-nav, #footer {
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+
+.heading-link-text-color a, .sm-header a, h1 a, h2 a, h3 a, h4 a, h5 a, #main-nav a, #footer a {
+  color: #111; }
+  .heading-link-text-color a:hover, .sm-header a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, #main-nav a:hover, #footer a:hover {
+    color: #8a9a0f;
+    text-decoration: none; }
+
+.sm-header {
+  font-size: 0.8rem;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 1em 0; }
+
+/* PROPERTIES */
+html {
+  border-top: 5px solid #EFD465;
+  font-size: 15px;
+  line-height: 1.6; }
+
+body {
+  background: url(../images/topleft.png) top left no-repeat;
+  background-size: 50% 50%;
+  font-size: 16px; }
+
+img {
+  max-width: 100%; }
+
+hr {
+  border-width: 5px;
+  border-color: #eceeef;
+  margin-left: 20%;
+  margin-right: 20%; }
+
+/* UNIVERSAL ELEMENTS */
+#main-nav {
+  font-size: 0.7rem;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.2em; }
+  #main-nav li {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+#footer {
+  font-size: 0.8rem;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  margin-bottom: 4em; }
+  #footer hr {
+    margin-bottom: 1.5em !important; }
+  #footer a {
+    color: #818a91;
+    font-size: 0.7rem; }
+
+/* HOME */
+#index hr {
+  margin-top: 4em;
+  margin-bottom: 4em; }
+
+#index #footer .social-media {
+  display: none; }
+
+.intro {
+  margin: 5em 0; }
+  .intro h1 {
+    font-style: italic;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: right; }
+  .intro .subheader h2 {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666; }
+
+.index-contact {
+  margin-top: 3em; }
+
+.recent-writing {
+  margin-bottom: 3em; }
+  .recent-writing h4 {
+    font-style: italic; }
+
+.recent-speaking li {
+  margin: 0.5em 0; }
+
+.recent-speaking span {
+  color: #aaa; }
+  .recent-speaking span.date {
+    font-size: 0.8rem;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+  .recent-speaking span.location {
+    font-style: italic;
+    font-size: 1.1rem; }
+
+.recent-speaking h4 {
+  display: inline;
+  font-size: 1.1rem;
+  padding: 0 1em; }

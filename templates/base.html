@@ -64,12 +64,16 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <h1>Tracy Osborn</h1>
-                <div class="subheader">
-                    {% block subheader %}
-                    <h2>is an outdoorsy designer, developer, author, and entreprenerd living in Toronto, Ontario.</h2>
-                    {% endblock %}
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="intro">
+                    {% block intro %}
+                    <h1>Tracy Osborn</h1>
+                    <div class="subheader">
+                        {% block subheader %}
+                        <h2>is an outdoorsy designer, developer, author, and entreprenerd living in Toronto, Ontario.</h2>
+                        {% endblock %}
+                    </div>
+                    {% endblock intro %}
                 </div>
 
                 {% block content %}
@@ -79,23 +83,27 @@
     </div>
 
     <div id="footer" class="container text-center">
-        <nav id="footer-nav">
-            <ul class="list-inline list-unstyled">
-                <li><a href="{% url '/about.html' %}">About</a></li>
-                <li><a href="{% url '/writing.html' %}">Writing</a></li>
-                <li><a href="{% url '/work.html' %}">Work</a></li>
-                <li><a href="{% url '/speaking.html' %}">Speaking</a></li>
-                <li><a href="{% url '/contact.html' %}">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <hr/>
+                <nav id="footer-nav">
+                    <ul class="list-inline list-unstyled">
+                        <li><a href="{% url '/about.html' %}">About</a></li>
+                        <li><a href="{% url '/writing.html' %}">Writing</a></li>
+                        <li><a href="{% url '/work.html' %}">Work</a></li>
+                        <li><a href="{% url '/speaking.html' %}">Speaking</a></li>
+                        <li><a href="{% url '/contact.html' %}">Contact</a></li>
+                    </ul>
+                </nav>
 
-        <ul class="list-inline social-media">
-            <li><a href="//twitter.com/hellowebapp"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="//facebook.com/hellowebapp"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="//github.com/hellowebapp"><i class="fa fa-github"></i></a></li>
-            <li><a href="mailto:tracy@limedaring.com"><i class="fa fa-envelope"></i></a></li>
-        </ul>
-        <p class="copy">&copy; {% now "Y" %} Tracy Osborn</p>
+                <ul class="list-inline social-media">
+                    <li><a href="//twitter.com/hellowebapp"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="//facebook.com/hellowebapp"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="//github.com/hellowebapp"><i class="fa fa-github"></i></a></li>
+                    <li><a href="mailto:tracy@limedaring.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     {% block scripts %}

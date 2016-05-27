@@ -43,8 +43,16 @@ analytics.page("Homepage");
         <div class="recent-writing">
             <h3 class="sm-header"><a href="/writing.html">Recent Writing</a></h3>
             <ul class="list-unstyled">
-                <h4><a href="">Case Study: Hello Web App</a></h4>
-                <p>In 2011, I taught myself how to code Python and Django to launch my startup, WeddingLovely. I got something working, but over the years of working with Python and Django, I became more and more frustrated about how programming in general was taught.</p>
+                <!-- XXX Need to hide all posts past one featured post -->
+                {% for post in posts %}
+                {% if post.featured == "True" %}
+                    <h4>
+                        <a href='{{ post.page.link_url|cut:".html" }}/'>{{ post.title }}</a>
+                    </h4>
+                    <p>{{ post.excerpt|truncatewords:42 }}</p>
+                </li>
+                {% endif %}
+                {% endfor %}
             </ul>
         </div>
         <div class="recent-speaking">

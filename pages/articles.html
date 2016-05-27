@@ -1,18 +1,42 @@
 {% extends "base.html" %}
 
 {% block analytics %}
-analytics.page("About");
+analytics.page("Articles");
 {% endblock %}
 
 {% block bodyclass %}
-<body id="about">
+<body id="articles">
 {% endblock bodyclass %}
 
-{% block body %}
-<div class="jumbotron">
-  <div class="container">
-    <h1>Make this your about page!</h1>
-    <p>Use this page to tell your visitors about you. Or scrape it, and make a new one!</p>
-  </div>
-</div>
-{% endblock %}
+{% block contentsize %}
+<div class="col-lg-10 col-lg-offset-1">
+{% endblock contentsize %}
+
+{% block content %}
+<h1>Writing</h1>
+
+{% for post in posts %}
+{% if forloop.counter0 < 20 %}
+<li>
+    {% if post.featuredimage %}
+    <div class="thumbnail">
+        <a href="{{ post.page.link_url|cut:".html" }}">
+            <img src="{% static post.featuredimage %}" alt="{{ post.title }}" />
+        </a>
+    </div>
+    {% endif %}
+    <aside class="dates">{{ post.date|date:"F j, Y" }}</aside></a>
+    <h2><a href='{{ post.page.link_url|cut:".html" }}/'>{{ post.title }}</a></h2>
+    {% if post.headline %}
+    <p>{{ post.headline }}</p>
+    {% endif %}
+    {% if post.excerpt %}
+    <p class="excerpt">{{ post.excerpt|truncatewords:30 }}</p>
+    {% endif %}
+    <p class="readmore"><a href="{{ post.page.link_url|cut:".html" }}/">Read more...</a></p>
+</li>
+{% endif %}
+{% endfor %}
+
+
+{% endblock content %}

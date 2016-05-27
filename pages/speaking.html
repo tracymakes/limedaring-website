@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
+{% block analytics %}
+analytics.page("Speaking");
+{% endblock %}
+
+{% block bodyclass %}
+<body id="speaking">
+{% endblock bodyclass %}
+
 {% block body %}
 <div class="jumbotron">
   <div class="container">

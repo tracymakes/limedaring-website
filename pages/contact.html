@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
+{% block analytics %}
+analytics.page("Contact");
+{% endblock %}
+
+{% block bodyclass %}
+<body id="contact">
+{% endblock bodyclass %}
+
 {% block body %}
 <div class="jumbotron">
   <div class="container">

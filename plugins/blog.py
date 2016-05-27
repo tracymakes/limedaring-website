@@ -3,7 +3,7 @@ import datetime
 import logging
 
 ORDER = 999
-POSTS_PATH = 'posts/'
+POSTS_PATH = 'articles/'
 POSTS = []
 
 from django.template import Context
@@ -52,6 +52,13 @@ def preBuild(site):
             postContext['date'] = find('date')
             postContext['path'] = page.path
             postContext['body'] = getNode(get_template(page.path), name="body")
+
+            # new contexts that I'm adding
+            postContext['excerpt'] = find('excerpt')
+            postContext['featuredimage'] = find('featuredimage')
+            postContext['category'] = find('category')
+            postContext['featured'] = find('featured')
+            postContext['page'] = page
 
             # Parse the date into a date object
             try:

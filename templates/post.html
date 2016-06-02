@@ -1,44 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{% block title %}Tracy Osborn{% endblock %}</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <meta name="author" content="Tracy Osborn">
+{% extends "base.html" %}
 
-    <link rel="stylesheet" href="{% static '/static/css/main.css' %}?v=1.0">
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head>
+{% block title %}{{ title }} - {{ block.super }}{% endblock title %}
+{% block bodyclass %}
+<body id="post" class="{{ title|slugify }}">
+{% endblock %}
 
-<body>
-    <div class="container">
-        <nav class="row">
-            <ul class="unstyled">
-                <li class="{% if_current_page '/index.html' 'active' '' %}">
-                    <a href="{% url '/index.html' %}">Home</a>
-                </li>
-                <li class="{% if_current_page '/about.html' 'active' '' %}">
-                    <a href="{% url '/about.html' %}">About</a>
-                </li>
-                <li class="{% if_current_page '/contact.html' 'active' '' %}">
-                    <a href="{% url '/contact.html' %}">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+{% block content %}
 
-    {% block body %}
-    {% endblock %}
+<article class="post container">
+    <header>
+        <h1>{{ title }}</h1>
+        <h2 class="headline">{{ headline }}</h2>
+    </header>
+
+    <section id="post-body">
+        {% block body %}
+        This is where the post contents is.
+        {% endblock body %}
+    </section>
 
     {% comment %}
-    <script src="{% static '/static/js/vendor/jquery-1.10.1.js' %}"></script>
+    <footer id="post-meta" class="clearfix">
+        <div><span>Posted on </span> {{ date|date:"M j" }}</div>
+        <div><span>Written by</span> {{ author }}</div>
+    </footer>
     {% endcomment %}
-
-    {% block scripts %}
-    {% endblock %}
-</body>
-</html>
+</article>
+{% endblock %}

@@ -8,9 +8,15 @@ analytics.page("Homepage");
 <body id="index">
 {% endblock bodyclass %}
 
+{% block contentsize %}
+<div class="col-lg-8 col-lg-offset-2">
+{% endblock contentsize %}
+
 {% block intro %}
-<div class="row">
-    <h1 class="col-md-4">Tracy Osborn</h1>
+<div class="row intro">
+    <h1 class="col-md-4">
+        <a href="{% url '/index.html' %}">Tracy Osborn</a>
+    </h1>
     <div class="subheader col-md-8">
         {% block subheader %}
         <h2>is an outdoorsy designer, developer, author, and entreprenerd living in Toronto, Ontario.</h2>

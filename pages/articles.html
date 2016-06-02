@@ -12,31 +12,66 @@ analytics.page("Articles");
 <div class="col-lg-10 col-lg-offset-1">
 {% endblock contentsize %}
 
-{% block content %}
-<h1>Writing</h1>
+{% block intro %}
+<div class="intro">
+    <h1><a href="{% url '/index.html' %}">Tracy Osborn</a></h1>
+    <div class="subheader">
+        {% block subheader %}
+        <h2>loves to chat about entrepreneurship, teaching, design, development, and more.</h2>
+        {% endblock %}
 
-{% for post in posts %}
-{% if forloop.counter0 < 20 %}
-<li>
-    {% if post.featuredimage %}
-    <div class="thumbnail">
-        <a href="{{ post.page.link_url|cut:".html" }}">
-            <img src="{% static post.featuredimage %}" alt="{{ post.title }}" />
-        </a>
+        <!-- XXX: Figure out how to link to categories -->
+        <ul class="list-unstyled categories">
+            <li>
+                <a href="">Entrepreneurship</a>
+            </li>
+            <li>
+                <a href="">Women in Tech</a>
+            </li>
+            <li>
+                <a href="">Personal</a>
+            </li>
+            <li>
+                <a href="">Design</a>
+            </li>
+            <li>
+                <a href="">Development</a>
+            </li>
+        </ul>
     </div>
+</div>
+{% endblock intro %}
+
+{% block content %}
+{% comment %}<h1>Writing</h1>{% endcomment %}
+
+<ul class="list-unstyled blog-list">
+    {% for post in posts %}
+    {% if forloop.counter0 < 20 %}
+    <li>
+        {% comment %}
+        {% if post.featuredimage %}
+        <div class="thumbnail">
+            <a href="{{ post.page.link_url|cut:".html" }}">
+                <img src="{% static post.featuredimage %}" alt="{{ post.title }}" />
+            </a>
+        </div>
+        {% endif %}
+        <aside class="dates">{{ post.date|date:"F j, Y" }}</aside></a>
+        {% endcomment %}
+        <h2><a href='{{ post.page.link_url|cut:".html" }}/'>{{ post.title }}</a></h2>
+        {% if post.headline %}
+        <p>{{ post.headline }}</p>
+        {% endif %}
+        {% if post.excerpt %}
+        <p class="excerpt">{{ post.excerpt|truncatewords:30 }}</p>
+        {% endif %}
+        <p class="readmore"><a href="{{ post.page.link_url|cut:".html" }}/">Read more</a></p>
+        <hr/>
+    </li>
     {% endif %}
-    <aside class="dates">{{ post.date|date:"F j, Y" }}</aside></a>
-    <h2><a href='{{ post.page.link_url|cut:".html" }}/'>{{ post.title }}</a></h2>
-    {% if post.headline %}
-    <p>{{ post.headline }}</p>
-    {% endif %}
-    {% if post.excerpt %}
-    <p class="excerpt">{{ post.excerpt|truncatewords:30 }}</p>
-    {% endif %}
-    <p class="readmore"><a href="{{ post.page.link_url|cut:".html" }}/">Read more...</a></p>
-</li>
-{% endif %}
-{% endfor %}
+    {% endfor %}
+</ul>
 
 
 {% endblock content %}

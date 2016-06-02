@@ -75,21 +75,23 @@
     <div class="container">
         <div class="row">
             {% block contentsize %}
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-10 col-lg-offset-1">
             {% endblock contentsize %}
+                {% block intro %}
                 <div class="intro">
-                    {% block intro %}
-                    <h1>Tracy Osborn</h1>
+                    <h1><a href="{% url '/index.html' %}">Tracy Osborn</a></h1>
                     <div class="subheader">
                         {% block subheader %}
                         <h2>is an outdoorsy designer, developer, author, and entreprenerd living in Toronto, Ontario.</h2>
                         {% endblock %}
                     </div>
-                    {% endblock intro %}
                 </div>
+                {% endblock intro %}
 
-                {% block content %}
-                {% endblock content %}
+                <div id="content">
+                    {% block content %}
+                    {% endblock content %}
+                </div>
             </div>
         </div>
     </div>

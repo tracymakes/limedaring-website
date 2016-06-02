@@ -5338,7 +5338,7 @@ a.bg-danger:focus, a.bg-danger:hover {
 .fa-percent:before { content: $fa-var-percent; }
 */
 /* EXTENDABLE PROPERTIES */
-.caps-letterspaced, .sm-header, ul.categories, .blog-list li .readmore, #main-nav, #footer {
+.caps-letterspaced, .sm-header, ul.categories, .blog-list li .readmore, h4, #main-nav, #footer {
   text-transform: uppercase;
   letter-spacing: 0.1em; }
 
@@ -5362,7 +5362,6 @@ html {
 
 body {
   background: url(../images/topleft.png) top left no-repeat;
-  background-size: 50% 50%;
   font-size: 16px; }
 
 img {
@@ -5373,6 +5372,12 @@ hr {
   border-color: #eceeef;
   margin-left: 20%;
   margin-right: 20%; }
+
+h1, h2, h3, h4, h5 {
+  margin: 1em 0 0.5em 0; }
+
+h3 {
+  font-style: italic; }
 
 /* UNIVERSAL ELEMENTS */
 #main-nav {
@@ -5466,3 +5471,7 @@ ul.categories {
 
 .blog-list li hr {
   margin: 2em 4em; }
+
+/* POST */
+#post h1 {
+  font-style: italic; }

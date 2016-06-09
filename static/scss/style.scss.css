@@ -5342,6 +5342,10 @@ a.bg-danger:focus, a.bg-danger:hover {
   text-transform: uppercase;
   letter-spacing: 0.1em; }
 
+.de-caps-letterspaced, .recent-writing h4, .recent-speaking h4 {
+  text-transform: none;
+  letter-spacing: 0; }
+
 .heading-link-text-color a, .sm-header a, ul.categories a, .blog-list li .readmore a, h1 a, h2 a, h3 a, h4 a, h5 a, #main-nav a, #footer a {
   color: #111; }
   .heading-link-text-color a:hover, .sm-header a:hover, ul.categories a:hover, .blog-list li .readmore a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, #main-nav a:hover, #footer a:hover {
@@ -5351,6 +5355,7 @@ a.bg-danger:focus, a.bg-danger:hover {
 .sm-header, ul.categories, .blog-list li .readmore {
   font-size: 0.8rem;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-style: normal;
   font-weight: 400;
   margin: 1em 0; }
 
@@ -5385,10 +5390,11 @@ h3 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   letter-spacing: 0.2em; }
   #main-nav li {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px; }
+    padding: 10px 20px; }
+
+@media (max-width: 47.9em) {
+  #main-nav li {
+    padding: 10px 5px; } }
 
 .intro {
   margin: 5em 0; }
@@ -5424,7 +5430,8 @@ h3 {
 #index .intro {
   margin: 5em 0; }
   #index .intro .subheader {
-    margin-top: 0; }
+    margin-top: 0;
+    margin-right: 0; }
   #index .intro h1 {
     text-align: right; }
 
@@ -5441,6 +5448,8 @@ h3 {
   margin-bottom: 3em; }
   .recent-writing h4 {
     font-style: italic; }
+  .recent-writing li:nth-child(1n+2) {
+    display: none; }
 
 .recent-speaking li {
   margin: 0.5em 0; }
@@ -5472,6 +5481,14 @@ ul.categories {
 .blog-list li hr {
   margin: 2em 4em; }
 
+.blog-list li:last-child hr {
+  display: none; }
+
 /* POST */
 #post h1 {
   font-style: italic; }
+
+.post-body:before {
+  content: url("../images/caret.png");
+  float: left;
+  margin: 6px 12px 0 0; }

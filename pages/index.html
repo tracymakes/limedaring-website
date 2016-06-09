@@ -52,6 +52,7 @@ analytics.page("Homepage");
                 <!-- XXX Need to hide all posts past one featured post -->
                 {% for post in posts %}
                 {% if post.featured == "True" %}
+                <li>
                     <h4>
                         <a href='{{ post.page.link_url|cut:".html" }}/'>{{ post.title }}</a>
                     </h4>

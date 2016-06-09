@@ -43,6 +43,11 @@ $btn-padding-y:              1rem;
     letter-spacing: 0.1em;
 }
 
+.de-caps-letterspaced {
+    text-transform: none;
+    letter-spacing: 0;
+}
+
 .heading-link-text-color {
     a {
         color: $headings-color;
@@ -58,6 +63,7 @@ $btn-padding-y:              1rem;
     @extend .heading-link-text-color;
     font-size: 0.8rem;
     font-family: $font-family-sans-serif;
+    font-style: normal;
     font-weight: 400;
     margin: 1em 0;
 }
@@ -92,7 +98,7 @@ h1,h2,h3,h4,h5 {
 }
 
 h2 {
-    
+
 }
 
 h3 {
@@ -112,10 +118,13 @@ h4 {
     font-family: $font-family-sans-serif;
     letter-spacing: 0.2em;
     li {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 10px 20px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #main-nav li {
+        padding: 10px 5px;
     }
 }
 
@@ -135,6 +144,12 @@ h4 {
             line-height: 1.6;
             color: $body-color;
         }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .intro {
+        //display: none;
     }
 }
 
@@ -169,6 +184,7 @@ h4 {
         margin: 5em 0;
         .subheader {
             margin-top: 0;
+            margin-right: 0;
         }
         h1 {
             text-align: right;
@@ -192,7 +208,11 @@ h4 {
 .recent-writing {
     margin-bottom: 3em;
     h4 {
+        @extend .de-caps-letterspaced;
         font-style: italic;
+    }
+    li:nth-child(1n+2) {
+        display: none;
     }
 }
 
@@ -212,6 +232,7 @@ h4 {
         }
     }
     h4 {
+        @extend .de-caps-letterspaced;
         display: inline;
         font-size: 1.1rem;
         padding: 0 1em;
@@ -240,6 +261,9 @@ ul.categories {
         hr {
             margin: 2em 4em;
         }
+        &:last-child {
+            hr { display: none; }
+        }
     }
 }
 
@@ -248,5 +272,13 @@ ul.categories {
 #post {
     h1 {
         font-style: italic;
+    }
+}
+
+.post-body{
+    &:before {
+        content: url('../images/caret.png');
+        float: left;
+        margin: 6px 12px 0 0;
     }
 }

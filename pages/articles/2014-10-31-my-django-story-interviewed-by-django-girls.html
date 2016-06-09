@@ -1,0 +1,19 @@
+date: 2014-10-31
+featuredimage:
+featured:
+author: Tracy Osborn
+title: My Django Story — Interviewed by Django Girls
+category: personal
+
+{% extends "post.html" %}
+{% block body %}
+{% filter markdown %}
+
+[![](http://static1.squarespace.com/static/543c1b40e4b0f23a04303889/543f4799e4b033d6ec5036ed/54530aebe4b0654429280bf2/1414728428671//img.png)](http://blog.djangogirls.org/post/98718406548/your-django-story-meet-tracy-osborn)
+
+I had the honor of being interviewed by Django Girls, an awesome organization focused on inspiring women to fall in love with programming. 
+
+[Read the full interview here.](http://blog.djangogirls.org/post/98718406548/your-django-story-meet-tracy-osborn)
+
+{% endfilter %}
+{% endblock body %}

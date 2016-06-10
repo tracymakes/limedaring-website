@@ -5488,7 +5488,9 @@ ul.categories {
 #post h1 {
   font-style: italic; }
 
-.post-body:before {
-  content: url("../images/caret.png");
-  float: left;
-  margin: 6px 12px 0 0; }
+.post-body {
+  font-size: 18px; }
+  .post-body:before {
+    content: url("../images/caret.png");
+    float: left;
+    margin: 6px 12px 0 0; }

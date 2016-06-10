@@ -1,0 +1,53 @@
+author: Tracy Osborn
+date: 2009-04-01
+featuredimage:
+featured:
+excerpt: I'm joking, of course (about having a CSS Master card - I'm not that awesome yet!). But for all my puffery about knowing CSS, there are often small but significant things that I forget about and cause me all sorts of trouble. I was amused about this today...
+title: I Need To Revoke My CSS-Master Card
+category: articles
+
+{% extends "post.html" %}
+{% block body %}
+{% filter markdown %}
+
+I'm joking, of course (about having a CSS Master card - I'm not that awesome yet!). But for all my puffery about knowing CSS, there are often small but significant things that I forget about and cause me all sorts of trouble. I was amused about this today...
+
+Working with multivariate tests, I often add things to the source code of my website that get display-none-ed that will be turned "on" in the test*. Usually this means I add .class-name { display:none; } to the main CSS file and .class-name { display:block; } to the alternate CSS file that is added when the test is run, therefore overriding the existing CSS and allowing myself to test both of those variations.
+
+Today, however, I was testing adding more items to a list. The "new" items were given a class that was display-none-ed, and when the test was run, it would show those additional items as well as adding list-style-decimal to the ul so the list would be numbered.
+
+### Source:
+
+    <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li class="mod">Item 6</li>
+    <li class="mod">Item 7</li>
+    <li class="mod">Item 8</li>
+    <li class="mod">Item 9</li>
+    <li class="mod">Item 10</li>
+    </ul>
+
+### Existing CSS file:
+    
+    li.mod { display:none; }
+
+### My initial test CSS file:
+
+    ul { list-style-type:decimal; }
+    li.mod { display:block; }
+
+And it was driving myself absolutely batty that the list-style only spanned the first five rows of the list and not the last five. I knew it had to do with the display:block declaration, but I had no idea. Why? Because 99% of the time I use display:none, display:block, and display:inline.
+
+### My working test CSS file:
+
+    ul { list-style-type:decimal; }
+    li.mod { display:list-item; }
+
+Lesson? I definitely don't know everything and I definitely won't know everything. It's easy to feel good about myself and my relative knowledge of CSS, but there are a lot of little, _obvious_ things I'll forget about!
+
+{% endfilter %}
+{% endblock body %}

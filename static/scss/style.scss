@@ -275,7 +275,8 @@ ul.categories {
     }
 }
 
-.post-body{
+.post-body {
+    font-size: 18px;
     &:before {
         content: url('../images/caret.png');
         float: left;

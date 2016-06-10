@@ -1,0 +1,29 @@
+author: Tracy Osborn
+date: 2009-04-12
+featuredimage:
+featured:
+excerpt: <p style="margin-left:0px; margin-right:0px">I recently laughed the other day when reading&nbsp;<a href="http://stopdesign.com/">Doug Bowman's</a>&nbsp;farewell blog post to Google, when he mentioned how Google is so meticulous about their testing that&nbsp;<a href="http://stopdesign.com/archive/2009/03/20/goodbye-google.html">they tested 41 different shades of blue</a>. Being that I work in Multivariate Testing (MVT), that situation is all too well known - once you have a way to reliably* say "<em>this</em>&nbsp;makes us more money than&nbsp;<em>this</em>", it's almost impossible to not try to test everything.</p>
+title: 'MVT: When You Start Testing Everything'
+category: articles
+
+{% extends "post.html" %}
+{% block body %}
+{% filter markdown %}
+
+I recently laughed the other day when reading [Doug Bowman's](http://stopdesign.com/) farewell blog post to Google, when he mentioned how Google is so meticulous about their testing that [they tested 41 different shades of blue](http://stopdesign.com/archive/2009/03/20/goodbye-google.html). Being that I work in Multivariate Testing (MVT), that situation is all too well known - once you have a way to reliably* say "_this_ makes us more money than _this_", it's almost impossible to not try to test everything.
+
+This results in a lot of wasted time--first, tests should take around two weeks to finish to make sure that daily trends aren't shifting a result one way or another, and if you want to test everything that you change with your website, you'll quickly create a backlog of tests and nothing will complete very quickly.
+
+However, when you're implementing a new feature without testing, there is the chance that you've miscalculated how valuable it will be to your users and you'll see a drop in conversion once it's implemented. Suddenly you're struck with the inspiration to change headline-so-and-so to be clearer, and perhaps you changed it to be clearer to yourself but maybe it confuses your users and they stop converting. A different background color. Different images. Anything, really, could lead to higher conversion or lower conversion, and when working with a high value property, you really don't want to implement _anything_ without making sure it was a _good decision_ in the first place.
+
+That's the important part: don't test if you can reliably say that something is a good decision.
+
+If you're sure that something is a _good decision_: improved accessibility, search results, information architecture, I say to not test. If you think that there is 90% change it'll be a positive change. There will never be a 100% confidence of a decision because something can always go wrong.
+
+But if you're making a change that cannot be reliably named a _good decision_: changing the link colors; headline copy; location of results: test. If you think there is a 25% chance or greater that something could go wrong.
+
+Continually improving your website should not be hindered by the ability to test. The time it takes to run a test should be a major factor as to whether to change a feature without testing. Furthermore, if an accessibility improvement is tested and somehow leads to poorer conversion, should that accessibility improvement be shelved for the sake of making more money? No! Implement the accessibility feature, then find out why conversion went down--never forget that all the pieces of your website work together and just because something goes wrong, it doesn't necessarily have to do with what you changed that time... it could be an effect further down the line.
+
+* I say reliably meaning about 90% confidence. You basically ALMOST know whether one thing will be better than another.
+{% endfilter %}
+{% endblock body %}

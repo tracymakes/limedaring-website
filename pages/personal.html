@@ -1,46 +1,30 @@
 {% extends "base.html" %}
 
-{% block title %}The Writing of Tracy Osborn{% endblock %}
+{% block title %}Tracy Osborn's Writing on Personal Stuff{% endblock %}
 
 {% block analytics %}
-analytics.page("Articles");
+analytics.page("Contact");
 {% endblock %}
 
 {% block bodyclass %}
-<body id="articles">
+<body id="contact">
 {% endblock bodyclass %}
-
-{% block contentsize %}
-<div class="col-lg-10 col-lg-offset-1">
-{% endblock contentsize %}
 
 {% block intro %}
 <div class="intro">
     <h1><a href="{% url '/index.html' %}">Tracy Osborn</a></h1>
     <div class="subheader">
-        <h2>loves to chat about entrepreneurship, teaching, design, development, and more.</h2>
+        <h2>sometimes chats straight from the heart.</h2>
         {% include 'includes/blog-sidebar.html' %}
     </div>
 </div>
 {% endblock intro %}
 
 {% block content %}
-{% comment %}<h1>Writing</h1>{% endcomment %}
-
 <ul class="list-unstyled blog-list">
     {% for post in posts %}
-    {% if forloop.counter0 < 20 %}
+    {% if post.category == "personal" %}
     <li>
-        {% comment %}
-        {% if post.featuredimage %}
-        <div class="thumbnail">
-            <a href="{{ post.page.link_url|cut:".html" }}">
-                <img src="{% static post.featuredimage %}" alt="{{ post.title }}" />
-            </a>
-        </div>
-        {% endif %}
-        <aside class="dates">{{ post.date|date:"F j, Y" }}</aside></a>
-        {% endcomment %}
         <h2><a href='{{ post.page.link_url|cut:".html" }}/'>{{ post.title }}</a></h2>
         {% if post.headline %}
         <p>{{ post.headline }}</p>
@@ -54,6 +38,4 @@ analytics.page("Articles");
     {% endif %}
     {% endfor %}
 </ul>
-
-
 {% endblock content %}

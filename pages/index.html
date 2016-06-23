@@ -30,13 +30,13 @@ analytics.page("Homepage");
 
 <div class="row">
     <div class="col-md-4">
-        <h3 class="sm-header"><a href="/work.html">Projects</a></h3>
+        <h3 class="sm-header"><a href="{% url '/work.html' %}">Projects</a></h3>
         <a href="">
             <img src="http://placehold.it/350x250">
         </a>
 
         <div class="index-contact">
-            <h3 class="sm-header"><a href="/contact.html">Contact Me</a></h3>
+            <h3 class="sm-header"><a href="{% url '/contact.html' %}">Contact Me</a></h3>
             <ul class="list-inline social-media">
                 <li><a href="//twitter.com/hellowebapp"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="//facebook.com/hellowebapp"><i class="fa fa-facebook"></i></a></li>
@@ -47,7 +47,7 @@ analytics.page("Homepage");
     </div>
     <div class="col-md-8">
         <div class="recent-writing">
-            <h3 class="sm-header"><a href="/writing.html">Recent Writing</a></h3>
+            <h3 class="sm-header"><a href="{% url '/articles.html' %}">Recent Writing</a></h3>
             <ul class="list-unstyled">
                 <!-- XXX Need to hide all posts past one featured post -->
                 {% for post in posts %}
@@ -63,7 +63,7 @@ analytics.page("Homepage");
             </ul>
         </div>
         <div class="recent-speaking">
-            <h3 class="sm-header"><a href="/speaking.html">Upcoming Speaking Engagements</a></h3>
+            <h3 class="sm-header"><a href="{% url '/speaking.html' %}">Upcoming Speaking Engagements</a></h3>
             <ul class="list-unstyled">
                 <li>
                     <span class="date">6/27/16</span>

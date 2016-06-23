@@ -5338,7 +5338,7 @@ a.bg-danger:focus, a.bg-danger:hover {
 .fa-percent:before { content: $fa-var-percent; }
 */
 /* EXTENDABLE PROPERTIES */
-.caps-letterspaced, .sm-header, ul.categories, .blog-list li .readmore, h4, #main-nav, #footer {
+.caps-letterspaced, .sm-header, ul.categories, .blog-list li .readmore, h4, figcaption, #main-nav, #footer {
   text-transform: uppercase;
   letter-spacing: 0.1em; }
 
@@ -5383,6 +5383,24 @@ h1, h2, h3, h4, h5 {
 
 h3 {
   font-style: italic; }
+
+figure.video {
+  position: relative;
+  padding-bottom: 55%;
+  /* to fit original ks video */
+  padding-top: 25px;
+  height: 0; }
+  figure.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+figcaption {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  margin: 0.5em 0 1em 0; }
 
 /* UNIVERSAL ELEMENTS */
 #main-nav {
@@ -5489,7 +5507,9 @@ ul.categories {
   font-style: italic; }
 
 .post-body {
-  font-size: 18px; }
+  font-size: 20px; }
+  .post-body b, .post-body strong {
+    color: #333; }
   .post-body:before {
     content: url("../images/caret.png");
     float: left;

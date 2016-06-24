@@ -5,9 +5,6 @@ staticfiles
 .DS_STORE
 *.zip
 *.csv
-*.png
-*.jpeg
-*.jpg
 .env*
 .build*
 settings_local.py

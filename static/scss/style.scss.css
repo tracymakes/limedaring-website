@@ -5379,6 +5379,12 @@ hr {
   margin-left: 20%;
   margin-right: 20%; }
 
+blockquote {
+  border-left: 5px solid #f4e193;
+  padding-left: 20px;
+  font-style: italic;
+  font-size: 1.2rem; }
+
 h1, h2, h3, h4, h5 {
   margin: 1em 0 0.5em 0;
   font-weight: 400; }
@@ -5387,10 +5393,16 @@ h3 {
   font-style: italic; }
 
 p {
-  margin: 1em 0; }
+  margin: 1.2em 0 1em 0; }
 
 b, strong {
   font-weight: 400; }
+
+ul {
+  list-style-type: circle; }
+
+li {
+  margin: 0.5em 0; }
 
 figure.video {
   position: relative;
@@ -5522,7 +5534,13 @@ ul.categories {
   font-size: 1.2rem; }
   .post-body b, .post-body strong {
     color: #333; }
-  .post-body:before {
+  .post-body hr {
+    margin-top: 2.5em;
+    margin-bottom: 2em; }
+  .post-body img {
+    border: 1px solid #f7f7f7;
+    margin: 0.5em 0; }
+  .post-body > p:first-of-type:before {
     content: url("../images/caret.png");
     float: left;
     margin: 6px 12px 0 0; }

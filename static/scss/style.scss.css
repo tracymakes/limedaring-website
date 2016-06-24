@@ -5389,8 +5389,16 @@ h1, h2, h3, h4, h5 {
   margin: 1em 0 0.5em 0;
   font-weight: 400; }
 
+h2 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: -10px; }
+
 h3 {
-  font-style: italic; }
+  margin-bottom: -10px;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #7b660d; }
 
 p {
   margin: 1.2em 0 1em 0; }
@@ -5518,7 +5526,8 @@ ul.categories {
 
 .blog-list li h2 {
   font-size: 1.5rem;
-  font-style: italic; }
+  font-style: italic;
+  font-family: "alda", "Times New Roman", Georgia, Times, serif; }
 
 .blog-list li hr {
   margin: 2em 4em; }
@@ -5544,3 +5553,10 @@ ul.categories {
     content: url("../images/caret.png");
     float: left;
     margin: 6px 12px 0 0; }
+  .post-body p > ul {
+    margin-top: -10px; }
+  .post-body span.lead {
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 80%; }

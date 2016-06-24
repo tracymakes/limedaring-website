@@ -1,12 +1,12 @@
 // bootstrap variable overrides
 $font-family-sans-serif:     'Open Sans', Helvetica, Arial, sans-serif !default;
-$font-family-serif:          "freight-text-pro", Georgia, "Times New Roman", Times, serif !default;
+$font-family-serif:          "alda", "Times New Roman", Georgia, Times, serif !default;
 $font-family-base:           $font-family-serif !default;
 $headings-font-weight:       300 !default;
 //$headings-line-height:       1.6;
 $font-size-base:             1.3rem !default;
 
-$body-color:                 #666 !default;
+$body-color:                 #444 !default;
 $headings-color:             #111 !default;
 $enable-rounded:             true !default;
 $border-radius:              0 !default;
@@ -79,6 +79,7 @@ html {
 body {
     background: url(../images/topleft.png) top left no-repeat;
     font-size: 16px;
+    font-weight: 100;
 }
 
 img {
@@ -95,6 +96,7 @@ hr {
 h1,h2,h3,h4,h5 {
     @extend .heading-link-text-color;
     margin: 1em 0 0.5em 0;
+    font-weight: 400;
 }
 
 h2 {
@@ -107,6 +109,14 @@ h3 {
 
 h4 {
     @extend .caps-letterspaced;
+}
+
+p {
+    margin: 1em 0;
+}
+
+b, strong {
+    font-weight: 400;
 }
 
 figure.video {
@@ -128,6 +138,7 @@ figcaption {
     font-family: $font-family-sans-serif;
     font-size: 0.8rem;
     margin: 0.5em 0 1em 0;
+    font-weight: 400;
 }
 
 /* UNIVERSAL ELEMENTS */
@@ -137,6 +148,7 @@ figcaption {
     @extend .heading-link-text-color;
     font-size: 0.7rem;
     font-family: $font-family-sans-serif;
+    font-weight: 400;
     letter-spacing: 0.2em;
     li {
         padding: 10px 20px;
@@ -184,6 +196,7 @@ figcaption {
     @extend .heading-link-text-color;
     font-size: 0.8rem;
     font-family: $font-family-sans-serif;
+    font-weight: 400;
     margin-bottom: 4em;
     hr {
         margin-bottom: 1.5em !important;
@@ -246,6 +259,7 @@ figcaption {
         &.date {
             font-size: 0.8rem;
             font-family: $font-family-sans-serif;
+            font-weight: 400;
         }
         &.location {
             font-style: italic;
@@ -297,7 +311,8 @@ ul.categories {
 }
 
 .post-body {
-    font-size: 20px;
+    font-size: 1.2rem;
+    
     b, strong {
         color: #333;
     }

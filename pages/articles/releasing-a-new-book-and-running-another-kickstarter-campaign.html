@@ -1,6 +1,7 @@
 date: 2015-09-04
 featuredimage:
 featured:
+excerpt: My goal with Hello Web App was to create a small, easily digestible book that walks you through everything you would need to launch your first web app — albeit, a very basic web app. Since launch, I've had nothing but great feedback and so many people have shared with me their first web apps!
 author: Tracy Osborn
 title: Releasing a new book (and running another Kickstarter campaign!)
 category: authorship
@@ -9,9 +10,9 @@ category: authorship
 {% block body %}
 {% filter markdown %}
 
-[caption id="" align="alignnone" width="1913.0"]![Image from the awesome Kickstarter video!](http://static1.squarespace.com/static/543c1b40e4b0f23a04303889/543f4799e4b033d6ec5036ed/55e9c5d7e4b0974d19c99a30/1441383902862//img.png) Image from the awesome Kickstarter video![/caption] 
-
 My goal with Hello Web App was to create a small, easily digestible book that walks you through _everything_ you would need to launch your first web app — albeit, a very basic web app. Since launch, I've had nothing but great feedback and so many people have shared with me their first web apps!
+
+![](/static/images/blog/kickstarter-video.png)
 
 There were a lot of concepts that didn't make it into the first book due to their complexity, things that most web apps would probably need at some point, like:
 
@@ -36,6 +37,11 @@ Check out the Kickstarter campaign here:
 (Highly recommend you check out the video because it was a blast to film.)
 
 Hello Web App: Intermediate Concepts will be released in December to all backers of the Kickstarter — the first draft is already finished and I am so excited to release this new book to everyone!
-
 {% endfilter %}
+
+<figure class="video">
+    <iframe src="https://player.vimeo.com/video/155448004?byline=0&portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    {% comment %}<figcaption>Hello Web App: Intermediate Concepts Kickstarter Video</figcaption>{% endcomment %}
+</figure>
+
 {% endblock body %}

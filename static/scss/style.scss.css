@@ -252,10 +252,10 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "freight-text-pro", Georgia, "Times New Roman", Times, serif;
+  font-family: "alda", "Times New Roman", Georgia, Times, serif;
   font-size: 1.3rem;
   line-height: 1.5;
-  color: #666;
+  color: #444;
   background-color: #fff; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -3659,7 +3659,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "freight-text-pro", Georgia, "Times New Roman", Times, serif;
+  font-family: "alda", "Times New Roman", Georgia, Times, serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -3738,7 +3738,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "freight-text-pro", Georgia, "Times New Roman", Times, serif;
+  font-family: "alda", "Times New Roman", Georgia, Times, serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5367,7 +5367,8 @@ html {
 
 body {
   background: url(../images/topleft.png) top left no-repeat;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 100; }
 
 img {
   max-width: 100%; }
@@ -5379,10 +5380,17 @@ hr {
   margin-right: 20%; }
 
 h1, h2, h3, h4, h5 {
-  margin: 1em 0 0.5em 0; }
+  margin: 1em 0 0.5em 0;
+  font-weight: 400; }
 
 h3 {
   font-style: italic; }
+
+p {
+  margin: 1em 0; }
+
+b, strong {
+  font-weight: 400; }
 
 figure.video {
   position: relative;
@@ -5400,12 +5408,14 @@ figure.video {
 figcaption {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 0.8rem;
-  margin: 0.5em 0 1em 0; }
+  margin: 0.5em 0 1em 0;
+  font-weight: 400; }
 
 /* UNIVERSAL ELEMENTS */
 #main-nav {
   font-size: 0.7rem;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
   letter-spacing: 0.2em; }
   #main-nav li {
     padding: 10px 20px; }
@@ -5426,7 +5436,7 @@ figcaption {
     .intro .subheader h2 {
       font-size: 1rem;
       line-height: 1.6;
-      color: #666; }
+      color: #444; }
 
 #content {
   margin-top: 4em; }
@@ -5434,6 +5444,7 @@ figcaption {
 #footer {
   font-size: 0.8rem;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
   margin-bottom: 4em; }
   #footer hr {
     margin-bottom: 1.5em !important; }
@@ -5476,7 +5487,8 @@ figcaption {
   color: #aaa; }
   .recent-speaking span.date {
     font-size: 0.8rem;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 400; }
   .recent-speaking span.location {
     font-style: italic;
     font-size: 1.1rem; }
@@ -5507,7 +5519,7 @@ ul.categories {
   font-style: italic; }
 
 .post-body {
-  font-size: 20px; }
+  font-size: 1.2rem; }
   .post-body b, .post-body strong {
     color: #333; }
   .post-body:before {

@@ -10,7 +10,7 @@ category: Entrepreneurship
 {% block body %}
 {% filter markdown %}
 
-**I launched [WeddingLovely](http://weddinglovely.com), my startup, nearly five years ago. **WeddingLovely, in a nutshell, is a free online wedding planning guide and wedding vendor marketplace. My goal is to walk couples through their wedding planning in a simple and sane way, connecting them with awesome small-business and local wedding vendors.
+**I launched [WeddingLovely](http://weddinglovely.com), my startup, nearly five years ago.** WeddingLovely, in a nutshell, is a free online wedding planning guide and wedding vendor marketplace. My goal is to walk couples through their wedding planning in a simple and sane way, connecting them with awesome small-business and local wedding vendors.
 
 The planning side of WeddingLovely is simple — you can sign up for the web app at [WeddingLovely.com](http://weddinglovely.com). Vendor-wise, WeddingLovely runs a network of specialized directories (like [WeddingInviteLove](http://weddinginvitelove.com) and [WeddingPhotoLove](http://weddingphotolove.com)), which all tie into a general directory ([The WeddingLovely Vendor Guide](http://weddinglovely.com/vendors/)), and all of the listings on all of these properties also are imported into the planning app. Right now, we have 5,000 vendor listings across 10 different vendor directories. Last but not least, I also run a semi-popular weddings blog which gets ~40,000 page views per month.
 
@@ -34,15 +34,10 @@ When I list it all out like this, it feels like I'm a superwoman, when in realit
 
 **Here's a rundown of how I run WeddingLovely.**  
  
-
 ## **Onboarding:** I have free accounts, and I rely on my users to spread the word and drive more users onto my platform.
 
-
-  
-       [caption id="" align="alignnone" width="1056.0"]![The internal Django admin for WeddingLovely, where I can review new applications and approve/deny.](http://static1.squarespace.com/static/543c1b40e4b0f23a04303889/543f4799e4b033d6ec5036ed/55acd9b7e4b019ea0d5fdd00/1437391290666//img.png) The internal Django admin for WeddingLovely, where I can review new applications and approve/deny.[/caption] 
-  
-
-
+![](/static/images/blog/wl-admin.png)
+*The internal Django admin for WeddingLovely, where I can review new applications and approve/deny.*
 
 This one is kind of a "duh" topic but let me go into a bit more detail.
 
@@ -50,13 +45,13 @@ This one is kind of a "duh" topic but let me go into a bit more detail.
 
 Marketplaces have a chicken-and-egg problem, meaning that it's hard to get visitors to the marketplace without a lot of selection, and it's hard to get vendors/profiles signed up when you don't have a lot of traction — which means a lot of "do things that don't scale" (like hundreds of cold emails) early on.
 
-**Wedding vendors know other wedding vendors, and at this point near 100% of our signups comes from word of mouth. **We would get _more_ signups if I was able to spend time on marketing, of course, but the directories and our listings are growing at this point without any major time spent by WeddingLovely. **Of course, this is only possible through freemium accounts — vendor onboarding would be 1000% harder if I wasn't giving away listings for free at the start.**
+**Wedding vendors know other wedding vendors, and at this point near 100% of our signups comes from word of mouth.** We would get _more_ signups if I was able to spend time on marketing, of course, but the directories and our listings are growing at this point without any major time spent by WeddingLovely. **Of course, this is only possible through freemium accounts — vendor onboarding would be 1000% harder if I wasn't giving away listings for free at the start.**
 
 Other small things I do to help user on-boarding without spending a lot of time on it:
 
   * In your drip emails to users, I encourage them to share their profile on their social networks.
   * Give pretty badges to add to their website ("Approved member of the WeddingLovely Vendor Network!") Also good for SEO, since they also link back to my site.
-  * Back in the day, I would follow thousands of wedding businesses on Twitter, because they would get an email saying we followed them along with our Twitter description and link to our sites. I would update the description to something like, "We're looking for new wedding stationers to list on our site for free! Sign up here:" and our website link would be displayed. _But Twitter ruined it by launching their t.co shortener.** **_Clicks to our website drastically dropped after the URL was obscured, since users couldn't see that we weren't some spammy website. I'm still mad about this.
+  * Back in the day, I would follow thousands of wedding businesses on Twitter, because they would get an email saying we followed them along with our Twitter description and link to our sites. I would update the description to something like, "We're looking for new wedding stationers to list on our site for free! Sign up here:" and our website link would be displayed. _But Twitter ruined it by launching their t.co shortener._ Clicks to our website drastically dropped after the URL was obscured, since users couldn't see that we weren't some spammy website. I'm still mad about this.
 
 ## **Automated marketing:** Heavy use of drip marketing and Buffer so I only _need_ to work one day a week.
 
@@ -64,53 +59,35 @@ Once I approve a vendor to join WeddingLovely for free (which pretty much consis
 
 All automated emails are written to make it look like a personal email. I don't recommend using HTML emails for newsletters as engagement goes way up if they don't look like a newsletter. **The drip emails let the vendor know they're approved and implores them to share their profile, then introduces them over the next month to various features as well as an upsell to our paid accounts.**
 
-
-  
-       [caption id="" align="alignnone" width="1315.0"]![Mailchimp's automation screen where you can set up drip marketing.](http://static1.squarespace.com/static/543c1b40e4b0f23a04303889/543f4799e4b033d6ec5036ed/55acee4ee4b0b8a3dbbd9f34/1437396561340//img.png) Mailchimp's automation screen where you can set up drip marketing.[/caption] 
-  
-
-
+![](/static/images/blog/mailchimp-workflow.png)
+*Mailchimp's automation screen where you can set up drip marketing.*  
 
 To make sure our social media accounts look active throughout the week, I'm a heavy user of [Buffer](http://bufferapp.com). We've built up quite a following on most social networks (6,000 followers on [Twitter](http://twitter.com/weddinglovely), 1,500 followers on [Instagram](http://instagram.com/weddinglovelyblog), 24,000 followers on [Pinterest](http://pinterest.com/weddinglovely), for example) and being active is really important. Content from our blog, general announcement tweets, and content from a few wedding blogs are collected and set up to go out over the week on one day.
 
-
-  
-       [caption id="" align="alignnone" width="1072.0"]![WeddingLovely's Buffer account](http://static1.squarespace.com/static/543c1b40e4b0f23a04303889/543f4799e4b033d6ec5036ed/55acf1afe4b04299231c8c35/1437397426959//img.png) WeddingLovely's Buffer account[/caption] 
-  
-
-
+![](/static/images/blog/buffer.png)
+*WeddingLovely's Buffer account*
 
 **The combination of these processes means that if I only have one day a week to maintain WeddingLovely, I can do it all at once**, and then the rest of my week is free to work on development, or on side-projects like [my book](http://hellowebapp.com).   
- 
 
 ## **Traffic:** I launched a free wedding planning app to drive potential customers to my users so I didn't have to rely on SEO.
 
-
-  
-      [![](http://static1.squarespace.com/static/543c1b40e4b0f23a04303889/543f4799e4b033d6ec5036ed/55acd8bbe4b0824df5e88d26/1437391057997//img.png)](http://weddinglovely.com)
-  
-
-
+![](/static/images/blog/weddinglovely.jpeg)
 
 Once my marketplace gained some traction, I could start relying on SEO to drive users to my listings — people who searched for "wedding photographers in San Jose" for example.
 
-SEO is kind of hard though, and my rankings has been dropping over the years (I'm working on it, but SEO is kind of a long game so I don't have much in results right now.) **I didn't want to be beholden to Google, so I diversified WeddingLovely by launching a free wedding planning app. **
+SEO is kind of hard though, and my rankings has been dropping over the years (I'm working on it, but SEO is kind of a long game so I don't have much in results right now.) **I didn't want to be beholden to Google, so I diversified WeddingLovely by launching a free wedding planning app.**
 
-Originally a paid product because I wanted to diversify our income as well (long story short, decided that traffic/page-views to our vendors was more important than income so I made the app free to increase usage.) **The wedding planning app is WeddingLovely's way to bring in and control the traffic that goes through to our vendors, and allows me to build features like in-app vendor booking and management. **The big downside, of course, is that it's yet another product to maintain.  
+Originally a paid product because I wanted to diversify our income as well (long story short, decided that traffic/page-views to our vendors was more important than income so I made the app free to increase usage.) **The wedding planning app is WeddingLovely's way to bring in and control the traffic that goes through to our vendors, and allows me to build features like in-app vendor booking and management.** The big downside, of course, is that it's yet another product to maintain.  
  
 
-## **Reducing churn: **I launched a blog so I have an excuse to repeatedly engage with my users.
+## **Reducing churn:** I launched a blog so I have an excuse to repeatedly engage with my users.
 
-
-  
-       [caption id="" align="alignnone" width="1117.0"][![Our weddings blog, which is run off of Wordpress.](http://static1.squarespace.com/static/543c1b40e4b0f23a04303889/543f4799e4b033d6ec5036ed/55acd876e4b0ab3015ee6abd/1437390975620//img.png)](http://weddinglovely.com/blog/) Our weddings blog, which is run off of Wordpress.[/caption] 
-  
-
-
+![](/static/images/blog/wl-blog.jpeg)
+*Our weddings blog, which is run off of Wordpress.* 
 
 I don't want to hound the vendors in our marketplace every week to sign up for our paid plans. A _lot_ of vendor directories do this and vendors report to me that it feels very scummy. On the other hand, if the vendors forget that WeddingLovely exists, then there is no reason to move to a paid account.
 
-**I launched our weddings blog primarily as an excuse to constantly email our users without making it look like we're pestering them. **Our wedding blog is near-100% vendor-sourced content.** **I share the work that our vendors are doing, which produces a blog filled with lovely wedding inspiration without spending time writing content myself. The vendor gets a boost in page views and good feelings towards WeddingLovely (not to mention they share the posts and we get the traffic/page-views from that.)** I can sneak in excuses to pitch them our paid vendor plans during these exchanges. **We limit blog features to twice a year per vendor, so we can upsell them once they hit the limit on features.
+**I launched our weddings blog primarily as an excuse to constantly email our users without making it look like we're pestering them. **Our wedding blog is near-100% vendor-sourced content.** I share the work that our vendors are doing, which produces a blog filled with lovely wedding inspiration without spending time writing content myself. The vendor gets a boost in page views and good feelings towards WeddingLovely (not to mention they share the posts and we get the traffic/page-views from that.) **I can sneak in excuses to pitch them our paid vendor plans during these exchanges.** We limit blog features to twice a year per vendor, so we can upsell them once they hit the limit on features.
 
 **The blog exposes us to new vendors for our marketplace and new users for our planning guide. Not to mention, we can sell sidebar advertisements and sponsored posts, which brings in more income too.**
 
@@ -118,39 +95,27 @@ The blog is run on Wordpress, because Wordpress has too many can't-live-without-
 
 I need to link the blog features to the profile on our directories, which used to be manual but now is mostly-automated.
 
+![](/static/images/blog/wl-vendor-features.png)
+*Every time a vendor is featured on the blog, we need to add the feature to their profile.*  
 
-  
-       [caption id="" align="alignnone" width="659.0"]![Every time a vendor is featured on the blog, we need to add the feature to their profile.](http://static1.squarespace.com/static/543c1b40e4b0f23a04303889/543f4799e4b033d6ec5036ed/55ad41aee4b0d9ec9d7e47af/1437417905525//img.png) Every time a vendor is featured on the blog, we need to add the feature to their profile.[/caption] 
-  
+![](/static/images/blog/wl-vendor-features2.png)
+*The internal admin add-feature form.*  
 
-
-  
-       [caption id="" align="alignnone" width="1026.0"]![The internal admin add-feature form.](http://static1.squarespace.com/static/543c1b40e4b0f23a04303889/543f4799e4b033d6ec5036ed/55ad3e0be4b0175ead01d54e/1437416973466//img.png) The internal admin add-feature form.[/caption] 
-  
-
-
-  
-       [caption id="" align="alignnone" width="853.0"]![The output from using the form above — links already filled out — which I copy/paste into email to send to the vendor.](http://static1.squarespace.com/static/543c1b40e4b0f23a04303889/543f4799e4b033d6ec5036ed/55ad4376e4b0059e313015cf/1437418361645//img.png) The output from using the form above — links already filled out — which I copy/paste into email to send to the vendor.[/caption] 
-  
-
-
+![](/static/images/blog/wl-vendor-features3.png)
+*The output from using the form above — links already filled out — which I copy/paste into email to send to the vendor.*  
 
 The admin-only form allows me or my blogging assistant to add the feature to our database and tie it with the vendor's profile while also creating the script we use to announce the blog post to the vendor (with social links and sharing filled out.) So by filling out one form with info, all the info is added into our backend and we also save time by having our announcement email created for us.
 
 This is actually only one of many different admin forms I've built over the last couple years — for example, I also have a form where I can press a button and get a list of emails of vendors who aren't on paid accounts and who haven't been featured on our blog in the last six months, so I can email them directly and invite them to submit content as well as remind them about our paid plans. Now that I'm typing this, I probably could automate this with a cronjob, but it's still faster than logging into my server and running a database query.
 
-## **Support: **Heavy, heavy use of canned responses and Boomerang.
+## **Support:** Heavy, heavy use of canned responses and Boomerang.
 
-
-  
-       [caption id="" align="alignnone" width="1073.0"]![A few of my canned responses — there are even more after you scroll.](http://static1.squarespace.com/static/543c1b40e4b0f23a04303889/543f4799e4b033d6ec5036ed/55acf48ce4b05f4b613d140c/1437398165002//img.png) A few of my canned responses — there are even more after you scroll.[/caption] 
-  
-
-
+![](/static/images/blog/wl-canned.png)
+*A few of my canned responses — there are even more after you scroll.*  
 
 I send out newsletters to all our vendors about twice a month, asking for new content for our blog or announcing a new feature (of course, a subtle upsell included in the content as well.)
 
-I normally get ~40 emails per day, if that, normally — but the days after a newsletter means I'll usually have hundreds of responses.** The only way I could get through all of the email and keep "inbox zero" is by creating a canned response for nearly any kind of email I get.**
+I normally get ~40 emails per day, if that, normally — but the days after a newsletter means I'll usually have hundreds of responses. **The only way I could get through all of the email and keep "inbox zero" is by creating a canned response for nearly any kind of email I get.**
 
 Of course, these responses are crafted to look as natural and "human" as possible. I worry that some time someone will accuse me of being a robot but so far that hasn't happened yet.
 
@@ -168,16 +133,11 @@ I'm lucky that I work with thousands of small-businesses, folks who are already 
 
 As WeddingLovely is bootstrapped, ergo low on cash nearly all the time, these remote contractors cost a fraction of hiring a Bay Area employee. They help me run my business more efficiently, and I help them bring in some extra cash.
 
-## **Content and SEO: **Take advantage of your users.
+## **Content and SEO:** Take advantage of your users.
 
 Of course, not in a mean way
 
-
-  
-      ![](http://static1.squarespace.com/static/543c1b40e4b0f23a04303889/543f4799e4b033d6ec5036ed/55ae51d3e4b0372eed44e714/1437487586616//img.png)
-  
-
-
+![](/static/images/blog/weddinglovely.jpeg)
 
 The beautiful image on the WeddingLovely.com homepage, as well other images scattered throughout the site, were donated by [Josh Gruetzmacher](http://www.joshgruetzmacher.com/), an amazing San Francisco wedding photographer listed on my directories. He said he just wanted to help out, and I got amazing non-stock images to use for free.
 
@@ -199,13 +159,13 @@ One of my biggest peeves is when I tell someone about my business and they immed
 
 I can go on forever of all the parts of the business I feel are broken or are being neglected.
 
-## **Success? **Not quite... but it does give me freedom.
+## **Success?** Not quite... but it does give me freedom.
 
 WeddingLovely doesn't bring in a lot of money (one of the main reasons it's impossible for me to raise money at this point — if I haven't hit virality in four years of running the business, I probably won't ever. Oh the stories I can tell of thinking I could raise money last summer.)
 
-**It's super fucking fun though. **I love building web apps ([which is why I think more web designers should learn how to code](http://hellowebapp.com)). I'm writing this from a rented apartment in Budapest because I can travel when I want (plus, it's way cheaper than Silicon Valley! I highly recommend renting your apartment and working abroad for a few months.)
+**It's super fucking fun though.** I love building web apps ([which is why I think more web designers should learn how to code](http://hellowebapp.com)). I'm writing this from a rented apartment in Budapest because I can travel when I want (plus, it's way cheaper than Silicon Valley! I highly recommend renting your apartment and working abroad for a few months.)
 
-**In a nutshell, WeddingLovely has become a minor force in the weddings world and it almost entirely runs itself. I'm proud about what I've built. **
+**In a nutshell, WeddingLovely has become a minor force in the weddings world and it almost entirely runs itself. I'm proud about what I've built.**
 
 I hope this insight into my business helps you run yours! If you ever want to chat, I'm [@limedaring on Twitter](http://twitter.com/limedaring). Of course, if you're thinking of learning how to build web apps yourself, [I highly recommend my book](http://hellowebapp.com).
 

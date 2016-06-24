@@ -6,6 +6,16 @@
 <body id="post" class="{{ title|slugify }}">
 {% endblock %}
 
+{% block intro %}
+<div class="intro">
+    <h1><a href="{% url '/index.html' %}">Tracy Osborn</a></h1>
+    <div class="subheader">
+        <h2>loves to chat about entrepreneurship, teaching, design, development, and more.</h2>
+        {% include 'includes/blog-sidebar.html' %}
+    </div>
+</div>
+{% endblock intro %}
+
 {% block contentsize %}
 <div class="col-lg-12">
 {% endblock contentsize %}

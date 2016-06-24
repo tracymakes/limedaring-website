@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Tracy Osborn's Writing on Development{% endblock %}
+
+{% block analytics %}
+analytics.page("Contact");
+{% endblock %}
+
+{% block bodyclass %}
+<body id="contact">
+{% endblock bodyclass %}
+
+{% block intro %}
+<div class="intro">
+    <h1><a href="{% url '/index.html' %}">Tracy Osborn</a></h1>
+    <div class="subheader">
+        <h2>loves to teach others new things.</h2>
+        {% include 'includes/blog-sidebar.html' %}
+    </div>
+</div>
+{% endblock intro %}
+
+{% block content %}
+<ul class="list-unstyled blog-list">
+    {% for post in posts %}
+    {% if post.category == "instruction" %}
+    <li>
+        <h2><a href='{{ post.page.link_url|cut:".html" }}/'>{{ post.title }}</a></h2>
+        {% if post.headline %}
+        <p>{{ post.headline }}</p>
+        {% endif %}
+        {% if post.excerpt %}
+        <p class="excerpt">{{ post.excerpt|truncatewords:30 }}</p>
+        {% endif %}
+        <p class="readmore"><a href="{{ post.page.link_url|cut:".html" }}/">Read more</a></p>
+        <hr/>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+{% endblock content %}

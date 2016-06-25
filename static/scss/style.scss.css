@@ -5514,7 +5514,12 @@ figcaption {
 .recent-writing {
   margin-bottom: 3em; }
   .recent-writing h4 {
-    font-style: italic; }
+    font-style: italic;
+    margin: 10px 0 0 0; }
+  .recent-writing p {
+    margin-top: 10px;
+    font-size: 1.05rem;
+    line-height: 1.6; }
   .recent-writing li:nth-child(1n+2) {
     display: none; }
 
@@ -5535,6 +5540,9 @@ figcaption {
   display: inline;
   font-size: 1.1rem;
   padding: 0 1em; }
+
+.social-media li {
+  margin-top: 0; }
 
 /* SPEAKING */
 .speaking-list .date, .speaking-list .location {

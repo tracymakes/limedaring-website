@@ -277,6 +277,12 @@ figcaption {
     h4 {
         @extend .de-caps-letterspaced;
         font-style: italic;
+        margin: 10px 0 0 0;
+    }
+    p {
+        margin-top: 10px;
+        font-size: 1.05rem;
+        line-height: 1.6;
     }
     li:nth-child(1n+2) {
         display: none;
@@ -305,6 +311,10 @@ figcaption {
         font-size: 1.1rem;
         padding: 0 1em;
     }
+}
+
+.social-media li {
+    margin-top: 0;
 }
 
 /* SPEAKING */

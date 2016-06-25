@@ -56,7 +56,7 @@ analytics.page("Homepage");
                     <h4>
                         <a href='{{ post.page.link_url|cut:".html" }}/'>{{ post.title }}</a>
                     </h4>
-                    <p>{{ post.excerpt|truncatewords:42 }}</p>
+                    <p>{{ post.excerpt|truncatewords:40 }}</p>
                 </li>
                 {% endif %}
                 {% endfor %}

@@ -19,16 +19,16 @@ Today, however, I was testing adding more items to a list. The "new" items were 
 ### Source:
 
     <ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-    <li>Item 4</li>
-    <li>Item 5</li>
-    <li class="mod">Item 6</li>
-    <li class="mod">Item 7</li>
-    <li class="mod">Item 8</li>
-    <li class="mod">Item 9</li>
-    <li class="mod">Item 10</li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li class="mod">Item 6</li>
+        <li class="mod">Item 7</li>
+        <li class="mod">Item 8</li>
+        <li class="mod">Item 9</li>
+        <li class="mod">Item 10</li>
     </ul>
 
 ### Existing CSS file:
@@ -51,3 +51,9 @@ Lesson? I definitely don't know everything and I definitely won't know everythin
 
 {% endfilter %}
 {% endblock body %}
+
+{% block scripts %}
+<link rel="stylesheet" href="{% static '/css/tomorrow.css' %}">
+<script src="{% static '/js/highlight.pack.js' %}"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{% endblock scripts %}

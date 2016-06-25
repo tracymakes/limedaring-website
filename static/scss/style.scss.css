@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -5338,7 +5339,7 @@ a.bg-danger:focus, a.bg-danger:hover {
 .fa-percent:before { content: $fa-var-percent; }
 */
 /* EXTENDABLE PROPERTIES */
-.caps-letterspaced, .sm-header, ul.categories, .blog-list li .readmore, h4, figcaption, #main-nav, #footer {
+.caps-letterspaced, .sm-header, ul.categories, .blog-list li .readmore, h4, figcaption, #main-nav, #footer, .speaking-list .date, .speaking-list .location {
   text-transform: uppercase;
   letter-spacing: 0.1em; }
 
@@ -5370,6 +5371,10 @@ body {
   font-size: 16px;
   font-weight: 100; }
 
+.wf-loading body {
+  color: #888;
+  font-size: 17px; }
+
 img {
   max-width: 100%; }
 
@@ -5391,14 +5396,15 @@ h1, h2, h3, h4, h5 {
 
 h2 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 1.8rem;
-  margin-bottom: -10px; }
+  font-size: 1.8rem; }
 
 h3 {
-  margin-bottom: -10px;
   font-size: 1.4rem;
   font-style: italic;
   color: #7b660d; }
+
+h2 + p, h3 + p {
+  margin-top: 0; }
 
 p {
   margin: 1.2em 0 1em 0; }
@@ -5449,14 +5455,26 @@ figcaption {
   .intro h1 {
     font-style: italic;
     font-size: 1.8rem;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-top: 7px; }
   .intro .subheader {
     margin-top: 2em;
     margin-right: 2em; }
     .intro .subheader h2 {
       font-size: 1rem;
       line-height: 1.6;
-      color: #444; }
+      color: #444;
+      font-family: "alda", "Times New Roman", Georgia, Times, serif;
+      font-style: italic;
+      font-weight: 100; }
+  .intro .intro-cats {
+    font-family: "alda", "Times New Roman", Georgia, Times, serif;
+    font-size: 1.1rem;
+    margin-top: 3em;
+    margin-bottom: -10px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 1em;
+    margin-right: 2em; }
 
 #content {
   margin-top: 4em; }
@@ -5518,6 +5536,25 @@ figcaption {
   font-size: 1.1rem;
   padding: 0 1em; }
 
+/* SPEAKING */
+.speaking-list .date, .speaking-list .location {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  font-size: 0.9rem;
+  margin: 7px 0 2px 0;
+  color: #999; }
+
+.speaking-list .date::after {
+  content: " · "; }
+
+.speaking-list h3 {
+  margin-bottom: 0; }
+  .speaking-list h3 a {
+    color: #8a9a0f; }
+
+.speaking-list p {
+  margin: 0; }
+
 /* BLOG */
 ul.categories {
   margin-top: 2em; }
@@ -5555,8 +5592,13 @@ ul.categories {
     margin: 6px 12px 0 0; }
   .post-body p > ul {
     margin-top: -10px; }
+  .post-body h3 + pre {
+    margin-top: 1em; }
   .post-body span.lead {
     font-variant: small-caps;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-size: 80%; }
+
+.wf-loading .post-body {
+  font-size: 1.3rem; }

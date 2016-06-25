@@ -187,11 +187,10 @@ figcaption {
     h1 {
         font-style: italic;
         font-size: 1.8rem;
-        font-weight: 700;
         margin-top: 7px;
     }
     .subheader {
-        margin-top: 2em;
+        margin-top: 1.35em;
         margin-right: 2em;
         h2 {
             font-size: 1rem;
@@ -220,7 +219,7 @@ figcaption {
 }
 
 #content {
-    margin-top: 4em;
+    margin-top: 4.7em;
     @extend .col-md-8;
 }
 
@@ -231,6 +230,7 @@ figcaption {
     font-family: $font-family-sans-serif;
     font-weight: 400;
     margin-bottom: 4em;
+    margin-top: 4em;
     hr {
         margin-bottom: 1.5em !important;
     }
@@ -330,6 +330,14 @@ figcaption {
     }
 }
 
+/* CONTACT */
+
+#contact {
+    h2:first-child {
+        margin-top: 0.5em;
+    }
+}
+
 /* BLOG */
 
 ul.categories {
@@ -342,6 +350,9 @@ ul.categories {
 
 .blog-list {
     li {
+        &:first-child h2 {
+            margin-top: 0.7em;
+        }
         h2 {
             font-size: 1.5rem;
             font-style: italic;
@@ -361,9 +372,10 @@ ul.categories {
 
 /* POST */
 
-#post {
+.post {
     h1 {
         font-style: italic;
+        margin-top: 1px;
     }
 }
 

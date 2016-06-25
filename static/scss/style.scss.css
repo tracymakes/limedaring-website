@@ -5455,10 +5455,9 @@ figcaption {
   .intro h1 {
     font-style: italic;
     font-size: 1.8rem;
-    font-weight: 700;
     margin-top: 7px; }
   .intro .subheader {
-    margin-top: 2em;
+    margin-top: 1.35em;
     margin-right: 2em; }
     .intro .subheader h2 {
       font-size: 1rem;
@@ -5477,13 +5476,14 @@ figcaption {
     margin-right: 2em; }
 
 #content {
-  margin-top: 4em; }
+  margin-top: 4.7em; }
 
 #footer {
   font-size: 0.8rem;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  margin-bottom: 4em; }
+  margin-bottom: 4em;
+  margin-top: 4em; }
   #footer hr {
     margin-bottom: 1.5em !important; }
   #footer a {
@@ -5555,11 +5555,18 @@ figcaption {
 .speaking-list p {
   margin: 0; }
 
+/* CONTACT */
+#contact h2:first-child {
+  margin-top: 0.5em; }
+
 /* BLOG */
 ul.categories {
   margin-top: 2em; }
   ul.categories li {
     padding: 0.5em 0; }
+
+.blog-list li:first-child h2 {
+  margin-top: 0.7em; }
 
 .blog-list li h2 {
   font-size: 1.5rem;
@@ -5573,8 +5580,9 @@ ul.categories {
   display: none; }
 
 /* POST */
-#post h1 {
-  font-style: italic; }
+.post h1 {
+  font-style: italic;
+  margin-top: 1px; }
 
 .post-body {
   font-size: 1.2rem; }

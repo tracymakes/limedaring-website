@@ -36,6 +36,23 @@
         {% endblock body %}
     </section>
 
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = {{ CURRENT_PAGE.absolute_final_url }};  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = {{ title|slugify }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        (function() { 
+            var d = document, s = d.createElement('script');
+            
+            s.src = '//limedaring.disqus.com/embed.js';
+            
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
     {% comment %}
     <footer id="post-meta" class="clearfix">
         <div><span>Posted on </span> {{ date|date:"M j" }}</div>

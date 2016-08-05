@@ -10,9 +10,21 @@ analytics.page("Work");
 <body id="work">
 {% endblock bodyclass %}
 
-{% block subheader %}
-<h2>loves building websites, creating web apps, and working on fun side-projects.</h2>
-{% endblock %}
+{% block intro %}
+<div class="intro">
+    <h1><a href="{% url '/index.html' %}">Tracy Osborn</a></h1>
+    <div class="subheader">
+        <h2>loves building websites, creating web apps, and working on fun side-projects.</h2>
+    </div>
+
+    <div class="hidden-sm-down">
+        <h2 class="intro-cats">Featured press mentions</h2>
+        <ul class="list-unstyled categories">
+            <li><a href="http://www.businessinsider.com/14-super-busy-startup-founders-share-their-single-best-productivity-tip-2016-8">Business Insider - 14 super-busy startup founders share their single best productivity tip</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock intro %}
 
 {% block content %}
 
@@ -42,5 +54,11 @@ analytics.page("Work");
 
 <p><strong>WeddingLovely walks customers through planning their wedding and connects them with local and small business wedding vendors.</strong> Today WeddingLovely (and all eleven WeddingLovely web properties) largely run themselves and I act mostly in an advisory position.</p>
 
+<div class="hidden-md-up">
+    <h2 class="intro-cats">Featured press mentions</h2>
+    <ul class="list-unstyled categories">
+        <li><a href="http://www.businessinsider.com/14-super-busy-startup-founders-share-their-single-best-productivity-tip-2016-8">Business Insider - 14 super-busy startup founders share their single best productivity tip</a></li>
+    </ul>
+</div>
 
 {% endblock content %}

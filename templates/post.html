@@ -36,6 +36,25 @@
         {% endblock body %}
     </section>
 
+    <footer class="post-meta clearfix">
+        <div><span>Posted on </span> {{ date|date:"F j, Y" }}</div>
+        <section class="sharing">
+            <div>
+                <span>Share: </span>
+                <a class="twitter" href="http://twitter.com/home/?status={{ title }} https://hellowebapp.com/{{ path|cut:".html" }}/ (via @hellowebapp)"><i class="fa fa-twitter"></i></a>
+
+                <a class="facebook" href="#" onclick="
+                    window.open(
+                    'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+                    'facebook-share-dialog', 
+                    'width=626,height=436'); 
+                    return false;"><i class="fa fa-facebook"></i> 
+                </a>
+                <a class="mail" href="mailto:?subject={{ title }}&amp;body=Here's the link: https://hellowebapp.com/{{ path|cut:".html" }}/"><i class="fa fa-envelope"></i></a>
+            </div>
+        </section>
+    </footer>
+
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function () {

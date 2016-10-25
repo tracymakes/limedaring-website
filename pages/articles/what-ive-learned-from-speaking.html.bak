@@ -1,0 +1,105 @@
+date: 2016-10-20
+featuredimage:
+featured: True
+author: Tracy Osborn
+excerpt:
+title: The biggest and most unexpected things I've learned on how to become a better speaker
+category: personal
+
+{% extends "post.html" %}
+{% block body %}
+{% filter markdown %}
+
+I was reflecting the other day that I've reached a new milestone in my speaking career. This year was my biggest year yet -- giving multiple keynotes (at Fluent, and upcoming at PyCon Canada and NodeConf Argentina) and reaching the level where I'm invited to speak at international conferences where my travel and hotel are covered.
+
+I've always wanted to become a public speaker. In school, we'd get public speakers and I'd listen in awe and leave their sessions feeling completely inspired -- and wanting to be able to do the same myself. 
+
+There are *a lot* of articles on public speaking and giving talks at technical conferences, but there are a few tidbits I've learned over the last few years that I don't see referenced very often, and think they could be helpful to anyone else looking to jump into giving talks at technical conferences.
+
+First though, lest you think this career was easy for me, let me tell you the story of my very first public speaking opportunity.
+
+My alma mater (Art &amp; Design at Cal Poly San Luis Obispo) in 2006 wasn't very up to date on web standards (which I don't entirely blame them, as the web moves astoundingly quick). I sent over a proposal for an hour long session on what web standards meant, which was accepted with enthusiasm by the department. 
+
+It was kind of amazing to show back up at my old stomping grounds to see posters everywhere announcing my talk and making me feel like a bit deal. However, it all went downhill from there. 
+
+The room I was in was the computer room, so everyone attending my talk was hidden behind a large cinema display. I was *incredibly* nervous - voice quivers, I forgot my place many many times, and I'm sure my presentation wasn't very interesting or personable. The worst part (and truly a sign of how badly it was going) was the web design professor walking out of the room halfway through the talk, sending me into an even bigger nervous hole.
+
+I look back on that day as one of the worst and more terrifying experiences of my life... and it has only been up from there.
+
+## You can save and submit sessions to multiple conferences.
+
+When I started submitting to conferences, I would write a new session each time to submit -- meaning I usually stared at the CFP form with no small amount of anxiousness willing myself to figure out a good thing to talk about and to write semi-coherently about it.
+
+It's better though to divorce yourself from the CFP form and write independently about what you'd like to speak about. I have a page in Google Docs with lists out all the sessions I've ever proposed: ones that have been accepted to conferences already as well as ones that haven't yet -- and when a new CFP comes out, I can go to my doc and copy/paste the ones that fit best, and editing them at that point to better fit the conference's topic and focus.
+
+Saving my sessions and copy/pasting them into multiple conferences has saved me so much time and stress from submitting to conferences. It means that I already know my grammar and spelling is checked in the session, and it also gives me more time to submit multiple sessions to the same conference.
+
+## You can submit multiple sessions to the same conference.
+
+Another thing that seems obvious in hindsight. A CFP would be released, I would open the form, stuggle over writing an idea, submit... and exhausted, I would close the form and move on with my life. Meaning, I would create a new session for every CFP but also only send in one session idea per CFP.
+
+Having a document where you keep all of your ideas to copy/paste into CFPs means it's easier to send in not just one, but multiple ideas per conference, maximizing your chances something will get accepted.
+
+## 90% rejections, 10% acceptances.
+
+Of course, once you start sending in more ideas, the more rejections you'll receive. Some rejections will come with a silver lining - one of five sessions you've submitted will be accepted (hurrah!) meaning you get four separate rejection emails. But also, the easier to submit to multiple conferences and multiple sessions, the more conferences there are that potentially can reject you. 
+
+Even though I've been speaking at about 1-2 conferences *per month* on average, 90% of my submissions are rejected. I am just lucky that my particular sessions are programming-language agnostic, so I can submit them to many conferences in many different languages, so the 10% I am accepted to are quite a lot of conferences.
+
+It's basically spray-and-pray. But it's been very successful for me.
+
+## Write full blog posts on what you'd like to speak on.
+
+There was a recent discussion prompted by a conference giving the biggest reasons why they reject sessions, and the last one was because the person submitting the session had no other speaking experience. A lot of people had a lot of problems with this - because how can you get conference speaking experience without giving a talk at a conference first?
+
+The first recommendation makes a lot of sense - give talks at smaller locations first, like the talk I gave at my department at university. But the second piece of advice especially worked for me - write a complete blog post on the topic you want to speak on first before submitting.
+
+This is how I got my first major conference speakin opportunities - I wrote a blog post about learning how to code Python and Django and launching my startup WeddingLovely. Both DjangoCon and GitHub's PyCodeConf invited me to speak solely based on that blog post - I had no real speaking experience otherwise.
+
+It might seem counter-intuitive -- why would someone attend my session if the information is already on the web completely? But having a complete post with your story and all your points reassures the conference organizers that you'll give a good session, and they're more likely to take a chance with you.
+
+## The easiest way to relax is to not take it seriously and me myself.
+
+OR 
+
+## The way the talk is given is maybe more important than the information within.
+
+Now to the getting-on-stage part. I've gotten tremendously better about stage fright and nervousness simply by doing so many speaking engagements. A lot of my earliest engagements, you can hear a very noticable and annoying quaver in my voice - pretty much my biggest nemesis back in the day. 
+
+What helped with my nervousness was getting it in my head that people are *probably* not going to remember my session much longer than that conference day, if that.
+
+The audience is filled with potential friends. The best way to feel like they're my friends is to do something at the very beginning which prompts them to laugh or clap -- so usually when I am being announced, I am goofily doing a little dance in the background. It helps releave my nerves, and usually the people in the front few rows react by smiling or laughing, making me feel better at the start.
+
+A session with stories, fun sidenotes, funny images, jokes, and goofy dances is both more fun for me to give (making me feel less nervous) but is also more fun for the audience to listen to. 
+
+On that note -- structuring your talk to be more storylike than just reciting information will be more fun for all. Think of yourself like a storyteller at a pub before a fire. Entertain AND inform. Try to tell a story at the beginning and end, tying them together through the session. Make it more dramatic. Add in personal anecdotes. Make it an event.
+
+## Pause more!
+
+You're giving your talk, and suddenly at the end of your sentence, you forget what's next. 
+
+"AAAH!" your brain says. "What do I do? People are going to notice that I lost my place! That I got overwhelmed!"
+
+Usually, the speaker (and me, before) would overcompensate by umming loudly, or saying another sentence (something, anything) as fast as possible so people wouldn't notice a gap.
+
+This gap only exists in *your* mind. To the audience member, you actually appear to have sped up, that you started umming more, that you look more nervous.
+
+The best thing to do is to ignore your gut feeling and just *stop*. Take a breath. Chill out. Relax longer than you think you should.
+
+The dramatic pause doesn't look like nervousmess - it looks like you know what you're doing. It looks like you are giving the audience time to digest what you just said. When I give dramatic pauses, it's usually not because I'm in control - it's because I'm a bit out of control and need a break - but it *looks* like I am *more* in control.
+
+Wild, right?
+
+Embrace pauses and silences. Give yourself more breaks than you think. Don't try to nervously fill the silence. It'll make you sound (and be) a better speaker.
+
+## Conclusion
+
+I'm working myself towards the next level of public speaking -- not just being paid for my travel and lodging but actually being paid for my time as well. 
+
+But I am so, so, so very lucky and pleased to be where I am right now, where I can be in Berlin one month and London the next month and Buenos Aires the next, giving talks and hearing such great feedback from those that attend my sessions. It's a dream (side-)job that gives me a great platform to share the things that do make me money, like my books.
+
+It's
+
+
+{% endfilter %}
+{% endblock body %}

@@ -3368,6 +3368,9 @@ a.bg-danger:focus, a.bg-danger:hover {
   .sm-header a, ul.categories a, .blog-list li .readmore a {
     color: #666; }
 
+.hidden {
+  display: none; }
+
 /* PROPERTIES */
 html {
   border-top: 5px solid #EFD465;
@@ -3390,7 +3393,9 @@ hr {
   border-width: 5px;
   border-color: #eceeef;
   margin-left: 20%;
-  margin-right: 20%; }
+  margin-right: 20%;
+  margin-top: 2em;
+  margin-bottom: 2em; }
 
 blockquote {
   border-left: 5px solid #f4e193;
@@ -3608,6 +3613,9 @@ ul.categories {
 
 .blog-list li:last-child hr {
   display: none; }
+
+.sub-categories li {
+  font-size: 0.9rem; }
 
 /* POST */
 .post h1 {

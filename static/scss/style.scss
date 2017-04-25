@@ -65,6 +65,10 @@ $btn-padding-y:              1rem;
     }
 }
 
+.hidden {
+    display: none;
+}
+
 /* PROPERTIES */
 
 html {
@@ -90,6 +94,8 @@ hr {
     border-color: $gray-lighter;
     margin-left: 20%;
     margin-right: 20%;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 blockquote {
@@ -401,6 +407,12 @@ ul.categories {
         &:last-child {
             hr { display: none; }
         }
+    }
+}
+
+.sub-categories {
+    li {
+        font-size: 0.9rem;
     }
 }
 

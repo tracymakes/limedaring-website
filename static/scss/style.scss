@@ -359,6 +359,27 @@ figcaption {
     }
 }
 
+.old-speaking-list {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 2em; /* Chrome, Safari, Opera */
+    -moz-column-gap: 2em; /* Firefox */
+    column-gap: 2em;
+    li {
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+    h3 {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    .date, .location {
+        font-size: 0.7rem;
+        line-height: 1.1;
+    }
+}
+
 /* ABOUT */
 
 @include media-breakpoint-down(lg) {

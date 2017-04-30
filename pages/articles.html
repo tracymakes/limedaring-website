@@ -164,6 +164,7 @@ analytics.page("Articles");
 {% endblock content %}
 
 {% block scripts %}
+{{ block.super }}
 <script>
 $(document).ready(function($){
     $('.sub-categories li:first-child').removeClass("hidden");

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -191,6 +192,12 @@
 
 .fa-envelope:before {
   content: "\f0e0"; }
+
+.fa-link:before {
+  content: ""; }
+
+.fa-external-link:before {
+  content: ""; }
 
 /*
 .fa-glass:before { content: $fa-var-glass; }

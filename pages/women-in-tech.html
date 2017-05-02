@@ -24,17 +24,7 @@ analytics.page("Contact");
 <ul class="list-unstyled blog-list">
     {% for post in posts %}
     {% if post.category == "womenintech" %}
-    <li>
-        <h2><a href='{{ post.page.link_url|cut:".html" }}/'>{{ post.title }}</a></h2>
-        {% if post.headline %}
-        <p>{{ post.headline }}</p>
-        {% endif %}
-        {% if post.excerpt %}
-        <p class="excerpt">{{ post.excerpt|truncatewords:30 }}</p>
-        {% endif %}
-        <p class="readmore"><a href="{{ post.page.link_url|cut:".html" }}/">Read more</a></p>
-        <hr/>
-    </li>
+    {% include 'includes/post-snippet.html' %}
     {% endif %}
     {% endfor %}
 </ul>

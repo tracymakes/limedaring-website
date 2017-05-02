@@ -2648,6 +2648,12 @@ a.bg-danger:focus, a.bg-danger:hover {
 .fa-envelope:before {
   content: "\f0e0"; }
 
+.fa-link:before {
+  content: ""; }
+
+.fa-external-link:before {
+  content: ""; }
+
 /*
 .fa-glass:before { content: $fa-var-glass; }
 .fa-music:before { content: $fa-var-music; }

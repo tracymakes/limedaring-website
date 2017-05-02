@@ -716,6 +716,8 @@ $fa-var-youtube-square: "\f166";
 .fa-github:before { content: "\f09b"; }
 .fa-envelope-o:before { content: "\f003"; }
 .fa-envelope:before { content: "\f0e0"; }
+.fa-link:before { content: $fa-var-link; }
+.fa-external-link:before { content: $fa-var-external-link; }
 
 /*
 .fa-glass:before { content: $fa-var-glass; }

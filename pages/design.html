@@ -23,7 +23,7 @@ analytics.page("Design");
 {% block content %}
 <ul class="list-unstyled blog-list">
     {% for post in posts %}
-    {% if post.category == "design" %}
+    {% if "design" in post.category %}
     {% include 'includes/post-snippet.html' %}
     {% endif %}
     {% endfor %}

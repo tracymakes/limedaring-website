@@ -23,7 +23,7 @@ analytics.page("Contact");
 {% block content %}
 <ul class="list-unstyled blog-list">
     {% for post in posts %}
-    {% if post.category == "development" %}
+    {% if "development" in post.category %}
     {% include 'includes/post-snippet.html' %}
     {% endif %}
     {% endfor %}

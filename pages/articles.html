@@ -67,7 +67,7 @@ analytics.page("Articles");
         <h3 class="sm-header"><a href="{% url '/entrepreneurship.html' %}">Entrepreneurship</a></h3>
         <ul class="list-unstyled">
         {% for post in posts %}
-            {% if post.category == "entrepreneurship" %}
+            {% if "entrepreneurship" in post.category %}
             <li class="hidden"><a href='{{ post.page.link_url|cut:".html" }}/'>
                 {{ post.title }}
             </a></li>
@@ -79,7 +79,7 @@ analytics.page("Articles");
         <h3 class="sm-header"><a href="{% url '/onspeaking.html' %}">Speaking</a></h3>
         <ul class="list-unstyled">
         {% for post in posts %}
-            {% if post.category == "speaking" %}
+            {% if "speaking" in post.category %}
             <li class="hidden"><a href='{{ post.page.link_url|cut:".html" }}/'>
                 {{ post.title }}
             </a></li>
@@ -91,7 +91,7 @@ analytics.page("Articles");
         <h3 class="sm-header"><a href="{% url '/howto.html' %}">Instructionals</a></h3>
         <ul class="list-unstyled">
         {% for post in posts %}
-            {% if post.category == "instruction" %}
+            {% if "instruction" in post.category %}
             <li class="hidden"><a href='{{ post.page.link_url|cut:".html" }}/'>
                 {{ post.title }}
             </a></li>
@@ -105,7 +105,7 @@ analytics.page("Articles");
         <h3 class="sm-header"><a href="{% url '/personal.html' %}">Personal</a></h3>
         <ul class="list-unstyled">
         {% for post in posts %}
-            {% if post.category == "personal" %}
+            {% if "personal" in post.category %}
             <li class="hidden"><a href='{{ post.page.link_url|cut:".html" }}/'>
                 {{ post.title }}
             </a></li>
@@ -117,7 +117,7 @@ analytics.page("Articles");
         <h3 class="sm-header"><a href="{% url '/design.html' %}">Design</a></h3>
         <ul class="list-unstyled">
         {% for post in posts %}
-            {% if post.category == "design" %}
+            {% if "design" in post.category %}
             <li class="hidden"><a href='{{ post.page.link_url|cut:".html" }}/'>
                 {{ post.title }}
             </a></li>
@@ -129,7 +129,7 @@ analytics.page("Articles");
         <h3 class="sm-header"><a href="{% url '/development.html' %}">Development</a></h3>
         <ul class="list-unstyled">
         {% for post in posts %}
-            {% if post.category == "development" %}
+            {% if "development" in post.category %}
             <li class="hidden"><a href='{{ post.page.link_url|cut:".html" }}/'>
                 {{ post.title }}
             </a></li>

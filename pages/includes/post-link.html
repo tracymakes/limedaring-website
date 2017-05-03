@@ -1,7 +1,7 @@
 {% if post.external %}
 <li class="hidden"><a href='{{ post.external }}'>
     {{ post.title }}
-</a> <i class="fa fa-external-link" style="color: #999; font-size: 1rem; padding-left: 5px;"></i></li>
+</a> <i class="fa fa-external-link" style="color: #999; font-size: 0.8rem; padding-left: 5px;"></i></li>
 {% else %}
 <li class="hidden"><a href='{{ post.page.link_url|cut:".html" }}/'>
     {{ post.title }}

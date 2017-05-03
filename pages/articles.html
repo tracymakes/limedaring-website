@@ -54,7 +54,11 @@ analytics.page("Articles");
             {% if post.excerpt %}
             <p class="excerpt">{{ post.excerpt }}</p>
             {% endif %}
+            {% if post.external %}
+            <p class="readmore"><a href="{{ post.external }}/">Read more</a></p>
+            {% else %}
             <p class="readmore"><a href="{{ post.page.link_url|cut:".html" }}/">Read more</a></p>
+            {% endif %}
             <hr/>
         </li>
     {% endif %}

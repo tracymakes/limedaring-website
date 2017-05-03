@@ -62,7 +62,7 @@
                     {{ nextPost.title }} 
                 </a> <i class="fa fa-external-link" style="color: #999; font-size: 0.8rem; padding-left: 5px;"></i>
                 {% else %}
-                <a href='{{ ROOT_URL }}/{{ nextPost.path|cut:".html" }}'>
+                <a href='/{{ nextPost.path|cut:".html" }}'>
                     {{ nextPost.title }}
                 </a>
                 {% endif %}
@@ -76,7 +76,7 @@
                     {{ prevPost.title }}
                 </a> <i class="fa fa-external-link" style="color: #999; font-size: 0.8rem; padding-left: 5px;"></i>
                 {% else %}
-                <a href='{{ ROOT_URL }}/{{ prevPost.path|cut:".html" }}'>
+                <a href='/{{ prevPost.path|cut:".html" }}'>
                     {{ prevPost.title }}
                 </a>
                 {% endif %}

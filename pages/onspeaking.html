@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Tracy writes about speaking at conferences{% endblock %}
+
+{% block analytics %}
+analytics.page("Speaking writing");
+{% endblock %}
+
+{% block bodyclass %}
+<body id="">
+{% endblock bodyclass %}
+
+{% block intro %}
+<div class="intro">
+    <h1><a href="{% url '/index.html' %}">Tracy Osborn</a></h1>
+    <div class="subheader">
+        <h2>loves to speak at conferences around the world.</h2>
+        {% include 'includes/blog-sidebar.html' %}
+    </div>
+</div>
+{% endblock intro %}
+
+{% block content %}
+<ul class="list-unstyled blog-list">
+    {% for post in posts %}
+    {% if post.category == "speaking" %}
+    {% include 'includes/post-snippet.html' %}
+    {% endif %}
+    {% endfor %}
+</ul>
+{% endblock content %}

@@ -3,7 +3,8 @@ excerpt: I travel a lot, especially now that I've joined the Developer Relations
 author: Tracy Osborn 
 featuredimage: /images/blog/2015/12/7/1.jpg
 date: 2016-5-16
-category: womenintech
+category: womenintech, speaking
+external:
 featured: True
 
 {% extends "post.html" %}

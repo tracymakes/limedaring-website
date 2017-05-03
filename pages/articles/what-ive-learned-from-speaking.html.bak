@@ -4,7 +4,8 @@ featured: True
 author: Tracy Osborn
 excerpt:
 title: The biggest and most unexpected things I've learned on how to become a better speaker
-category: personal
+external:
+category: personal, speaking
 
 {% extends "post.html" %}
 {% block body %}

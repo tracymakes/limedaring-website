@@ -68,9 +68,7 @@ analytics.page("Articles");
         <ul class="list-unstyled">
         {% for post in posts %}
             {% if "entrepreneurship" in post.category %}
-            <li class="hidden"><a href='{{ post.page.link_url|cut:".html" }}/'>
-                {{ post.title }}
-            </a></li>
+            {% include 'includes/post-link.html' %}
             {% endif %}
         {% endfor %}
         </ul>
@@ -80,9 +78,7 @@ analytics.page("Articles");
         <ul class="list-unstyled">
         {% for post in posts %}
             {% if "speaking" in post.category %}
-            <li class="hidden"><a href='{{ post.page.link_url|cut:".html" }}/'>
-                {{ post.title }}
-            </a></li>
+            {% include 'includes/post-link.html' %}
             {% endif %}
         {% endfor %}
         </ul>
@@ -92,9 +88,7 @@ analytics.page("Articles");
         <ul class="list-unstyled">
         {% for post in posts %}
             {% if "instruction" in post.category %}
-            <li class="hidden"><a href='{{ post.page.link_url|cut:".html" }}/'>
-                {{ post.title }}
-            </a></li>
+            {% include 'includes/post-link.html' %}
             {% endif %}
         {% endfor %}
         </ul>
@@ -106,9 +100,7 @@ analytics.page("Articles");
         <ul class="list-unstyled">
         {% for post in posts %}
             {% if "personal" in post.category %}
-            <li class="hidden"><a href='{{ post.page.link_url|cut:".html" }}/'>
-                {{ post.title }}
-            </a></li>
+            {% include 'includes/post-link.html' %}
             {% endif %}
         {% endfor %}
         </ul>
@@ -118,9 +110,7 @@ analytics.page("Articles");
         <ul class="list-unstyled">
         {% for post in posts %}
             {% if "design" in post.category %}
-            <li class="hidden"><a href='{{ post.page.link_url|cut:".html" }}/'>
-                {{ post.title }}
-            </a></li>
+            {% include 'includes/post-link.html' %}
             {% endif %}
         {% endfor %}
         </ul>
@@ -130,9 +120,7 @@ analytics.page("Articles");
         <ul class="list-unstyled">
         {% for post in posts %}
             {% if "development" in post.category %}
-            <li class="hidden"><a href='{{ post.page.link_url|cut:".html" }}/'>
-                {{ post.title }}
-            </a></li>
+            {% include 'includes/post-link.html' %}
             {% endif %}
         {% endfor %}
         </ul>

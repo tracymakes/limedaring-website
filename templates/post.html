@@ -53,6 +53,36 @@
                 <a class="mail" href="mailto:?subject={{ title }}&amp;body=Here's the link: https://hellowebapp.com/{{ path|cut:".html" }}/"><i class="fa fa-envelope"></i></a>
             </div>
         </section>
+        <section class="prevnext row" style="margin-top: 25px;">
+            <div class="col-md-6">
+                {% if nextPost %}
+                Next:<br/>
+                {% if nextPost.external %}
+                <a href='{{ nextPost.external }}' target="_new">
+                    {{ nextPost.title }} 
+                </a> <i class="fa fa-external-link" style="color: #999; font-size: 0.8rem; padding-left: 5px;"></i>
+                {% else %}
+                <a href='{{ ROOT_URL }}/{{ nextPost.path|cut:".html" }}'>
+                    {{ nextPost.title }}
+                </a>
+                {% endif %}
+                {% endif %}
+            </div>
+            <div class="col-md-6 text-right">
+                {% if prevPost %}
+                Previous:<br/>
+                {% if prevPost.external %}
+                <a href='{{ prevPost.external }}' target="_new">
+                    {{ prevPost.title }}
+                </a> <i class="fa fa-external-link" style="color: #999; font-size: 0.8rem; padding-left: 5px;"></i>
+                {% else %}
+                <a href='{{ ROOT_URL }}/{{ prevPost.path|cut:".html" }}'>
+                    {{ prevPost.title }}
+                </a>
+                {% endif %}
+                {% endif %}
+            </div>
+        </section>
     </footer>
 
     <div id="disqus_thread"></div>

@@ -1,0 +1,28 @@
+<li>
+    {% comment %}
+    {% if post.featuredimage %}
+    <div class="thumbnail">
+        <a href="{{ post.page.link_url|cut:".html" }}">
+            <img src="{% static post.featuredimage %}" alt="{{ post.title }}" />
+        </a>
+    </div>
+    {% endif %}
+    <aside class="dates">{{ post.date|date:"F j, Y" }}</aside></a>
+    {% endcomment %}
+    <h2>
+        {% if post.external %}
+        <a href='{{ post.external }}'>{{ post.title }}</a>
+        {% else %}
+        <a href='{{ post.page.link_url|cut:".html" }}/'>{{ post.title }}</a>
+        {% endif %}
+        {% if post.external %} <i class="fa fa-external-link" style="color: #999; font-size: 1rem; padding-left: 5px;"></i>{% endif %}
+    </h2>
+    {% if post.headline %}
+    <p>{{ post.headline }}</p>
+    {% endif %}
+    {% if post.excerpt %}
+    <p class="excerpt">{{ post.excerpt|truncatewords:30 }}</p>
+    {% endif %}
+    {% comment %}<p class="readmore"><a href="{{ post.page.link_url|cut:".html" }}/">Read more</a></p>{% endcomment %}
+    <hr/>
+</li>

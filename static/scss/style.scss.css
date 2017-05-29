@@ -253,9 +253,9 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  font-family: "Lora", "Times New Roman", Georgia, Times, serif;
   font-size: 1.3rem;
-  line-height: 1.5;
+  line-height: 1.7;
   color: #666;
   background-color: #fff; }
 
@@ -372,7 +372,7 @@ output {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Bitter", "Times New Roman", Georgia, Times, serif;
+  font-family: "Lora", "Times New Roman", Georgia, Times, serif;
   font-weight: 300;
   line-height: 1.4;
   color: #333; }
@@ -479,7 +479,7 @@ mark,
   .blockquote footer {
     display: block;
     font-size: 80%;
-    line-height: 1.5;
+    line-height: 1.7;
     color: #818a91; }
     .blockquote footer:before {
       content: "\2014 \00A0"; }
@@ -515,7 +515,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  line-height: 1.5;
+  line-height: 1.7;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 0;
@@ -556,7 +556,7 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 90%;
-  line-height: 1.5;
+  line-height: 1.7;
   color: #373a3c; }
   pre code {
     padding: 0;
@@ -1205,7 +1205,7 @@ pre {
   .table th,
   .table td {
     padding: 0.75rem;
-    line-height: 1.5;
+    line-height: 1.7;
     vertical-align: top;
     border-top: 1px solid #eceeef; }
   .table thead th {
@@ -1348,7 +1348,7 @@ pre {
   width: 100%;
   padding: 0.375rem 0.75rem;
   font-size: 1.3rem;
-  line-height: 1.5;
+  line-height: 1.7;
   color: #55595c;
   background-color: #fff;
   background-image: none;
@@ -1384,7 +1384,7 @@ pre {
   input[type="time"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
-    line-height: 2.825rem; }
+    line-height: 3.085rem; }
   input[type="date"].input-sm,
   .input-group-sm input[type="date"].form-control,
   input[type="time"].input-sm,
@@ -1411,7 +1411,7 @@ pre {
     line-height: 3.29167rem; } }
 
 .form-control-static {
-  min-height: 2.825rem;
+  min-height: 3.085rem;
   padding-top: 0.4375rem;
   padding-bottom: 0.4375rem;
   margin-bottom: 0; }
@@ -1502,8 +1502,8 @@ fieldset[disabled]
 .form-control-warning,
 .form-control-error {
   padding-right: 2.25rem;
-  background-position: center right 0.70625rem;
-  background-size: 1.83625rem 1.83625rem;
+  background-position: center right 0.77125rem;
+  background-size: 2.00525rem 2.00525rem;
   background-repeat: no-repeat; }
 
 .has-success .help-block,
@@ -1635,7 +1635,7 @@ fieldset[disabled]
   border: 0.0625rem solid transparent;
   padding: 0.375rem 1rem;
   font-size: 1.3rem;
-  line-height: 1.5;
+  line-height: 1.7;
   border-radius: 0; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
     outline: thin dotted;
@@ -3406,7 +3406,7 @@ hr {
 blockquote {
   border-left: 5px solid #f4e193;
   padding-left: 20px;
-  font-family: "Bitter", "Times New Roman", Georgia, Times, serif;
+  font-family: "Lora", "Times New Roman", Georgia, Times, serif;
   font-style: italic;
   margin: 1.5rem 0; }
 
@@ -3489,11 +3489,11 @@ figcaption {
       font-size: 1rem;
       line-height: 1.6;
       color: #666;
-      font-family: "Bitter", "Times New Roman", Georgia, Times, serif;
+      font-family: "Lora", "Times New Roman", Georgia, Times, serif;
       font-style: italic;
       font-weight: 100; }
   .intro .intro-cats {
-    font-family: "Bitter", "Times New Roman", Georgia, Times, serif;
+    font-family: "Lora", "Times New Roman", Georgia, Times, serif;
     font-size: 1.1rem;
     margin-top: 3em;
     margin-bottom: -10px;
@@ -3515,6 +3515,8 @@ figcaption {
   #footer a {
     color: #818a91;
     font-size: 0.7rem; }
+  #footer .social-media a {
+    font-size: 1rem; }
 
 /* HOME */
 #index hr {
@@ -3630,7 +3632,7 @@ ul.categories {
 
 .blog-list li h2 {
   font-size: 1.5rem;
-  font-family: "Bitter", "Times New Roman", Georgia, Times, serif; }
+  font-family: "Lora", "Times New Roman", Georgia, Times, serif; }
 
 .blog-list li .readmore {
   color: #888; }
@@ -3671,6 +3673,12 @@ ul.categories {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-size: 80%; }
+  .post-body a {
+    color: #666;
+    border-bottom: 2px solid #efd990;
+    padding-bottom: 2px; }
+    .post-body a:hover {
+      text-decoration: none; }
 
 .post-meta {
   margin: 2em 0;

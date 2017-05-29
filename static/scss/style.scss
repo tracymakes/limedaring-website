@@ -1,7 +1,9 @@
 // bootstrap variable overrides
 $font-family-sans-serif:     'Work Sans', Helvetica, Arial, sans-serif !default;
-$font-family-serif:          "Bitter", "Times New Roman", Georgia, Times, serif !default;
-$font-family-base:           $font-family-sans-serif !default;
+$font-family-serif:          "Lora", "Times New Roman", Georgia, Times, serif !default;
+$font-family-base:           $font-family-serif !default;
+$line-height:                1.7;
+
 $headings-font-weight:       300 !default;
 $headings-font-family:       $font-family-serif;
 $headings-line-height:       1.4;
@@ -258,6 +260,9 @@ figcaption {
         color: $gray-light;
         font-size: 0.7rem;
     }
+    .social-media a {
+        font-size: 1rem;
+    }
 }
 
 /* HOME */
@@ -474,6 +479,14 @@ ul.categories {
         letter-spacing: 0.1em;
         text-transform: uppercase;
         font-size: 80%;
+    }
+    a {
+        color: #666;
+        border-bottom: 2px solid lighten($brand-secondary, 15%);
+        padding-bottom: 2px;
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 

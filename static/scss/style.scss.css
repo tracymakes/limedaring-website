@@ -3504,8 +3504,24 @@ figcaption {
     padding-bottom: 1em;
     margin-right: 2em; }
 
+@media (max-width: 47.9em) {
+  .intro {
+    margin: 1em 0 0 0; }
+    .intro h1 {
+      margin-bottom: 0; }
+    .intro .subheader {
+      margin-top: 0.5em; }
+      .intro .subheader h2 {
+        margin-top: 0; }
+    .intro .social-media {
+      margin-top: 0; } }
+
 #content {
   margin-top: 4.7em; }
+
+@media (max-width: 47.9em) {
+  #content {
+    margin-top: 2em; } }
 
 #footer {
   font-size: 0.8rem;
@@ -3518,8 +3534,10 @@ figcaption {
   #footer a {
     color: #818a91;
     font-size: 0.7rem; }
-  #footer .social-media a {
-    font-size: 1rem; }
+  #footer .social-media {
+    margin-top: 0; }
+    #footer .social-media a {
+      font-size: 1rem; }
 
 /* HOME */
 #index hr {
@@ -3570,8 +3588,10 @@ figcaption {
   font-size: 1.1rem;
   padding: 0 1em; }
 
-.social-media li {
-  margin-top: 0; }
+.social-media {
+  margin-top: 25px; }
+  .social-media li {
+    margin-top: 0; }
 
 /* SPEAKING */
 .speaking-list .date, .speaking-list .location {

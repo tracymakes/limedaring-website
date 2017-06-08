@@ -2654,6 +2654,9 @@ a.bg-danger:focus, a.bg-danger:hover {
 .fa-external-link:before {
   content: ""; }
 
+.fa-rss:before {
+  content: ""; }
+
 /*
 .fa-glass:before { content: $fa-var-glass; }
 .fa-music:before { content: $fa-var-music; }

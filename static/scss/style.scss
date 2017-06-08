@@ -236,13 +236,31 @@ figcaption {
 
 @include media-breakpoint-down(sm) {
     .intro {
-        //display: none;
+        margin: 1em 0 0 0;
+        h1 {
+            margin-bottom: 0;
+        }
+        .subheader {
+            margin-top: 0.5em;
+            h2 {
+                margin-top: 0;
+            }
+        }
+        .social-media {
+            margin-top: 0;
+        }
     }
 }
 
 #content {
     margin-top: 4.7em;
     @extend .col-md-8;
+}
+
+@include media-breakpoint-down(sm) {
+    #content {
+        margin-top: 2em;
+    }
 }
 
 #footer {
@@ -260,8 +278,11 @@ figcaption {
         color: $gray-light;
         font-size: 0.7rem;
     }
-    .social-media a {
-        font-size: 1rem;
+    .social-media {
+        margin-top: 0;
+        a {
+            font-size: 1rem;
+        }
     }
 }
 
@@ -337,8 +358,11 @@ figcaption {
     }
 }
 
-.social-media li {
-    margin-top: 0;
+.social-media {
+    margin-top: 25px;
+    li {
+        margin-top: 0;
+    }
 }
 
 /* SPEAKING */

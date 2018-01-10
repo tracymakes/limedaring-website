@@ -2,6 +2,23 @@
 
 {% block title %}{{ title }} - {{ block.super }}{% endblock title %}
 
+{% block header %}
+    <meta property="og:url" content="https://limedaring.com/{{ path|cut:".html" }}/">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:type" content="article">
+    <meta property="og:description" 
+          name="description" content="{{ excerpt }}">
+    <meta name="twitter:site" content="@limedaring" />
+    {% if featuredimage %}
+    <meta name="twitter:image" 
+          property="og:image" content="https://limedaring.com/static{{ featuredimage }}">
+    {% else %}
+    <meta name="twitter:image" 
+          property="og:image" content="https://limedaring.com/static/images/tracy-osborn_atom-images.jpg">
+    {% endif %}
+    <meta name="twitter:card" content="summary">
+{% endblock %}
+
 {% block bodyclass %}
 <body id="post" class="{{ title|slugify }}">
 {% endblock %}

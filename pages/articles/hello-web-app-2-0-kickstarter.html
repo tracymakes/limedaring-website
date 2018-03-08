@@ -1,0 +1,46 @@
+date: 2018-03-08
+featuredimage:
+featured: True
+author: tracy@limedaring.com
+comments: true
+excerpt: Hello Web App is still 90% up to date, there were some big things I needed to update to bring it into 2018 — mainly, support for Python 3 and Django 2.0. Since I'll be rerecording all my videos and getting a new print run done, I thought this would be a great time to run a "mini-Kickstarter" to sell pre-orders for the book!
+external:
+title: Pre-orders are open for Hello Web App 2.0 on Kickstarter
+category: authorship
+
+{% extends "post.html" %}
+{% block body %}
+{% filter markdown %}
+
+It's been a few years since I released _[Hello Web App](https://hellowebbooks.com/learn-django)_, my book teaching web app development with Python and Django aimed at beginners.
+
+Since its launch, it's been read and used by thousands of folks and hundreds of workshop participants. I am so happy that it's been such a success. However, tech changes quickly (wee!) and, while _Hello Web App_ is still 90% up to date, there were some big things I needed to update to bring it into 2018 — mainly, support for Python 3 and Django 2.0.
+
+Since I'll be rerecording all my videos and getting a new print run done, I thought this would be a great time to run a "mini-Kickstarter" to sell pre-orders for the book!
+
+{% endfilter %}
+
+<figure>
+    <a href="https://www.kickstarter.com/projects/1868398473/hello-web-app-20-build-your-first-web-app-with-dja"><img src="https://hellowebbooks.com/static/images/blog/2018/ks.png" alt="Hello Web App Kickstarter campaign" /></a>
+</figure>
+
+{% filter markdown %}
+
+Updates in full:
+
+* Both _Hello Web App_ books are now packaged together as a unit! I'm no longer selling them individually. This, in hindsight, makes a lot more sense.
+* The content has been updated to Python 3 + Django 2.0.
+* The videos are getting a complete revamp.
+* Various bits of pieces of the content has been updated as well.
+* The Kindle edition has some snazzier graphics.
+
+Yeehah!
+
+If you've been curious about working with Python, or want a super simple system for launching web apps, or just plain curious:
+
+[Check out the Kickstarter campaign for Hello Web App 2.0 here](https://www.kickstarter.com/projects/1868398473/hello-web-app-20-build-your-first-web-app-with-dja).
+
+Appreciate your support!
+
+{% endfilter %}
+{% endblock body %}

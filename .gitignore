@@ -10,6 +10,7 @@ staticfiles
 settings_local.py
 post-double.py
 labels
+*.bak
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

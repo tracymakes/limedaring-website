@@ -1,3 +1,4 @@
+Makefile
 db.sqlite3
 venv
 *.pyc

@@ -3375,7 +3375,8 @@ a.bg-danger:focus, a.bg-danger:hover {
   font-weight: 400;
   margin: 1em 0; }
   .sm-header a, ul.categories a, .blog-list li .readmore a {
-    color: #666; }
+    color: #666;
+    text-decoration: none; }
 
 .hidden {
   display: none; }
@@ -3423,6 +3424,8 @@ h1 {
 h2 {
   font-family: "Work Sans", Helvetica, Arial, sans-serif;
   font-size: 1.8rem; }
+  h2 a {
+    text-decoration: none; }
 
 h3 {
   font-size: 1.4rem;
@@ -3436,6 +3439,9 @@ p {
 
 b, strong {
   font-weight: 600; }
+
+a {
+  text-decoration: underline; }
 
 ul {
   list-style-type: circle; }
@@ -3472,6 +3478,8 @@ figcaption {
   font-family: "Work Sans", Helvetica, Arial, sans-serif;
   font-weight: 500;
   letter-spacing: 0.2em; }
+  #main-nav a {
+    text-decoration: none; }
   #main-nav li {
     padding: 10px 20px; }
 
@@ -3481,6 +3489,8 @@ figcaption {
 
 .intro {
   margin: 5em 0; }
+  .intro a {
+    text-decoration: none; }
   .intro h1 {
     font-style: italic;
     font-size: 1.8rem;
@@ -3533,7 +3543,8 @@ figcaption {
     margin-bottom: 1.5em !important; }
   #footer a {
     color: #818a91;
-    font-size: 0.7rem; }
+    font-size: 0.7rem;
+    text-decoration: none; }
   #footer .social-media {
     margin-top: 0; }
     #footer .social-media a {

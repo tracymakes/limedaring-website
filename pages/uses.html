@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}Tracy Osborn Uses...{% endblock %}
+
+{% block analytics %}
+analytics.page("About");
+{% endblock %}
+
+{% block bodyclass %}
+<body id="about">
+{% endblock bodyclass %}
+
+{% block subheader %}
+<h2>plays with a lot of tools.</h2>
+{% include 'includes/social-links.html' %}
+{% endblock %}
+
+{% block content %}
+
+Was inspired <a href="https://github.com/wesbos/awesome-uses">by Wes Bos's collection of "Uses" pages</a> so I thought I would add my own!
+
+<h2>Editor and Terminal</h2>
+
+<ul>
+  <li>
+    <p><b>Code editor for big things:</b> At the moment I am using <a href="https://atom.io/">Atom</a> though I know the entire world has been recommending Visual Studio Code, so I'm probably going to switch to that as soon as I get off my butt. </p>
+  </li>
+  <li>
+    <p><b>Code editor for little things:</b> <a href="https://macvim-dev.github.io/macvim/">MacVim</a>. I have a command I can use from my terminal to pop open pages quickly for editing. I also use MacVim if I want to use it for big vim things (like macros).</p>
+  </li>
+  <li>
+    <p><b>Terminal:</b> <a href="https://iterm2.com/">iTerm2</a>. I especially like the hotkey window to pop down a terminal wherever I am.</p>
+  </li>
+</ul>
+
+<h2>Design Apps</h2>
+<ul>
+  <li>
+    <p>I generally use <a href="https://www.sketch.com/">Sketch</a> if I'm working on a new design from scratch.</p>
+  </li>
+  <li>
+    <p>For image editing things, I still use <a href="https://www.adobe.com/products/photoshop.html">Adobe Photoshop</a>.</p>
+    </li>
+</ul>
+
+<h2>Book Creation</h2>
+<ul>
+  <li>
+    <p>Books are written in <a href="https://docs.google.com">Google Docs</a> first (mainly because the review features are so great.</p>
+  </li>
+  <li>
+    <p>Once the writing part is (mostly) done, <a href="https://lifehacker.com/this-script-converts-google-documents-to-markdown-for-e-511746113">I export the content in Markdown using this script</a>.</p>
+  </li>
+  <li>
+    <p>To create the PDF files, I import the Markdown into <a href="https://www.adobe.com/products/indesign.html">Adobe InDesign</a>.</p>
+  </li>
+  <li>
+    <p>To create the ePub/mobi files, I create a <a href="https://leanpub.com/">Leanpub book</a> using the Markdown.</p>
+  </li>
+  <li>
+    <p>For zines, I draw on an <a href="https://www.apple.com/ipad-pro/">iPad Pro</a> with an <a href="https://www.apple.com/apple-pencil/">Apple Pencil</a> in the <a href="https://procreate.art/">Procreate</a> app.</p>
+  </li>
+</ul>
+
+<h2>Desk Setup</h2>
+<ul>
+  <li>
+    <p>I'm using a fairly-old Apple Cinema Display with a 2016 Macbook Pro. May they never die.</p>
+  </li>
+  <li>
+    <p>My chair is an <a href="https://www.ikea.com/us/en/catalog/products/S99208195/">Ikea computer chair</a> with a <a href="https://www.ikea.com/us/en/catalog/products/70026822/?query=RENS&icid=iba|us|unbxdsuggestion|201811132211556208_1">sheepskin</a> hanging over the back.</p>
+  </li>
+</ul>
+
+
+{% endblock content %}

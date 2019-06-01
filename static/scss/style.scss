@@ -28,7 +28,7 @@ $btn-padding-x:              1.2rem;
 $btn-padding-y:              1rem;
 
 
-// bootstrap and font-awesome 
+// bootstrap and font-awesome
 @import "bootstrap";
 @import "font-awesome";
 
@@ -505,7 +505,7 @@ ul.categories {
     }
     h3 + pre {
         margin-top: 1em;
-    } 
+    }
     span.lead {
         font-variant: small-caps;
         letter-spacing: 0.1em;
@@ -516,8 +516,10 @@ ul.categories {
         color: #666;
         border-bottom: 2px solid lighten($brand-secondary, 15%);
         padding-bottom: 2px;
+        text-decoration: none;
         &:hover {
             text-decoration: none;
+            border-bottom: 2px solid $brand-secondary;
         }
     }
 }
@@ -528,4 +530,3 @@ ul.categories {
 }
 
 .wf-loading .post-body { font-size: 1.3rem; }
-

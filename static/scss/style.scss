@@ -331,6 +331,7 @@ figcaption {
     h4 {
         @extend .de-caps-letterspaced;
         margin: -6px 0 0 0;
+        a { text-decoration: none; }
     }
     p {
         margin-top: 10px;

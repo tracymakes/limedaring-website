@@ -3575,6 +3575,8 @@ figcaption {
   margin-bottom: 3em; }
   .recent-writing h4 {
     margin: -6px 0 0 0; }
+    .recent-writing h4 a {
+      text-decoration: none; }
   .recent-writing p {
     margin-top: 10px;
     font-size: 1.05rem;

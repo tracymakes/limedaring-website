@@ -26,10 +26,10 @@
     <link rel="icon" type="image/png" href="{% static '/images/favicons/favicon-16x16.png' %}" sizes="16x16">
 
     <link rel="canonical" href="{{ CURRENT_PAGE.absolute_final_url }}" />
-    <link rel="stylesheet" href="{% static '/scss/style.scss.css' %}?v=10">
+    <link rel="stylesheet" href="{% static '/scss/style.scss.css' %}?v=11">
     <link rel="alternate" type="application/rss+xml" title="My Blog Feed" href="/rss.xml">
 
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
     <script type="text/javascript">
@@ -51,6 +51,7 @@
 {% endblock bodyclass %}
     <div class="container text-center">
         <nav class="row" id="main-nav">
+            <a href="{% url '/index.html' %}"><img src="{% static '/images/sigs.png' %}" alt="Tracy Osborn" class="logo-sig"></a>
             <ul class="list-inline list-unstyled">
                 <li class="{% if_current_page '/about.html' 'active' '' %}">
                     <a href="{% url '/about.html' %}">About</a>
@@ -58,15 +59,15 @@
                 <li class="{% if_current_page '/articles.html' 'active' '' %}">
                     <a href="{% url '/articles.html' %}">Writing</a>
                 </li>
-                <li class="{% if_current_page '/work.html' 'active' '' %}">
+                <!--<li class="{% if_current_page '/work.html' 'active' '' %}">
                     <a href="{% url '/work.html' %}">Work</a>
-                </li>
+                </li>-->
                 <li class="{% if_current_page '/speaking.html' 'active' '' %}">
                     <a href="{% url '/speaking.html' %}">Speaking</a>
                 </li>
-                <li class="{% if_current_page '/contact.html' 'active' '' %}">
+                <!--<li class="{% if_current_page '/contact.html' 'active' '' %}">
                     <a href="{% url '/contact.html' %}">Contact</a>
-                </li>
+                </li>-->
             </ul>
         </nav>
     </div>

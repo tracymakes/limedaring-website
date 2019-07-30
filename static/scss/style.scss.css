@@ -253,7 +253,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Lora", "Times New Roman", Georgia, Times, serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
   line-height: 1.7;
   color: #666;
@@ -612,7 +612,7 @@ pre {
   .row:after {
     clear: both; }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .intro, .col-md-5, .col-md-6, .col-md-7, .col-md-8, #content, .col-md-9, .col-md-10, .col-md-11, .col-md-12, #index .intro, #index #content, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .intro, .col-md-5, .col-md-6, .col-md-7, .col-md-8, #content, #post #content, .col-md-9, .col-md-10, .col-md-11, .col-md-12, #index .intro, #index #content, #post .intro, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
   position: relative;
   min-height: 1px;
   padding-left: 0.9375rem;
@@ -881,7 +881,7 @@ pre {
     margin-left: 100%; } }
 
 @media (min-width: 48em) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .intro, .col-md-5, .col-md-6, .col-md-7, .col-md-8, #content, .col-md-9, .col-md-10, .col-md-11, .col-md-12, #index .intro, #index #content {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .intro, .col-md-5, .col-md-6, .col-md-7, .col-md-8, #content, #post #content, .col-md-9, .col-md-10, .col-md-11, .col-md-12, #index .intro, #index #content, #post .intro {
     float: left; }
   .col-md-1 {
     width: 8.33333%; }
@@ -897,7 +897,7 @@ pre {
     width: 50%; }
   .col-md-7 {
     width: 58.33333%; }
-  .col-md-8, #content {
+  .col-md-8, #content, #post #content {
     width: 66.66667%; }
   .col-md-9 {
     width: 75%; }
@@ -905,7 +905,7 @@ pre {
     width: 83.33333%; }
   .col-md-11 {
     width: 91.66667%; }
-  .col-md-12, #index .intro, #index #content {
+  .col-md-12, #index .intro, #index #content, #post .intro {
     width: 100%; }
   .col-md-pull-0 {
     right: auto; }
@@ -963,7 +963,7 @@ pre {
     margin-left: 0%; }
   .col-md-offset-1 {
     margin-left: 8.33333%; }
-  .col-md-offset-2 {
+  .col-md-offset-2, #post #content {
     margin-left: 16.66667%; }
   .col-md-offset-3 {
     margin-left: 25%; }
@@ -3370,7 +3370,7 @@ a.bg-danger:focus, a.bg-danger:hover {
 
 .sm-header, ul.categories, .blog-list li .readmore {
   font-size: 0.85rem;
-  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   margin: 1em 0; }
@@ -3383,12 +3383,10 @@ a.bg-danger:focus, a.bg-danger:hover {
 
 /* PROPERTIES */
 html {
-  border-top: 5px solid #EFD465;
   font-size: 15px;
   line-height: 1.6; }
 
 body {
-  background: url(../images/topleft.png) top left no-repeat;
   font-size: 16px;
   font-weight: 100; }
 
@@ -3422,7 +3420,7 @@ h1 {
   line-height: 1.3; }
 
 h2 {
-  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 1.8rem; }
   h2 a {
     text-decoration: none; }
@@ -3438,10 +3436,14 @@ p {
   margin: 1.2em 0 1em 0; }
 
 b, strong {
-  font-weight: 600; }
+  font-weight: 500; }
 
 a {
-  text-decoration: underline; }
+  color: #606c0a;
+  text-decoration: underline #b4c814;
+  font-weight: 500; }
+  a:hover {
+    text-decoration: underline; }
 
 ul {
   list-style-type: circle; }
@@ -3467,15 +3469,24 @@ figure.video {
     bottom: -3em; }
 
 figcaption {
-  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 0.8rem;
   margin: 0.5em 0 1em 0;
   font-weight: 400; }
 
 /* UNIVERSAL ELEMENTS */
+.logo-sig {
+  max-width: 250px;
+  margin-top: 10px;
+  margin-bottom: -17px;
+  margin-left: -30px; }
+
+#post #main-nav li {
+  padding: 10px 10px; }
+
 #main-nav {
   font-size: 0.75rem;
-  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 500;
   letter-spacing: 0.2em; }
   #main-nav a {
@@ -3535,7 +3546,7 @@ figcaption {
 
 #footer {
   font-size: 0.8rem;
-  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 400;
   margin-bottom: 4em;
   margin-top: 4em; }
@@ -3591,7 +3602,7 @@ figcaption {
   color: #aaa; }
   .recent-speaking span.date {
     font-size: 0.8rem;
-    font-family: "Work Sans", Helvetica, Arial, sans-serif;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
     font-weight: 400; }
   .recent-speaking span.location {
     font-size: 1.1rem; }
@@ -3608,7 +3619,7 @@ figcaption {
 
 /* SPEAKING */
 .speaking-list .date, .speaking-list .location {
-  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   display: inline-block;
   font-size: 0.9rem;
   margin: 7px 0 2px 0;
@@ -3683,11 +3694,14 @@ ul.categories {
   font-size: 0.9rem; }
 
 /* POST */
+#post .intro {
+  display: none; }
+
 .post h1 {
   margin-top: 1px; }
 
 .post-body {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   /*> p:first-of-type:before {
         content: url('../images/caret.png');
         float: left;
@@ -3710,13 +3724,14 @@ ul.categories {
     text-transform: uppercase;
     font-size: 80%; }
   .post-body a {
-    color: #666;
-    border-bottom: 2px solid #efd990;
-    padding-bottom: 2px;
-    text-decoration: none; }
+    color: #b48f19;
+    font-weight: 500;
+    text-decoration: underline #efd990;
+    text-decoration-skip-ink: auto !important;
+    padding-bottom: 2px; }
     .post-body a:hover {
-      text-decoration: none;
-      border-bottom: 2px solid #e6c24d; }
+      color: #876c13;
+      text-decoration: underline #876c13; }
 
 .post-meta {
   margin: 2em 0;

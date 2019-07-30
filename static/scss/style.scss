@@ -1,7 +1,7 @@
 // bootstrap variable overrides
-$font-family-sans-serif:     'Work Sans', Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:     'Lato', Helvetica, Arial, sans-serif !default;
 $font-family-serif:          "Lora", "Times New Roman", Georgia, Times, serif !default;
-$font-family-base:           $font-family-serif !default;
+$font-family-base:           $font-family-sans-serif !default;
 $line-height:                1.7;
 
 $headings-font-weight:       300 !default;
@@ -75,13 +75,13 @@ $btn-padding-y:              1rem;
 /* PROPERTIES */
 
 html {
-    border-top: 5px solid $gold;
+    //border-top: 5px solid $gold;
     font-size: 15px;
     line-height: 1.6;
 }
 
 body {
-    background: url(../images/topleft.png) top left no-repeat;
+    //background: url(../images/topleft.png) top left no-repeat;
     font-size: 16px;
     font-weight: 100;
 }
@@ -147,10 +147,15 @@ p {
 }
 
 b, strong {
-    font-weight: 600;
+    font-weight: 500;
 }
 a {
-    text-decoration: underline;
+    color: darken($brand-primary-dark, 10%);
+    text-decoration: underline lighten($brand-primary-dark, 10%);
+    font-weight: 500;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 ul {
@@ -189,6 +194,14 @@ figcaption {
 }
 
 /* UNIVERSAL ELEMENTS */
+.logo-sig {
+    max-width: 250px;
+    margin-top: 10px;
+    margin-bottom: -17px;
+    margin-left: -30px;
+}
+
+#post #main-nav li { padding: 10px 10px; }
 
 #main-nav {
     @extend .caps-letterspaced;
@@ -477,6 +490,17 @@ ul.categories {
 
 /* POST */
 
+#post {
+    .intro {
+        @extend .col-md-12;
+        display: none;
+    }
+    #content {
+        @extend .col-md-8;
+        @extend .col-md-offset-2;
+    }
+}
+
 .post {
     h1 {
         //font-style: italic;
@@ -485,7 +509,7 @@ ul.categories {
 }
 
 .post-body {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     b, strong {
         color: #444;
     }
@@ -514,13 +538,18 @@ ul.categories {
         font-size: 80%;
     }
     a {
-        color: #666;
-        border-bottom: 2px solid lighten($brand-secondary, 15%);
+        color: darken($brand-secondary, 20%);
+        font-weight: 500;
+        text-decoration: underline lighten($brand-secondary, 15%);
+        text-decoration-skip-ink: auto !important;
+        //border-bottom: 1px solid lighten($brand-secondary, 25%);
         padding-bottom: 2px;
-        text-decoration: none;
+        //text-decoration: none;
         &:hover {
-            text-decoration: none;
-            border-bottom: 2px solid $brand-secondary;
+            //text-decoration: none;
+            color: darken($brand-secondary, 30%);
+            text-decoration: underline darken($brand-secondary, 30%);
+            //border-bottom: 1px solid $brand-secondary;
         }
     }
 }

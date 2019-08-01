@@ -7,7 +7,6 @@ staticfiles
 *.zip
 *.csv
 .env*
-.build*
 settings_local.py
 post-double.py
 labels

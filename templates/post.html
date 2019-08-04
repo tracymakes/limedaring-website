@@ -3,18 +3,18 @@
 {% block title %}{{ title }} - {{ block.super }}{% endblock title %}
 
 {% block header %}
-    <meta property="og:url" content="https://limedaring.com/{{ path|cut:".html" }}/">
+    <meta property="og:url" content="https://tracyosborn.com/{{ path|cut:".html" }}/">
     <meta property="og:title" content="{{ title }}">
     <meta property="og:type" content="article">
     <meta property="og:description"
           name="description" content="{{ excerpt }}">
-    <meta name="twitter:site" content="@limedaring" />
+    <meta name="twitter:site" content="@tracymakes" />
     {% if featuredimage %}
     <meta name="twitter:image"
-          property="og:image" content="https://limedaring.com/static{{ featuredimage }}">
+          property="og:image" content="https://tracyosborn.com/static{{ featuredimage }}">
     {% else %}
     <meta name="twitter:image"
-          property="og:image" content="https://limedaring.com/static/images/tracy-osborn_atom-images.jpg">
+          property="og:image" content="https://tracyosborn.com/static/images/tracy-osborn_atom-images.jpg">
     {% endif %}
     <meta name="twitter:card" content="summary">
 {% endblock %}

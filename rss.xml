@@ -1,0 +1,260 @@
+<?xml version= "1.0"?>
+
+<rss version= "2.0">
+  <channel>
+    <title>Limedaring</title>
+    <link>https://limedaring.com</link>
+    <description>Tracy Osborn's personal blog.</description>
+    
+    <item>
+      <title>Two months at TinySeed</title>
+      <description>
+        
+<p>Six months ago <a href="https://limedaring.com/articles/shutting-down-weddinglovely/">I officially shut down WeddingLovely</a>, and if you asked me what was next, I would have told you that I would be looking for a job &#8212; but was pretty sure I wanted to, long-term, continue working for myself.</p>
+
+<p><strong>Today, I am the Program Manager at <a href="https://tinyseed.com">TinySeed</a> — a remote, year-long accelerator for bootstrapped businesses.</strong> Traditionally, new tech startups had to choose between being 100% bootstrapped (funding their business themselves), or taking VC money and all its requirements for extremely fast growth. With WeddingLovely, I tried to do both &#8212; bootstrapping, then taking some angel money, then bootstrapping, then taking a tiny bit more money, and it's absolutely something I regret (I spoke at MicroConf 2016 about this; <a href="https://www.microconf.com/growth/past-videos/">search for my name here for the video</a>). Back then, it was a binary decision without a lot of possibilities for a middle ground.</p>
+
+<p>TinySeed gives bootstrapped founders another option: enough funding for the following year so the founder can quit their job and work full time on their business, or (if they've already done so), enough to hire another person or use that money for other growth opportunities. More importantly, the year-long program gives these founders (often working solo) a community of people and mentors to work with, encourage, ask advice from, to help the founder make better decisions and work more efficiently. We're creating a small family: people to ask advice and folks for whom you can lean on in hard times.</p>
+
+<p>I was hired to help form and run the program and it's an absolute delight.</p>
+
+<p>I spent a few months interviewing at various companies and receiving (what felt like) endless rejections. Devrel at Pagerduty. A smashing-sounding job at Glitch developing intro-to-tech zines (this rejection still stings, especially since they didn't explain why I wasn't chosen and Anil Dash never responded to my email). Applied for a more entry-level position at the Mozilla Foundation as a front-end developer — rejected since I had too much experience (wut.)</p>
+
+<p><em>(Note to self: Another day, write a post/rant about how hard it is to find a job when one's skills don't fit perfectly in most job descriptions.)</em></p>
+
+<p>When I saw that <a href="https://www.indeed.com/job/program-manager-startup-accelerator-b117fa3f494960c8">TinySeed was hiring a Program Manager</a>, I was stinging from being rejected from so many places that I skimmed the description, said to myself, "Fuck it," and applied.</p>
+
+<p><strong>There's something to be said about the "Fuck it" mindset that reduces ego and the fear of rejection, and boosts confidence.</strong> I sometimes wonder what would have happened if I came across the job listing at the start of my job search — would I have held myself back since the job description was so different than what I had expected my career to be?</p>
+
+<p>The TinySeed job description caught my eye because the requirements listed out a lot of things I did at WeddingLovely and almost perversely enjoyed way too much. Documentation. Creating endless to-do lists and spending almost too much time identifying, collecting, and tracking ideas and things to-do-in-the-future. Hiring and working with my employees — but not just as my underlines, but becoming invested in their growth and training. Even mundane tasks like doing bookkeeping or my own taxes — I would stop working on development and design and work on these things instead. I like to keep track of the state of <em>all</em> things and am constantly thinking about current processes and how to improve them.</p>
+
+<p>Two months in, I can tell you that TinySeed feels like my forever job, something that I want to be doing still five, ten years down the road. It's so great to be on the ground floor of a business I believe in, that I work with a very small team but feel like I have so many coworkers and folks to "hang" with through the day with the founders we work with.</p>
+
+<p>So that happened! I have a job and I love it. 🎉</p>
+
+
+      </description>
+      
+      <link>https://limedaring.com/articles/two-months-tinyseed.html</link>
+      
+    </item>
+    
+    <item>
+      <title>The new Hello Web Books website has launched!</title>
+      <description>
+        
+<p></p>
+
+
+      </description>
+      
+      <link>https://hellowebbooks.com/news/new-hello-web-books-website-backend-has-launched</link>
+      
+    </item>
+    
+    <item>
+      <title>Does your inbox feel too quiet? The hidden consequences for temporarily breaking your email.</title>
+      <description>
+        
+<p></p>
+
+
+      </description>
+      
+      <link>https://hellowebbooks.com/news/does-your-inbox-feel-too-quiet-hidden-consequences-temporarily-breaking-your-email</link>
+      
+    </item>
+    
+    <item>
+      <title>Support me via Patreon!</title>
+      <description>
+        
+<p>I now have a Patreon account! </p>
+
+<p><a href="https://www.patreon.com/tracyosborn">https://www.patreon.com/tracyosborn</a></p>
+
+<p>I'm working on the baby beginnings of several new projects and wanted a better place to do small, quick updates on progress (Twitter is a bit too ephemeral/noisy, I don't want to spam this email list, blogging feels too overwhelming.)</p>
+
+<p>Not to mention it would be helpful to even out my personal revenue inbetween product launches, and support more free / community projects (like my Learn Command Line zine.)</p>
+
+<p>Appreciate any and all support! :cheers:</p>
+
+
+      </description>
+      
+      <link>https://limedaring.com/articles/im-on-patreon.html</link>
+      
+    </item>
+    
+    <item>
+      <title>Shutting down WeddingLovely</title>
+      <description>
+        
+<p>Almost eight years ago <a href="http://localhost:8000/articles/im-a-designer-who-learned-django-and-launched-her-first-webapp-in-6-weeks/">I taught myself how to code and launched my startup</a>, <a href="https://weddinglovely.com">WeddingLovely</a>.</p>
+
+<p><img src="/static/images/blog/weddinglovely.jpeg" alt="" /></p>
+
+<p><a href="/articles/case-study-weddinglovely/">See my case study on WeddingLovely here.</a></p>
+
+<p>It's been a rollercoaster. In late 2011, I joined the <a href="http://designerfund.com">Designer Fund</a> and <a href="http://500.co">500 Startups</a>, moving WeddingLovely from a bootstrapped model to funded model. At its end, WeddingLovely was a collection of eleven different properties in three categories: the planning app, the vendor directories, and a weddings blog.</p>
+
+<p>I've gained and lost a co-founder, gained and laid-off employees over the years. My passion has largely moved elsewhere (<a href="https://hellowebbooks.com">Hello Web Books</a> has been my focus for the last couple of years), but WeddingLovely largely ran itself and was making a good amount of revenue through affiliate and subscription accounts, so I hired a team to keep it running a few years ago and stayed on as an advisor.</p>
+
+<p>It was the lazy way out &#8212; the business wasn't evolving significantly, no new features were being launched, but the businesses and engaged couples that used our service seemed happy, I was able to employ a few folks who seemed happy as well, so why not continue it on?</p>
+
+<p><a href="https://www.indiehackers.com/product/weddinglovely/">We had our best year ever</a> so I decided to try to <a href="https://medium.com/@limedaring/why-im-selling-weddinglovely-my-eight-year-old-company-with-62-000-revenue-in-2017-69fb56c8929f">find a buyer</a>, and suddenly we started having trouble with SEO. A few of our big blog posts tanked. Negotiations weren't going well (the folks who were interested weren't a good fit, and companies for whom it would have been a good fit weren't interested.) I took a good hard look at the features and benefits of WeddingLovely, and because I (the designer/developer/main product person) haven't been spending my time on the business, everything was a bit stale.</p>
+
+<p>It's time finally close it up and move on entirely. I'm in process of closing down everything by the end of the year.</p>
+
+<p>In the next few months while I close things down, I'm planning on showcasing some of the code and features since I think that will be useful for <a href="https://hellowebbooks.com/learn-django/">Hello Web App</a> students. <a href="https://www.youtube.com/user/tosborn83/">Subscribe on YouTube if you're interested.</a></p>
+
+<p>Thanks friends. It's been quite a journey.💕</p>
+
+
+      </description>
+      
+      <link>https://limedaring.com/articles/shutting-down-weddinglovely.html</link>
+      
+    </item>
+    
+    <item>
+      <title>On Running</title>
+      <description>
+        
+<p>I've been getting down on myself for not writing more often, and then when I think of something I should write about, there's this silly little voice in my head that's like, "No one wants that!" and then I don't write. You know the voice. It's awfully discouraging.</p>
+
+<p>So I'm going to write about something completely different than what I normally focus on and has no impact whatsoever (I think) on my career or current projects.</p>
+
+<p>Running.</p>
+
+<p>I used to hate running. I'd rather hike, but since I moved to Toronto (delightfully flat Toronto), my hiking opportunities have been rather limited.</p>
+
+<p>Way back in the day, around ten years ago, I tried running. I signed up for the Nike Women's Half-Marathon in San Francisco and joined Team in Training for coaching. I could barely run a quarter mile when I started, then promptly injured my IT band, managed to finish the half marathon by mostly walking, and announced, "I HATE RUNNING" and promptly stopped doing it.</p>
+
+<p>So, years upon years later, I moved to Toronto and needed to make friends, and during my search for activities, I found <a href="http://www.runtobeer.ca/">RunTOBeer</a>, which schedules runs around Toronto ending at a brewery. Totally free, and you get a free beer at the end.</p>
+
+<p>Hells yes, I am motivated by free things (and especially free beer.)</p>
+
+<p>So I started joining random runs with them about two years ago. There were a few runs were I was the last person to finish the run. My pace wasn't great (~12:30/mi, ~7:30/km), there were a few runs where I quit halfway through, but I'm still motivated by free beer so I kept signing up for them.</p>
+
+<p>This summer I finally started improving, and started signing up for races. Finished a 10k in early summer (1:07:39), and in a fit of madness, signed up for a half-marathon this October.</p>
+
+
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BkF4JDClFyn/?utm_source=ig_embed&amp;utm_medium=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/BkF4JDClFyn/?utm_source=ig_embed&amp;utm_medium=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div><div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div></a> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BkF4JDClFyn/?utm_source=ig_embed&amp;utm_medium=loading" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">10 years or so have passed since my last running race. Thanks to @runtobeer for getting me back into running when I moved to Toronto — just rocked the #waterfront10k with my fastest pace ever. 🤘</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/limedaring/?utm_source=ig_embed&amp;utm_medium=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Tracy Osborn</a> (@limedaring) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-06-16T16:13:12+00:00">Jun 16, 2018 at 9:13am PDT</time></p></div></blockquote> <script async defer src="//www.instagram.com/embed.js"></script>
+
+<p>(Another shout-out to RunTOBeer, who delivered me a beer right before the finish line of the 10k.)</p>
+
+<p>The other big thing that has helped me out was <a href="https://www.maximumfun.org/shows/adventure-zone">The Adventure Zone</a> podcast. I tried music or random podcasts, but I couldn't quiet the little voice that kept whispering, "I hate this, I hate running, why am I doing this." But I've been loving listening to those dudes play D&amp;D and craft awesome stories and now I look forward to going out to run so I can listen to TAZ.</p>
+
+<p>I think it's funny to note that while I've been doing all this cardio, I haven't lost a pound and am still overweight. See the whole motivated-by-and-loving-food thing. 😅</p>
+
+<p>So yeah, I've been reflecting on how much I used to hate running, but finding the right group of people to run with, combining that with the right distraction to listen to while running, has made it into an enjoyable activity. I'm still slow, but I'm finally seeing some improvements in my speed the last few months. Woohoo.</p>
+
+
+      </description>
+      
+      <link>https://limedaring.com/articles/on-running.html</link>
+      
+    </item>
+    
+    <item>
+      <title>Lately (and some thoughts on anxiety)</title>
+      <description>
+        
+<p>I've been plagued lately with no confidence in my work. It's been very frustrating, to say the least.</p>
+
+<p>I'll be bumming around my house and out of nowhere, I'll think, "Ack, I haven't written a blog post in so long. Or an article. Or promoted my books. Or did marketing. Or worked on my own work in general."</p>
+
+<p>And immediately following that thought, I'll think, "But whatever I do, it's not going to be good enough. I did that blog post in the past, and so-and-so did something similar, and they did it so much better than me." Or, "I already launched a bunch of books, and right now they're not selling like they should, and thats my fault."</p>
+
+<p>Following with, "Yeah dummy, that's because you haven't worked on anything."</p>
+
+<p>And then, "But anything I am going to do is going to fail."</p>
+
+<p>Anxiety sucks.</p>
+
+<p>I know those negative thoughts aren't true, but man is it hard to work up the motivation to promote my work and myself when my brain seems dead-set on focusing on my failures, rather than my successes.</p>
+
+<p>(My anxiety is actually why, conversely, I do public speaking. Being in a place where people come up to me and tell me that my talk resonated with them, or that they have my books and they love them tames my brain's constant negative criticism of what I do. But this year I'm doing fewer speaking engagements, and I think my anxiety, as a result, is starting to catch up with me.)</p>
+
+<p>I recently took on a programming contract, which was a whole new experience that I should write a separate post on (I've only done design freelancing or front-end in the past.) And holy moly, was having consistant money rolling in awesome. I paid off my credit cards! I put money into retirement (!). However, it was also a huge anxiety trigger — I was working on unfamiliar code and very unintuitive Javascript, which meant most working mornings I was pulling my hair out thinking I was an awful programmer. The day of work would exhaust me, and then I didn't have any energy for working on my own projects, even on Mondays and Fridays, which I reserved for my own work (and usually ended up cooking and Netflixing instead, my comfort activities.) That contract just ended, so now I'm left with plenty of free time to work on my own projects, though also now I'm back to variable and unstead income.</p>
+
+<p>Since I've been kicking myself for not writing and working on my own projects, I thought that I might as well journal my current feelings and thoughts, just to get them out there, just to get used to writing again.</p>
+
+<p>Hi, I'm Tracy. This is what's currently going on in my brain.</p>
+
+
+      </description>
+      
+      <link>https://limedaring.com/articles/lately-thoughts-on-anxiety.html</link>
+      
+    </item>
+    
+    <item>
+      <title>Why I’m selling WeddingLovely, my eight year old company (with $62,000 revenue in 2017)</title>
+      <description>
+        
+<p></p>
+
+
+      </description>
+      
+      <link>https://medium.com/@limedaring/why-im-selling-weddinglovely-my-eight-year-old-company-with-62-000-revenue-in-2017-69fb56c8929f</link>
+      
+    </item>
+    
+    <item>
+      <title>Pre-orders are open for Hello Web App 2.0 on Kickstarter</title>
+      <description>
+        
+<p>It's been a few years since I released <em><a href="https://hellowebbooks.com/learn-django">Hello Web App</a></em>, my book teaching web app development with Python and Django aimed at beginners.</p>
+
+<p>Since its launch, it's been read and used by thousands of folks and hundreds of workshop participants. I am so happy that it's been such a success. However, tech changes quickly (wee!) and, while <em>Hello Web App</em> is still 90% up to date, there were some big things I needed to update to bring it into 2018 — mainly, support for Python 3 and Django 2.0.</p>
+
+<p>Since I'll be rerecording all my videos and getting a new print run done, I thought this would be a great time to run a "mini-Kickstarter" to sell pre-orders for the book!</p>
+
+
+<figure>
+    <a href="https://www.kickstarter.com/projects/1868398473/hello-web-app-20-build-your-first-web-app-with-dja"><img src="https://hellowebbooks.com/static/images/blog/2018/ks.png" alt="Hello Web App Kickstarter campaign" /></a>
+</figure>
+
+<p>Updates in full:</p>
+
+<ul>
+<li>Both <em>Hello Web App</em> books are now packaged together as a unit! I'm no longer selling them individually. This, in hindsight, makes a lot more sense.</li>
+<li>The content has been updated to Python 3 + Django 2.0.</li>
+<li>The videos are getting a complete revamp.</li>
+<li>Various bits of pieces of the content has been updated as well.</li>
+<li>The Kindle edition has some snazzier graphics.</li>
+</ul>
+
+<p>Yeehah!</p>
+
+<p>If you've been curious about working with Python, or want a super simple system for launching web apps, or just plain curious:</p>
+
+<p><a href="https://www.kickstarter.com/projects/1868398473/hello-web-app-20-build-your-first-web-app-with-dja">Check out the Kickstarter campaign for Hello Web App 2.0 here</a>.</p>
+
+<p>Appreciate your support!</p>
+
+
+      </description>
+      
+      <link>https://limedaring.com/articles/hello-web-app-2-0-kickstarter.html</link>
+      
+    </item>
+    
+    <item>
+      <title>Hello Web Design’s Product Hunt launch recap</title>
+      <description>
+        
+<p></p>
+
+
+      </description>
+      
+      <link>https://hellowebbooks.com/news/product-hunt-recap/</link>
+      
+    </item>
+    
+  </channel>
+</rss>

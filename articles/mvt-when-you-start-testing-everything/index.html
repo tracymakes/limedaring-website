@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Tracy Osborn">
+    <title>MVT: When you start testing everything - Tracy Osborn</title>
+    
+    <meta property="og:url" content="https://limedaring.com/articles/mvt-when-you-start-testing-everything/">
+    <meta property="og:title" content="MVT: When you start testing everything">
+    <meta property="og:type" content="article">
+    <meta property="og:description"
+          name="description" content="I recently laughed the other day when reading Doug Bowman&#39;s farewell blog post to Google, when he mentioned how Google is so meticulous about their testing that they tested 41 different shades of blue. Being that I work in Multivariate Testing (MVT), that situation is all too well known - once you have a way to reliably* say &quot;this&quot; makes us more money than &quot;this&quot;, it&#39;s almost impossible to not try to test everything.">
+    <meta name="twitter:site" content="@limedaring" />
+    
+    <meta name="twitter:image"
+          property="og:image" content="https://limedaring.com/static/images/tracy-osborn_atom-images.jpg">
+    
+    <meta name="twitter:card" content="summary">
+
+
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/static/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/static/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/static/images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/static/images/favicons/android-icon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/static/images/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/static/images/favicons/favicon-16x16.png" sizes="16x16">
+
+    <link rel="canonical" href="https://limedaring.com/articles/mvt-when-you-start-testing-everything/" />
+    <link rel="stylesheet" href="/static/scss/style.scss.css?v=11">
+    <link rel="alternate" type="application/rss+xml" title="My Blog Feed" href="/rss.xml">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+      analytics.load("CvntdZVXP5q2F5Wu4JsokpCX3t78l4RD");
+      
+      analytics.page()
+      
+      }}();
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+<body id="post" class="mvt-when-you-start-testing-everything">
+
+    <div class="container text-center">
+        <nav class="row" id="main-nav">
+            <a href="/"><img src="/static/images/sigs.png" alt="Tracy Osborn" class="logo-sig"></a>
+            <ul class="list-inline list-unstyled">
+                <li class="">
+                    <a href="/about/">About</a>
+                </li>
+                <li class="">
+                    <a href="/articles/">Writing</a>
+                </li>
+                <!--<li class="">
+                    <a href="/work/">Work</a>
+                </li>-->
+                <li class="">
+                    <a href="/speaking/">Speaking</a>
+                </li>
+                <!--<li class="">
+                    <a href="/contact/">Contact</a>
+                </li>-->
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            
+<div class="col-lg-12">
+
+                
+<div class="intro">
+    <h1><a href="/">Tracy Osborn</a></h1>
+    <div class="subheader">
+        <h2>loves to chat about entrepreneurship, teaching, design, development, and more.</h2>
+    </div>
+    <ul class="list-inline social-media">
+    <li><a href="//twitter.com/limedaring"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="//facebook.com/tracy.osborn"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="//github.com/tracymakes"><i class="fa fa-github"></i></a></li>
+    <li><a href="mailto:tracy@limedaring.com"><i class="fa fa-envelope"></i></a></li>
+    <li><a href="/rss.xml"><i class="fa fa-rss"></i></a></li>
+</ul>
+
+    <div class="hidden-sm-down">
+        <h2 class="intro-cats">Categories</h2>
+<ul class="list-unstyled categories">
+    <li>
+        <a href="/entrepreneurship/">Entrepreneurship</a>
+    </li>
+    <li>
+        <a href="/onspeaking/">Speaking</a>
+    </li>
+    <li>
+        <a href="/howto/">instructionals</a>
+    </li>
+    <li>
+        <a href="/design/">Design</a>
+    </li>
+    <li>
+        <a href="/development/">Development</a>
+    </li>
+    <li>
+        <a href="/authorship/">Authorship</a>
+    </li>
+    <li>
+        <a href="/women-in-tech/">Women in Tech</a>
+    </li>
+    <li>
+        <a href="/outdoorsy/">Being Outdoors</a>
+    </li>
+    <li>
+        <a href="/personal/">Personal</a>
+    </li>
+</ul>
+
+    </div>
+</div>
+
+
+                <div id="content">
+                    
+
+<article class="post">
+    <header>
+        <h1>MVT: When you start testing everything</h1>
+        <h2 class="headline"></h2>
+    </header>
+
+    <section class="post-body">
+        
+<p>I recently laughed the other day when reading <a href="http://stopdesign.com/">Doug Bowman's</a> farewell blog post to Google, when he mentioned how Google is so meticulous about their testing that <a href="http://stopdesign.com/archive/2009/03/20/goodbye-google.html">they tested 41 different shades of blue</a>. Being that I work in Multivariate Testing (MVT), that situation is all too well known - once you have a way to reliably* say "<em>this</em> makes us more money than <em>this</em>", it's almost impossible to not try to test everything.</p>
+
+<p>This results in a lot of wasted time--first, tests should take around two weeks to finish to make sure that daily trends aren't shifting a result one way or another, and if you want to test everything that you change with your website, you'll quickly create a backlog of tests and nothing will complete very quickly.</p>
+
+<p>However, when you're implementing a new feature without testing, there is the chance that you've miscalculated how valuable it will be to your users and you'll see a drop in conversion once it's implemented. Suddenly you're struck with the inspiration to change headline-so-and-so to be clearer, and perhaps you changed it to be clearer to yourself but maybe it confuses your users and they stop converting. A different background color. Different images. Anything, really, could lead to higher conversion or lower conversion, and when working with a high value property, you really don't want to implement <em>anything</em> without making sure it was a <em>good decision</em> in the first place.</p>
+
+<p>That's the important part: don't test if you can reliably say that something is a good decision.</p>
+
+<p>If you're sure that something is a <em>good decision</em>: improved accessibility, search results, information architecture, I say to not test. If you think that there is 90% change it'll be a positive change. There will never be a 100% confidence of a decision because something can always go wrong.</p>
+
+<p>But if you're making a change that cannot be reliably named a <em>good decision</em>: changing the link colors; headline copy; location of results: test. If you think there is a 25% chance or greater that something could go wrong.</p>
+
+<p>Continually improving your website should not be hindered by the ability to test. The time it takes to run a test should be a major factor as to whether to change a feature without testing. Furthermore, if an accessibility improvement is tested and somehow leads to poorer conversion, should that accessibility improvement be shelved for the sake of making more money? No! Implement the accessibility feature, then find out why conversion went down--never forget that all the pieces of your website work together and just because something goes wrong, it doesn't necessarily have to do with what you changed that time... it could be an effect further down the line.</p>
+
+<ul>
+<li>I say reliably meaning about 90% confidence. You basically ALMOST know whether one thing will be better than another.</li>
+</ul>
+
+
+    </section>
+
+    <footer class="post-meta clearfix">
+        <div><span>Posted on </span> April 12, 2009</div>
+        <section class="sharing">
+            <div>
+                <span>Share: </span>
+                <a class="twitter" href="http://twitter.com/home/?status=MVT: When you start testing everything https://hellowebapp.com/articles/mvt-when-you-start-testing-everything/ (via @hellowebapp)"><i class="fa fa-twitter"></i></a>
+
+                <a class="facebook" href="#" onclick="
+                    window.open(
+                    'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+                    'facebook-share-dialog',
+                    'width=626,height=436');
+                    return false;"><i class="fa fa-facebook"></i>
+                </a>
+                <a class="mail" href="mailto:?subject=MVT: When you start testing everything&amp;body=Here's the link: https://hellowebapp.com/articles/mvt-when-you-start-testing-everything/"><i class="fa fa-envelope"></i></a>
+            </div>
+        </section>
+        <section class="prevnext row" style="margin-top: 25px;">
+            <div class="col-md-6">
+                
+                Next:<br/>
+                
+                <a href='/articles/keeping-inspired-at-the-right-times'>
+                    Keeping inspired at the right times
+                </a>
+                
+                
+            </div>
+            <div class="col-md-6 text-right">
+                
+                Previous:<br/>
+                
+                <a href='/articles/i-need-to-revoke-my-css-master-card'>
+                    I need to revoke my CSS-master card
+                </a>
+                
+                
+            </div>
+        </section>
+    </footer>
+
+    
+</article>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="container text-center">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <hr/>
+                <nav id="footer-nav">
+                    <ul class="list-inline list-unstyled">
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/articles/">Writing</a></li>
+                        <li><a href="/work/">Work</a></li>
+                        <li><a href="/uses/">Uses</a></li>
+                        <li><a href="/speaking/">Speaking</a></li>
+                        <li><a href="https://www.patreon.com/tracyosborn">Patreon</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="list-inline social-media">
+                    <li><a href="//twitter.com/limedaring"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="//facebook.com/tracy.osborn"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="//github.com/tracymakes"><i class="fa fa-github"></i></a></li>
+                    <li><a href="mailto:tracy@limedaring.com"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="/rss.xml"><i class="fa fa-rss"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    
+</body>
+</html>

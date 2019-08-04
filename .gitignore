@@ -1,4 +1,4 @@
-Makefile
+/.build
 db.sqlite3
 venv
 *.pyc
@@ -66,3 +66,4 @@ docs/_build/
 
 # PyBuilder
 target/
+/.build

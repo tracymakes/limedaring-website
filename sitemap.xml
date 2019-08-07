@@ -391,6 +391,11 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://limedaring.com/articles/why-i-shut-down-weddinglovely/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>https://limedaring.com/articles/building-beautiful-business-cards/</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>

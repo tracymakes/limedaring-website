@@ -2,8 +2,8 @@
 
 <rss version= "2.0">
   <channel>
-    <title>Limedaring</title>
-    <link>https://limedaring.com</link>
+    <title>Tracy Osborn</title>
+    <link>https://tracyosborn.com</link>
     <description>Tracy Osborn's personal blog.</description>
     {% for post in posts|slice:":10" %}
     <item>
@@ -14,7 +14,7 @@
       {% if post.external %}
       <link>{{ post.external }}</link>
       {% else %}
-      <link>https://limedaring.com/{{ post.path }}</link>
+      <link>https://tracyosborn.com/{{ post.path }}</link>
       {% endif %}
     </item>
     {% endfor %}

@@ -8,7 +8,6 @@ const story=variant==='story';
 const picks=['why-i-shut-down-weddinglovely','how-i-run-a-marketplace-with-eleven-different-properties-and-5000-vendors','on-hiring-a-virtual-assistant'].map(slug=>posts.find(p=>p.slug===slug)!);
 ---
 <Base description="Tracy Osborn is a designer, former startup founder, and general manager at TinySeed and MicroConf." title={production ? "Tracy Osborn — Designer & startup founder" : `Tracy Osborn — ${story?'Story first':'Work first'} homepage mockup`} bodyClass={story ? "homepage-mockup story-typography" : "homepage-mockup"} width="col-lg-10 col-lg-offset-1" noindex={!production} navigation={[[`${homeUrl}#work`,"Current work"],[archiveUrl,"Writing archive"]]}>
-  <Fragment slot="head">{story && <link rel="stylesheet" href="/static/home/fonts/display.css"/>}</Fragment>
   <Fragment slot="preview-bar">{!production && <div class="mockup-switcher" aria-label="Homepage mockups">
     <span>Homepage directions</span>
     <a href="/mockups/" aria-current={!story?'page':undefined}>A · Work first</a>

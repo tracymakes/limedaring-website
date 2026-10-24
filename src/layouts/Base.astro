@@ -1,4 +1,5 @@
 ---
+import SiteNavigation from '../components/SiteNavigation.astro';
 import SocialLinks from '../components/SocialLinks.astro';
 import {site, defaultDescription} from '../lib/content';
 const {title='Tracy Osborn', description=defaultDescription, bodyId='', bodyClass='', width='col-lg-10 col-lg-offset-1', canonical=Astro.url.pathname, post, highlight=false, noindex=false, editorial=false, navigation=[['/#work','Current work'],['/articles/','Writing archive']]} = Astro.props;
@@ -32,22 +33,14 @@ const footerNavigation = [['about','About'],['articles','Writing'],['work','Work
     <meta name="twitter:card" content="summary"/>
   </>}
   {highlight && <link rel="stylesheet" href="/static/css/tomorrow.css"/>}
-  {editorial && <><link rel="stylesheet" href="/static/home/fonts/display.css"/><link rel="stylesheet" href="/static/home/editorial.css"/></>}
+  <link rel="stylesheet" href="/static/home/fonts/display.css"/>
+  {editorial && <><link rel="stylesheet" href="/static/home/editorial.css"/></>}
   <slot name="head"/>
 </head>
 <body id={bodyId} class:list={[bodyClass,{"editorial-site":editorial}]}>
   <slot name="preview-bar"/>
   <div class="container text-center">
-    <nav class="row" id="main-nav">
-      <a href="/"><img src="/static/images/sigs.png" alt="Tracy Osborn" class="logo-sig"/></a>
-      <ul class="list-inline list-unstyled">
-        {navigation.map(([slug,label]) => {
-          const href=slug.startsWith('/') ? slug : `/${slug}/`;
-          const current=!href.includes('#') && Astro.url.pathname===href;
-          return <li class:list={{active:current}}><a href={href} aria-current={current?'page':undefined}>{label}</a></li>;
-        })}
-      </ul>
-    </nav>
+    <SiteNavigation navigation={navigation}/>
   </div>
   <div class="container"><div class="row"><div class={width}>
     <slot name="intro"/>

@@ -1,0 +1,74 @@
+---
+const {navigation} = Astro.props;
+const links=[...navigation,['mailto:tracy@limedaring.com','Email']];
+---
+<nav id="main-nav" class="site-navigation" aria-label="Main navigation">
+  <a class="site-logo" href="/"><img src="/static/images/sigs.png" alt="Tracy Osborn — home" class="logo-sig"/></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+    <span class="menu-label">Menu</span><span class="menu-symbol" aria-hidden="true"></span>
+  </button>
+  <ul id="site-menu" class="site-menu">
+    {links.map(([slug,label])=>{
+      const href=slug.startsWith('/') || slug.includes(':') ? slug : `/${slug}/`;
+      const current=!href.includes('#') && Astro.url.pathname===href;
+      return <li><a href={href} aria-current={current?'page':undefined}>{label}</a></li>;
+    })}
+  </ul>
+</nav>
+<script>
+  const nav=document.querySelector<HTMLElement>('.site-navigation');
+  const button=nav?.querySelector<HTMLButtonElement>('.menu-toggle');
+  const label=button?.querySelector('.menu-label');
+  const menu=nav?.querySelector<HTMLElement>('.site-menu');
+  if(nav && button && menu && label){
+    const mobile=window.matchMedia('(max-width: 767px)');
+    const setOpen=(open:boolean)=>{
+      button.setAttribute('aria-expanded',String(open));
+      label.textContent=open?'Close':'Menu';
+    };
+    nav.classList.add('nav-ready');
+    button.addEventListener('click',()=>setOpen(button.getAttribute('aria-expanded')!=='true'));
+    menu.addEventListener('click',event=>{
+      if((event.target as HTMLElement).closest('a')){
+        // Keep keyboard focus out of the collapsed panel for same-page links.
+        if(mobile.matches)button.focus();
+        setOpen(false);
+      }
+    });
+    document.addEventListener('keydown',event=>{
+      if(event.key==='Escape' && button.getAttribute('aria-expanded')==='true'){
+        setOpen(false);button.focus();
+      }
+    });
+    document.addEventListener('click',event=>{
+      if(!nav.contains(event.target as Node))setOpen(false);
+    });
+    mobile.addEventListener('change',()=>setOpen(false));
+  }
+</script>
+<style is:global>
+  #main-nav.site-navigation {max-width:900px;margin:0 auto;font-family:Lato,Helvetica,Arial,sans-serif;}
+  #main-nav .site-logo {display:inline-block;}
+  #main-nav .menu-toggle {display:none;}
+  #main-nav .site-menu {list-style:none;padding:0;margin:0;display:flex;justify-content:center;flex-wrap:wrap;}
+  #main-nav .site-menu li {margin:0;padding:0;}
+  #main-nav .site-menu a {display:block;padding:15px 20px;color:#35382c;font-weight:400;text-transform:uppercase;text-decoration:none;min-height:44px;}
+  #main-nav .site-menu a:hover,#main-nav .site-menu a[aria-current=page] {color:#606c0a;text-decoration:underline;text-decoration-color:#c59b3d;text-underline-offset:6px;text-decoration-thickness:1px;}
+  #main-nav :is(a,button):focus-visible {outline:2px solid #8a9a0f;outline-offset:5px;border-radius:2px;}
+  @media(max-width:767px){
+    #main-nav.site-navigation {display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:20px;margin:12px 0 0;text-align:left;}
+    #main-nav .site-logo {justify-self:start;max-width:190px;}
+    #main-nav .site-logo .logo-sig {display:block;width:100%;max-width:190px;margin:0;}
+    #main-nav.nav-ready .menu-toggle {display:flex;align-items:center;gap:12px;justify-content:center;min-width:88px;min-height:44px;padding:10px 6px;background:none;border:0;color:#35382c;font:400 .78rem/1.4 Lato,sans-serif;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;}
+    #main-nav .menu-symbol {position:relative;display:block;width:16px;height:16px;}
+    #main-nav .menu-symbol::before,#main-nav .menu-symbol::after {content:"";position:absolute;left:0;top:7px;width:16px;height:1.5px;background:#7b8914;}
+    #main-nav .menu-symbol::after {transform:rotate(90deg);}
+    #main-nav .menu-toggle[aria-expanded=true] .menu-symbol::after {transform:rotate(-45deg);}
+    #main-nav .menu-toggle[aria-expanded=true] .menu-symbol::before {transform:rotate(45deg);}
+    #main-nav .site-menu {grid-column:1/-1;display:flex;flex-direction:column;gap:4px;margin:16px 0 0;padding:24px;background:#f8f8f2;}
+    #main-nav .site-menu::before {content:"";display:block;width:42px;height:3px;background:#c59b3d;margin-bottom:12px;}
+    #main-nav.nav-ready .menu-toggle[aria-expanded=false]+.site-menu {display:none;}
+    #main-nav .site-menu a {padding:8px 0;font:400 1.9rem/1.25 'Cormorant Garamond',Lora,Georgia,serif;letter-spacing:-.02em;text-transform:none;}
+  }
+  @media(max-width:359px){#main-nav .site-logo {max-width:160px;}#main-nav.site-navigation {column-gap:12px;}}
+</style>

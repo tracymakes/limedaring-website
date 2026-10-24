@@ -25,7 +25,8 @@ Astro 7 may run the development server in the background. Use `npx astro dev sto
 - `src/content/articles/*.md`: each article's metadata and Markdown/HTML body. Keep `slug` and filename unchanged to preserve its URL. Dates use `YYYY-MM-DD`.
 - `src/content/pages/*.json`: existing informational pages and their introductions, stored as HTML fragments to preserve the original formatting.
 - `src/components/HomeMockup.astro`: approved story homepage (production mode at `/`); `WritingArchive.astro`: year-by-year archive and topic pages; `PageContent.astro`: retained legacy page content.
-- `src/layouts/Base.astro`: shared navigation, document metadata, and footer.
+- `src/components/SiteNavigation.astro`: shared responsive navigation. Small screens use an expandable menu; desktop links stay visible. Add destinations to the navigation passed from `Base.astro` or the homepage; Email is shared across all pages.
+- `src/layouts/Base.astro`: document metadata and shared footer.
 - `public/static/`: published styles, images, fonts, scripts, and downloads. The existing compiled stylesheet is reused unchanged; no legacy Python/Sass compiler is required.
 - `src/content/post-order.json`: original ordering for articles published on the same date. New dates sort automatically.
 

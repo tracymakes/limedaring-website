@@ -71,9 +71,9 @@ const picks=['why-i-shut-down-weddinglovely','how-i-run-a-marketplace-with-eleve
       <p class="archive-description">{story ? "Most of these posts are from when I was running WeddingLovely and writing the books. I’ve kept them here, including the ones originally published elsewhere." : "An archive of building, bootstrapping, design, and learning as I went. A few places to start:"}</p>
       <ul class="selected-writing">{picks.map(post=><li><span>{dateLabel(post.date)}</span><a href={post.url}>{post.title}<span aria-hidden="true"> →</span></a></li>)}</ul>
     </section>
-    <section class="say-hello"><h2>{story ? "Email me" : "Say hello."}</h2>{!story && <p>I’ve always liked a good conversation.</p>}<a href="mailto:tracy@tracyosborn.com">tracy@tracyosborn.com <span aria-hidden="true">↗</span></a></section>
+    <section class="say-hello"><h2>{story ? "Email me" : "Say hello."}</h2>{!story && <p>I’ve always liked a good conversation.</p>}<a href="mailto:tracy@limedaring.com">tracy@limedaring.com <span aria-hidden="true">↗</span></a></section>
   </div>
-  <footer slot="footer" class="mockup-footer"><a href={homeUrl}>Current work</a><a href={archiveUrl}>Writing archive</a><a href="mailto:tracy@tracyosborn.com">Email</a>{!story && <span>Tracy Osborn</span>}</footer>
+  <footer slot="footer" class="mockup-footer"><a href={homeUrl}>Current work</a><a href={archiveUrl}>Writing archive</a><a href="mailto:tracy@limedaring.com">Email</a>{!story && <span>Tracy Osborn</span>}</footer>
 </Base>
 <style is:global>
   .homepage-mockup { color:#666; }

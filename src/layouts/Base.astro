@@ -53,14 +53,14 @@ const footerNavigation = [['about','About'],['articles','Writing'],['work','Work
     <slot name="intro"/>
     <div id="content"><slot/></div>
   </div></div></div>
-  <slot name="footer">{editorial ? <footer class="editorial-footer"><a href="/#work">Current work</a><a href="/articles/">Writing archive</a><a href="mailto:tracy@tracyosborn.com">Email</a><a href="/rss.xml">RSS</a></footer> : <div id="footer" class="container text-center"><div class="row"><div class="col-md-8 col-md-offset-2">
+  <slot name="footer">{editorial ? <footer class="editorial-footer"><a href="/#work">Current work</a><a href="/articles/">Writing archive</a><a href="mailto:tracy@limedaring.com">Email</a><a href="/rss.xml">RSS</a></footer> : <div id="footer" class="container text-center"><div class="row"><div class="col-md-8 col-md-offset-2">
     <hr/>
     <nav id="footer-nav"><ul class="list-inline list-unstyled">
       {footerNavigation.map(([slug,label]) => <li><a href={slug.startsWith('/') ? slug : `/${slug}/`}>{label}</a></li>)}
       <li><a href="https://www.patreon.com/tracyosborn">Patreon</a></li>
       <li><a href="/contact/">Contact</a></li>
     </ul></nav>
-    <SocialLinks email="tracy@tracyosborn.com"/>
+    <SocialLinks email="tracy@limedaring.com"/>
   </div></div></div>}</slot>
   {bodyId === 'articles' && <script is:inline>document.querySelectorAll('.sub-categories ul').forEach(list => list.firstElementChild?.classList.remove('hidden'));</script>}
   {bodyId === 'error' && <script is:inline>const label = document.getElementById('url'); if (label) label.textContent = window.location.pathname;</script>}

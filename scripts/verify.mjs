@@ -32,10 +32,7 @@ for(const entry of [...manifest.pages,...manifest.articles]){
   const old=load(fs.readFileSync(legacyFile,'utf8'));
   const selector=entry.url.startsWith('/articles/')?'.post-body':entry.url==='/articles/'||['authorship','design','development','entrepreneurship','howto','onspeaking','outdoorsy','personal','women-in-tech'].includes(entry.slug)?null:'#content';
   if(selector && entry.url!=='/' && !imported.has(entry.slug)){
-   // The current contact address was updated on the contact and speaking pages.
-   const legacyText=text(old,selector).replace(/\.\.\./g,'…');
-   const expectedText=['contact','speaking'].includes(entry.slug)?legacyText.replaceAll('tracy@limedaring.com','tracy@tracyosborn.com'):legacyText;
-   expect(expectedText===text($,selector).replace(/\.\.\./g,'…'),`Text changed ${entry.url}`);
+   expect(text(old,selector).replace(/\.\.\./g,'…')===text($,selector).replace(/\.\.\./g,'…'),`Text changed ${entry.url}`);
    for(const tag of ['img','iframe','video','audio'])expect(JSON.stringify(assetSignature(old,`${selector} ${tag}`))===JSON.stringify(assetSignature($,`${selector} ${tag}`)),`${tag} changed ${entry.url}`);
    if(selector==='.post-body')expect(JSON.stringify(assetSignature(old,'.post-body a'))===JSON.stringify(assetSignature($,'.post-body a')),`Article links changed ${entry.url}`);
   }

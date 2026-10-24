@@ -71,3 +71,7 @@ target/
 # Astro
 node_modules/
 .astro/
+
+# The legacy Python lib/ rule must not hide Astro source modules.
+!/src/lib/
+!/src/lib/**

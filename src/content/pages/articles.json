@@ -1,0 +1,8 @@
+{
+  "slug": "articles",
+  "title": "The Writing of Tracy Osborn",
+  "bodyId": "articles",
+  "category": "entrepreneurship",
+  "intro": "<div class=\"intro\">\n    <h1><a href=\"/\">Tracy Osborn</a></h1>\n    <div class=\"subheader\">\n        <h2>loves to chat about entrepreneurship, teaching, design, development, and more.</h2>\n    </div>\n    {% include 'includes/social-links.html' %}\n    <div class=\"hidden-sm-down\">\n        {% include 'includes/blog-sidebar.html' %}\n    </div>\n</div>",
+  "contentsize": "<div class=\"col-lg-10 col-lg-offset-1\">"
+}

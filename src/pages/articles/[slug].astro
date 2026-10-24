@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/Base.astro';
+import {posts, postLink, dateLabel,site} from '../../lib/content';
+export function getStaticPaths() {
+  return posts.map((post,index)=>({params:{slug:post.slug},props:{post,next:posts[index-1],previous:posts[index+1]}}));
+}
+const {post,next,previous} = Astro.props;
+const shareUrl = site + post.url;
+---
+<Base title={`${post.title} — Tracy Osborn`} description={post.excerpt} editorial bodyClass="article-page" width="col-lg-10 col-lg-offset-1" post={post} highlight={post.slug==='i-need-to-revoke-my-css-master-card' || post.html.includes('<pre')}>
+  <header slot="intro" class="reading-header">
+    <a class="archive-back" href="/articles/">← Writing archive</a>
+    <h1>{post.title}</h1>
+    {post.headline && <p class="headline">{post.headline}</p>}
+    <time class="reading-date" datetime={post.date}>{dateLabel(post.date)}</time>
+  </header>
+  <article class="reading-article">
+    <section class:list={["post-body", {"imported-article": post.imported}]} set:html={post.html}/>
+    <footer class="article-end">
+      <!-- Preserve provenance while the article itself is now hosted here. -->
+      {post.originalUrl && <p class="original-publication">Originally published on <a href={post.originalUrl}>{new URL(post.originalUrl).hostname.replace(/^www\./,'')}</a>.</p>}
+      <p class="article-sharing">Share: <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(shareUrl)}&via=tracymakes`}>Twitter</a> · <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}>Facebook</a> · <a href={`mailto:?subject=${encodeURIComponent(post.title)}&body=${encodeURIComponent("Here's the link: "+shareUrl)}`}>Email</a></p>
+      <nav class="prevnext" aria-label="More articles">
+        <div>{next && <><span>Newer article</span><a href={postLink(next)}>{next.title}</a></>}</div>
+        <div>{previous && <><span>Older article</span><a href={postLink(previous)}>{previous.title}</a></>}</div>
+      </nav>
+      <a href="/articles/">← All articles</a>
+    </footer>
+  </article>
+</Base>
+
+<style>
+  .original-publication { margin-bottom: 1rem; }
+  .imported-article :global(img) { max-width: 100%; height: auto; }
+  .imported-article :global(iframe) { max-width: 100%; }
+  .imported-article :global(pre) { overflow-x: auto; }
+</style>

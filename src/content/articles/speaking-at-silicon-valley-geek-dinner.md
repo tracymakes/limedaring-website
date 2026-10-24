@@ -1,0 +1,19 @@
+---
+{
+  "featuredimage": "/images/blog/2015/12/7/1.jpg",
+  "excerpt": "Hey, it's my very first speaking engagement! Sadly, I'm not talking about anything REALLY awesome; I'll be expanding a bit on multivariate testing, the stuff I do at work and how it has worked for the sites I manage. I promise to make it more interesting than it sounds.",
+  "date": "2008-10-17",
+  "featured": "True",
+  "author": "Tracy Osborn",
+  "title": "Speaking at Silicon Valley Geek Dinner",
+  "external": "",
+  "category": "personal, speaking",
+  "slug": "speaking-at-silicon-valley-geek-dinner"
+}
+---
+
+Hey, it's my very first speaking engagement! Sadly, I'm not talking about anything REALLY awesome; I'll be expanding a bit on multivariate testing, the stuff I do at work and how it has worked for the sites I manage. I promise to make it more interesting than it sounds.
+
+This dinner is being held at [Amarin Thai](http://www.amarinthaicuisine.com/home.html) in Mountain View, on Tuesday, October 21, 2008, at 7:00pm.
+
+[Sign up on Upcoming!](http://upcoming.yahoo.com/event/738604/)

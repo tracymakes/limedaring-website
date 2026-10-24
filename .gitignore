@@ -67,3 +67,7 @@ docs/_build/
 # PyBuilder
 target/
 /.build
+
+# Astro
+node_modules/
+.astro/

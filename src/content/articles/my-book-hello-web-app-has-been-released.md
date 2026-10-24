@@ -1,0 +1,24 @@
+---
+{
+  "date": "2015-05-04",
+  "featuredimage": "",
+  "featured": "",
+  "author": "Tracy Osborn",
+  "excerpt": "I've been working on Hello Web App for over a year now — it was around November 2013 when I started pondering the idea about writing my own book, after years of figuring out Django on my own and being annoyed at existing tutorials...",
+  "layout": "post",
+  "external": "",
+  "title": "My book, Hello Web App, has been released!",
+  "category": "authorship",
+  "slug": "my-book-hello-web-app-has-been-released"
+}
+---
+
+I've been working on Hello Web App ([http://hellowebapp.com](http://hellowebapp.com)) for over a year now — it was around November 2013 when I started pondering the idea about writing my own book, after years of figuring out Django on my own and being annoyed at existing tutorials.
+
+![](/static/images/blog/hwa-books.jpg)
+
+It's been a long journey. From Kickstarter, to writing, to revising, to revising again, to marketing, and finally — Hello Web App can be bought from Gumroad ([http://gumroad.com/limedaring](http://gumroad.com/limedaring)), Amazon ([http://amzn.to/1yLsHFH](http://amzn.to/1yLsHFH)), or Leanpub ([https://leanpub.com/hellowebapp/](https://leanpub.com/hellowebapp/)).
+
+_(FYI Amazon is showing the paperback book as being out of stock. I have been fighting with their automated system but they still didn't order enough. It should be back in stock by the end of the week, and I encourage you to order today even though it's out of stock so Amazon will learn to order more from me at a time. Gumroad paperback orders will be shipped by yours truly on Wednesday.)_
+
+Ridiculously happy to have my book finally released to the public. Appreciate any feedback anyone has (and Amazon reviews of course!)

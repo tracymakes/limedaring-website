@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import {posts,categories} from '../lib/content';
+const {page} = Astro.props;
+const topic = page?.slug !== 'articles' && page?.category ? categories.find(c=>c[2]===page.category) : undefined;
+const entries = topic ? posts.filter(p=>p.category.includes(topic[2])) : posts;
+const years=[...new Set(entries.map(p=>p.date.slice(0,4)))];
+const title = topic ? topic[1][0].toUpperCase()+topic[1].slice(1) : 'Writing archive';
+---
+<Base title={`${title} — Tracy Osborn`} description={topic ? `Tracy Osborn’s archived articles on ${topic[1].toLowerCase()}.` : 'Articles by Tracy Osborn on running WeddingLovely, writing books, design, development, and life.'} editorial bodyClass="writing-archive" width="col-lg-10 col-lg-offset-1">
+  <header slot="intro" class="archive-intro">
+    {topic && <a class="archive-back" href="/articles/">← All writing</a>}
+    <h1>{title}</h1>
+    {!topic && <p>Most of these posts are from when I was running WeddingLovely and writing the books. I’ve kept them here, including the ones originally published elsewhere.</p>}
+    <p class="archive-count">{entries.length} articles{years.length > 0 && ` · ${years.at(-1)}–${years[0]}`}</p>
+  </header>
+  <nav aria-label="Browse articles by topic" class="archive-topics">
+    <a href="/articles/" aria-current={!topic?'page':undefined}>All writing</a>
+    {categories.map(([slug,label])=><a href={`/${slug}/`} aria-current={topic?.[0]===slug?'page':undefined}>{label[0].toUpperCase()+label.slice(1)}</a>)}
+  </nav>
+  {years.map(year=><section class="archive-year" aria-labelledby={`year-${year}`}>
+    <h2 id={`year-${year}`}>{year}</h2>
+    <ul>{entries.filter(p=>p.date.startsWith(year)).map(post=><li><time datetime={post.date}>{new Date(post.date+'T12:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',timeZone:'UTC'})}</time><a href={post.url}>{post.title}</a></li>)}</ul>
+  </section>)}
+</Base>

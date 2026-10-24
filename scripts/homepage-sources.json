@@ -1,0 +1,13 @@
+{
+  "status": "Two local design mockups; original homepage unchanged",
+  "verifiedOn": "2026-10-24",
+  "sources": [
+    {"url": "https://tinyseed.com/people", "supports": "General Manager; leads operations across TinySeed and MicroConf; background in design, product, development, and startup founding"},
+    {"url": "https://microconf.com/about", "supports": "General Manager; community for non-venture-track startup founders"},
+    {"url": "https://nostarch.com/hello-web-design", "supports": "Author of Hello Web Design, published by No Starch Press in 2021; official cover image"},
+    {"url": "https://hellowebbooks.com/", "supports": "Hello Web App books"},
+    {"path": "src/content/articles/case-study-weddinglovely.md", "supports": "WeddingLovely design and development experience"},
+    {"path": "src/content/articles/why-i-shut-down-weddinglovely.md", "supports": "Business closed in 2018; founder's own retrospective"}
+  ],
+  "userDirection": "Prioritize current TinySeed/MicroConf work and relevant WeddingLovely experience. Books are a supporting mention. Do not feature speaking. Review mockups before replacing the homepage."
+}

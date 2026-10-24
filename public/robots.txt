@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://tracyosborn.com/sitemap.xml

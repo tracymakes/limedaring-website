@@ -1,0 +1,101 @@
+---
+{
+  "featuredimage": "/images/blog/2015/12/7/1.jpg",
+  "featured": "True",
+  "date": "2016-02-15",
+  "author": "Tracy Osborn",
+  "excerpt": "In 2011, I taught myself how to code Python and Django to launch my startup, WeddingLovely. I got something working, but over the years of working with Python and Django, I became more and more frustrated about how programming in general was taught. I'm a visual person with a background in building HTML/CSS websites, and programming never felt real for unless I was seeing results in the browser. However, programming tutorials all tended to show things working in the command line and left the website stuff (templates and whatnot) until the end of the tutorial, or not at all. In 2014 I started working on my \"Django for Designers\" book idea, which evolved into \"Hello Web App.\"",
+  "title": "Case study: Hello Web App",
+  "external": "",
+  "category": "authorship, entrepreneurship",
+  "slug": "case-study-hello-web-app"
+}
+---
+
+_(I'm moving to Toronto and [looking for a job](http://www.limedaring.com/articles/moving-to-toronto-opening-up-to-new-opportunities) (!) and thought I'd deep dive into my two main projects to showcase my work.)_
+
+**In 2011, [I taught myself how to code](http://www.limedaring.com/articles/im-a-designer-who-learned-django-and-launched-her-first-webapp-in-6-weeks) Python and Django to launch my startup, [WeddingLovely](http://weddinglovely.com).** I got something working, but over the years of working with Python and Django, I became more and more frustrated about how programming in general was taught.
+
+I'm a visual person with a background in building HTML/CSS websites, and programming never felt real unless I was seeing results in the browser. However, programming tutorials all tended to show things working in the command line and left the website stuff (templates and whatnot) until the end of the tutorial, or not at all.
+
+In 2014 I started working on my "Django for Designers" book idea, which evolved into "Hello Web App."
+
+## The books
+
+**Website: [http://hellowebapp.com](http://hellowebapp.com)**
+
+![](/static/images/blog/hwa-books.jpg)
+
+![](/static/images/blog/hwa-books2.jpg)
+
+![](/static/images/blog/hwa-books3.jpg)
+
+**_Hello Web App_ walks readers through the process of building their first web app.** I start with templates and the "website stuff" first, building the website while introducing concepts like models and the database slowly but surely. _Hello Web App_ is 144 pages and concludes with launching a basic but usable web app on Heroku.
+
+**_Hello Web App: Intermediate Concepts_ is for anyone who has a basic web app and wants to build more complex projects** like adding payments with Stripe, allowing for user-uploaded images, adding an API, and more. As compared to _Hello Web App_, the chapters in _Hello Web App: Intermediate Concepts_ are not chronological and can be tackled individually.
+
+_Hello Web App_ launched May 4th 2015 and _Hello Web App: Intermediate Concepts_ launched on December 7th 2015.
+
+## Kickstarter campaigns
+
+For each project I ran a Kickstarter campaign:
+
+
+
+
+
+<figure class="video">
+    <iframe src="https://player.vimeo.com/video/121716080?byline=0&portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    
+</figure>
+
+
+
+[Hello Web App raised $12,136 with 540 backers](https://www.kickstarter.com/projects/1868398473/hello-web-app-intro-to-building-web-apps-with-djan), ending in May 2014.
+
+
+
+
+<figure class="video">
+    <iframe src="https://player.vimeo.com/video/155448004?byline=0&portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    
+</figure>
+
+
+
+...and [Hello Web App: Intermediate Concepts raised $13,365 with 319 backers](https://www.kickstarter.com/projects/1868398473/hello-web-app-intermediate-concepts), ending in October 2015.
+
+**While I got an offer from a publisher for _Hello Web App_, I decided to self-publish.** This way, I could keep 100% of the royalties, in exchange for being on the hook for the design and marketing. Thankfully, editorial design was one of my favorite classes at university.
+
+The Kickstarter campaigns were crucial — I could use the campaigns to build excitement about the books, sell pre-orders, and (almost most importantly) raise money to cover the costs of printing 1,000 paperbacks.
+
+**I've written a number of posts about writing and launching _Hello Web App_:**
+
+  * [I self-published a learn-to-code book and made nearly $5,000 in pre-orders](https://hellowebapp.com/news/how-i-launched-my-learn-to-code-book-and-made-nearly-5000-in-pre-orders)
+  * [Hello Web App's Kickstarter campaign: How I did it, what I regret.](https://hellowebapp.com/news/reviewing-hello-web-apps-kickstarter-campaign)
+  * [Economics of self-publishing a book via Kickstarter: Hello Web App's story](https://hellowebapp.com/news/economics-of-self-publishing-on-kickstarter)
+  * [Designing and printing Hello Web App's PDF and paperback editions](https://hellowebapp.com/news/all-about-hello-web-apps-paperback-book-fulfillment)
+
+## Workshops
+
+![](/static/images/blog/hwa-workshop.jpg)
+
+**The content in Hello Web App translates very well to workshops.** I've given workshops at PyCon 2014, DjangoCon EU 2015, DjangoCon US 2015, and PyTennessee 2016, and will be giving it at PyCon US 2016 as well.
+
+I've also started giving non-conference workshops, like the Hackbright + Hello Web App workshop that I gave in September 2015 (photos shown above). We had around 75 attendees!
+
+## The website
+
+![](/static/images/blog/hellowebapp-website.png)
+ 
+While this blog is still (much to my chagrin) on Squarespace, **I recently designed and built a new Hello Web App website from scratch**, using the [Cactus](http://cactusformac.com) static site builder.
+
+[I'm particularly proud of my blog pages.](https://hellowebapp.com/news/)
+
+## Last thoughts
+
+**Writing, producing, and marketing both _Hello Web App_ books has been one of the best things I've ever done.** I've been able to make a measurable difference, teaching thousands of people how to code and launch their own web apps.
+
+I like writing books so much that I'm pretty set on writing _Hello Web Design_, teaching design principles aimed at non-designers and programmers.
+
+**Interested in Hello Web App? [Check out the website here!](http://hellowebapp.com)**

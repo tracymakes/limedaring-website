@@ -1,0 +1,17 @@
+---
+{
+  "date": "2012-10-21",
+  "excerpt": "I wrote over on the WeddingLovely Blog about my experience being a solo, non-technical founder, and the lessons I learned on working alone as well as eventually finding a cofounder.",
+  "featuredimage": "",
+  "featured": "",
+  "author": "Tracy Osborn",
+  "external": "",
+  "title": "How to thrive as a solo non-technical founder",
+  "category": "entrepreneurship",
+  "slug": "how-to-thrive-as-a-solo-non-technical-founder"
+}
+---
+
+I wrote over on the WeddingLovely Blog about my experience being a solo, non-technical founder, and the lessons I learned on working alone as well as eventually finding a cofounder.
+
+[See the article over on the WeddingLovely Blog.](http://weddinglovely.com/blog/how-to-survive-as-a-solo-designer-founder/)

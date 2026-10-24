@@ -1,0 +1,7 @@
+---
+import { categories } from '../lib/content';
+---
+<h2 class="intro-cats">Categories</h2>
+<ul class="list-unstyled categories">
+  {categories.map(([slug,label]) => <li><a href={`/${slug}/`}>{label}</a></li>)}
+</ul>

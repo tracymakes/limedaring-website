@@ -1,0 +1,511 @@
+{
+  "articles": [
+    {
+      "slug": "allegory-on-bootstrapping",
+      "url": "/articles/allegory-on-bootstrapping/",
+      "source": "pages/articles/allegory-on-bootstrapping.html"
+    },
+    {
+      "slug": "attending-events-as-an-introvert-make-one-meaningful-connection",
+      "url": "/articles/attending-events-as-an-introvert-make-one-meaningful-connection/",
+      "source": "pages/articles/attending-events-as-an-introvert-make-one-meaningful-connection.html"
+    },
+    {
+      "slug": "building-beautiful-business-cards",
+      "url": "/articles/building-beautiful-business-cards/",
+      "source": "pages/articles/building-beautiful-business-cards.html"
+    },
+    {
+      "slug": "case-study-hello-web-app",
+      "url": "/articles/case-study-hello-web-app/",
+      "source": "pages/articles/case-study-hello-web-app.html"
+    },
+    {
+      "slug": "case-study-weddinglovely",
+      "url": "/articles/case-study-weddinglovely/",
+      "source": "pages/articles/case-study-weddinglovely.html"
+    },
+    {
+      "slug": "companies-i-appreciate",
+      "url": "/articles/companies-i-appreciate/",
+      "source": "pages/articles/companies-i-appreciate.html"
+    },
+    {
+      "slug": "conference-burnout",
+      "url": "/articles/conference-burnout/",
+      "source": "pages/articles/conference-burnout.html"
+    },
+    {
+      "slug": "creative-storytelling-the-most-dangerous-thing-ive-ever-done",
+      "url": "/articles/creative-storytelling-the-most-dangerous-thing-ive-ever-done/",
+      "source": "pages/articles/creative-storytelling-the-most-dangerous-thing-ive-ever-done.html"
+    },
+    {
+      "slug": "crowdspring",
+      "url": "/articles/crowdspring/",
+      "source": "pages/articles/crowdspring.html"
+    },
+    {
+      "slug": "dont-settle-for-easy",
+      "url": "/articles/dont-settle-for-easy/",
+      "source": "pages/articles/dont-settle-for-easy.html"
+    },
+    {
+      "slug": "essential-services-your-startup-should-use-especially-if-youre-bootstrapped",
+      "url": "/articles/essential-services-your-startup-should-use-especially-if-youre-bootstrapped/",
+      "source": "pages/articles/essential-services-your-startup-should-use-especially-if-youre-bootstrapped.html"
+    },
+    {
+      "slug": "external-conference-proposal-rejections",
+      "url": "/articles/external-conference-proposal-rejections/",
+      "source": "pages/articles/external-conference-proposal-rejections.html"
+    },
+    {
+      "slug": "external-dangerous-thing",
+      "url": "/articles/external-dangerous-thing/",
+      "source": "pages/articles/external-dangerous-thing.html"
+    },
+    {
+      "slug": "external-django-form",
+      "url": "/articles/external-django-form/",
+      "source": "pages/articles/external-django-form.html"
+    },
+    {
+      "slug": "external-hello-web-design-launch",
+      "url": "/articles/external-hello-web-design-launch/",
+      "source": "pages/articles/external-hello-web-design-launch.html"
+    },
+    {
+      "slug": "external-hwa-economics",
+      "url": "/articles/external-hwa-economics/",
+      "source": "pages/articles/external-hwa-economics.html"
+    },
+    {
+      "slug": "external-hwa-ks-regret",
+      "url": "/articles/external-hwa-ks-regret/",
+      "source": "pages/articles/external-hwa-ks-regret.html"
+    },
+    {
+      "slug": "external-hwa-self-published",
+      "url": "/articles/external-hwa-self-published/",
+      "source": "pages/articles/external-hwa-self-published.html"
+    },
+    {
+      "slug": "external-inbox-quiet",
+      "url": "/articles/external-inbox-quiet/",
+      "source": "pages/articles/external-inbox-quiet.html"
+    },
+    {
+      "slug": "external-mrr-stripe",
+      "url": "/articles/external-mrr-stripe/",
+      "source": "pages/articles/external-mrr-stripe.html"
+    },
+    {
+      "slug": "external-new-hello-web-books-website",
+      "url": "/articles/external-new-hello-web-books-website/",
+      "source": "pages/articles/external-new-hello-web-books-website.html"
+    },
+    {
+      "slug": "external-nondesigners-1",
+      "url": "/articles/external-nondesigners-1/",
+      "source": "pages/articles/external-nondesigners-1.html"
+    },
+    {
+      "slug": "external-nondesigners-2",
+      "url": "/articles/external-nondesigners-2/",
+      "source": "pages/articles/external-nondesigners-2.html"
+    },
+    {
+      "slug": "external-nondesigners-3",
+      "url": "/articles/external-nondesigners-3/",
+      "source": "pages/articles/external-nondesigners-3.html"
+    },
+    {
+      "slug": "external-password-change",
+      "url": "/articles/external-password-change/",
+      "source": "pages/articles/external-password-change.html"
+    },
+    {
+      "slug": "external-product-hunt-launch",
+      "url": "/articles/external-product-hunt-launch/",
+      "source": "pages/articles/external-product-hunt-launch.html"
+    },
+    {
+      "slug": "external-selling-weddinglovely",
+      "url": "/articles/external-selling-weddinglovely/",
+      "source": "pages/articles/external-selling-weddinglovely.html"
+    },
+    {
+      "slug": "external-shipping-fulfillment",
+      "url": "/articles/external-shipping-fulfillment/",
+      "source": "pages/articles/external-shipping-fulfillment.html"
+    },
+    {
+      "slug": "external-technical-writing",
+      "url": "/articles/external-technical-writing/",
+      "source": "pages/articles/external-technical-writing.html"
+    },
+    {
+      "slug": "external-third-kickstarter",
+      "url": "/articles/external-third-kickstarter/",
+      "source": "pages/articles/external-third-kickstarter.html"
+    },
+    {
+      "slug": "hacking-your-week-the-28-hour-day",
+      "url": "/articles/hacking-your-week-the-28-hour-day/",
+      "source": "pages/articles/hacking-your-week-the-28-hour-day.html"
+    },
+    {
+      "slug": "hello-web-app-2-0-kickstarter",
+      "url": "/articles/hello-web-app-2-0-kickstarter/",
+      "source": "pages/articles/hello-web-app-2-0-kickstarter.html"
+    },
+    {
+      "slug": "hello-web-app-the-process-and-outcome",
+      "url": "/articles/hello-web-app-the-process-and-outcome/",
+      "source": "pages/articles/hello-web-app-the-process-and-outcome.html"
+    },
+    {
+      "slug": "hello-web-app-will-be-released-may-4th-pre-orders-now-open",
+      "url": "/articles/hello-web-app-will-be-released-may-4th-pre-orders-now-open/",
+      "source": "pages/articles/hello-web-app-will-be-released-may-4th-pre-orders-now-open.html"
+    },
+    {
+      "slug": "hello-web-design-kickstarter",
+      "url": "/articles/hello-web-design-kickstarter/",
+      "source": "pages/articles/hello-web-design-kickstarter.html"
+    },
+    {
+      "slug": "how-i-run-a-marketplace-with-eleven-different-properties-and-5000-vendors",
+      "url": "/articles/how-i-run-a-marketplace-with-eleven-different-properties-and-5000-vendors/",
+      "source": "pages/articles/how-i-run-a-marketplace-with-eleven-different-properties-and-5000-vendors.html"
+    },
+    {
+      "slug": "how-to-thrive-as-a-solo-non-technical-founder",
+      "url": "/articles/how-to-thrive-as-a-solo-non-technical-founder/",
+      "source": "pages/articles/how-to-thrive-as-a-solo-non-technical-founder.html"
+    },
+    {
+      "slug": "i-need-to-revoke-my-css-master-card",
+      "url": "/articles/i-need-to-revoke-my-css-master-card/",
+      "source": "pages/articles/i-need-to-revoke-my-css-master-card.html"
+    },
+    {
+      "slug": "im-a-designer-who-learned-django-and-launched-her-first-webapp-in-6-weeks",
+      "url": "/articles/im-a-designer-who-learned-django-and-launched-her-first-webapp-in-6-weeks/",
+      "source": "pages/articles/im-a-designer-who-learned-django-and-launched-her-first-webapp-in-6-weeks.html"
+    },
+    {
+      "slug": "im-on-patreon",
+      "url": "/articles/im-on-patreon/",
+      "source": "pages/articles/im-on-patreon.html"
+    },
+    {
+      "slug": "interviewed-by-lincoln-loop",
+      "url": "/articles/interviewed-by-lincoln-loop/",
+      "source": "pages/articles/interviewed-by-lincoln-loop.html"
+    },
+    {
+      "slug": "its-my-birthday",
+      "url": "/articles/its-my-birthday/",
+      "source": "pages/articles/its-my-birthday.html"
+    },
+    {
+      "slug": "ive-joined-the-dreamfactory-team",
+      "url": "/articles/ive-joined-the-dreamfactory-team/",
+      "source": "pages/articles/ive-joined-the-dreamfactory-team.html"
+    },
+    {
+      "slug": "keeping-inspired-at-the-right-times",
+      "url": "/articles/keeping-inspired-at-the-right-times/",
+      "source": "pages/articles/keeping-inspired-at-the-right-times.html"
+    },
+    {
+      "slug": "lately-thoughts-on-anxiety",
+      "url": "/articles/lately-thoughts-on-anxiety/",
+      "source": "pages/articles/lately-thoughts-on-anxiety.html"
+    },
+    {
+      "slug": "moving-to-toronto-opening-up-to-new-opportunities",
+      "url": "/articles/moving-to-toronto-opening-up-to-new-opportunities/",
+      "source": "pages/articles/moving-to-toronto-opening-up-to-new-opportunities.html"
+    },
+    {
+      "slug": "multivariate-testing-know-what-works",
+      "url": "/articles/multivariate-testing-know-what-works/",
+      "source": "pages/articles/multivariate-testing-know-what-works.html"
+    },
+    {
+      "slug": "mvt-when-you-start-testing-everything",
+      "url": "/articles/mvt-when-you-start-testing-everything/",
+      "source": "pages/articles/mvt-when-you-start-testing-everything.html"
+    },
+    {
+      "slug": "my-2015-reviewed",
+      "url": "/articles/my-2015-reviewed/",
+      "source": "pages/articles/my-2015-reviewed.html"
+    },
+    {
+      "slug": "my-book-hello-web-app-has-been-released",
+      "url": "/articles/my-book-hello-web-app-has-been-released/",
+      "source": "pages/articles/my-book-hello-web-app-has-been-released.html"
+    },
+    {
+      "slug": "my-django-story-interviewed-by-django-girls",
+      "url": "/articles/my-django-story-interviewed-by-django-girls/",
+      "source": "pages/articles/my-django-story-interviewed-by-django-girls.html"
+    },
+    {
+      "slug": "on-hiring-a-virtual-assistant",
+      "url": "/articles/on-hiring-a-virtual-assistant/",
+      "source": "pages/articles/on-hiring-a-virtual-assistant.html"
+    },
+    {
+      "slug": "on-running",
+      "url": "/articles/on-running/",
+      "source": "pages/articles/on-running.html"
+    },
+    {
+      "slug": "releasing-a-new-book-and-running-another-kickstarter-campaign",
+      "url": "/articles/releasing-a-new-book-and-running-another-kickstarter-campaign/",
+      "source": "pages/articles/releasing-a-new-book-and-running-another-kickstarter-campaign.html"
+    },
+    {
+      "slug": "resolutions",
+      "url": "/articles/resolutions/",
+      "source": "pages/articles/resolutions.html"
+    },
+    {
+      "slug": "resources",
+      "url": "/articles/resources/",
+      "source": "pages/articles/resources.html"
+    },
+    {
+      "slug": "review-2016",
+      "url": "/articles/review-2016/",
+      "source": "pages/articles/review-2016.html"
+    },
+    {
+      "slug": "review-2017",
+      "url": "/articles/review-2017/",
+      "source": "pages/articles/review-2017.html"
+    },
+    {
+      "slug": "shutting-down-weddinglovely",
+      "url": "/articles/shutting-down-weddinglovely/",
+      "source": "pages/articles/shutting-down-weddinglovely.html"
+    },
+    {
+      "slug": "small-business-customer-acquisition-for-your-freemium-product-launch",
+      "url": "/articles/small-business-customer-acquisition-for-your-freemium-product-launch/",
+      "source": "pages/articles/small-business-customer-acquisition-for-your-freemium-product-launch.html"
+    },
+    {
+      "slug": "speaking-at-silicon-valley-geek-dinner",
+      "url": "/articles/speaking-at-silicon-valley-geek-dinner/",
+      "source": "pages/articles/speaking-at-silicon-valley-geek-dinner.html"
+    },
+    {
+      "slug": "stop-waiting-for-things-to-be-perfect",
+      "url": "/articles/stop-waiting-for-things-to-be-perfect/",
+      "source": "pages/articles/stop-waiting-for-things-to-be-perfect.html"
+    },
+    {
+      "slug": "stress-and-burnout",
+      "url": "/articles/stress-and-burnout/",
+      "source": "pages/articles/stress-and-burnout.html"
+    },
+    {
+      "slug": "sxswi-your-user-interface-is-your-laboratory",
+      "url": "/articles/sxswi-your-user-interface-is-your-laboratory/",
+      "source": "pages/articles/sxswi-your-user-interface-is-your-laboratory.html"
+    },
+    {
+      "slug": "take-control-of-your-email-and-achieve-inbox-zero",
+      "url": "/articles/take-control-of-your-email-and-achieve-inbox-zero/",
+      "source": "pages/articles/take-control-of-your-email-and-achieve-inbox-zero.html"
+    },
+    {
+      "slug": "talkpay-and-being-underpaid",
+      "url": "/articles/talkpay-and-being-underpaid/",
+      "source": "pages/articles/talkpay-and-being-underpaid.html"
+    },
+    {
+      "slug": "teaching-design-making-designers",
+      "url": "/articles/teaching-design-making-designers/",
+      "source": "pages/articles/teaching-design-making-designers.html"
+    },
+    {
+      "slug": "technical-co-founder-wanted-for-disrupting-the-wedding-industry",
+      "url": "/articles/technical-co-founder-wanted-for-disrupting-the-wedding-industry/",
+      "source": "pages/articles/technical-co-founder-wanted-for-disrupting-the-wedding-industry.html"
+    },
+    {
+      "slug": "the-big-web-show",
+      "url": "/articles/the-big-web-show/",
+      "source": "pages/articles/the-big-web-show.html"
+    },
+    {
+      "slug": "the-worst-enemy-to-my-startup-is-depression",
+      "url": "/articles/the-worst-enemy-to-my-startup-is-depression/",
+      "source": "pages/articles/the-worst-enemy-to-my-startup-is-depression.html"
+    },
+    {
+      "slug": "two-months-tinyseed",
+      "url": "/articles/two-months-tinyseed/",
+      "source": "pages/articles/two-months-tinyseed.html"
+    },
+    {
+      "slug": "videos-from-djangocon-kickstarter-campaign-update",
+      "url": "/articles/videos-from-djangocon-kickstarter-campaign-update/",
+      "source": "pages/articles/videos-from-djangocon-kickstarter-campaign-update.html"
+    },
+    {
+      "slug": "what-i-wish-i-did-differently-blogging",
+      "url": "/articles/what-i-wish-i-did-differently-blogging/",
+      "source": "pages/articles/what-i-wish-i-did-differently-blogging.html"
+    },
+    {
+      "slug": "what-i-wish-i-did-differently-networking",
+      "url": "/articles/what-i-wish-i-did-differently-networking/",
+      "source": "pages/articles/what-i-wish-i-did-differently-networking.html"
+    },
+    {
+      "slug": "what-i-wish-i-did-differently-self-deprecation",
+      "url": "/articles/what-i-wish-i-did-differently-self-deprecation/",
+      "source": "pages/articles/what-i-wish-i-did-differently-self-deprecation.html"
+    },
+    {
+      "slug": "what-i-wish-i-did-differently-self-promotion",
+      "url": "/articles/what-i-wish-i-did-differently-self-promotion/",
+      "source": "pages/articles/what-i-wish-i-did-differently-self-promotion.html"
+    },
+    {
+      "slug": "what-ive-been-up-to-lately",
+      "url": "/articles/what-ive-been-up-to-lately/",
+      "source": "pages/articles/what-ive-been-up-to-lately.html"
+    },
+    {
+      "slug": "when-im-the-only-woman-at-an-event",
+      "url": "/articles/when-im-the-only-woman-at-an-event/",
+      "source": "pages/articles/when-im-the-only-woman-at-an-event.html"
+    },
+    {
+      "slug": "why-i-shut-down-weddinglovely",
+      "url": "/articles/why-i-shut-down-weddinglovely/",
+      "source": "pages/articles/why-i-shut-down-weddinglovely.html"
+    },
+    {
+      "slug": "why-im-an-entrepreneur",
+      "url": "/articles/why-im-an-entrepreneur/",
+      "source": "pages/articles/why-im-an-entrepreneur.html"
+    },
+    {
+      "slug": "why-we-need-events-like-the-female-founders-conference",
+      "url": "/articles/why-we-need-events-like-the-female-founders-conference/",
+      "source": "pages/articles/why-we-need-events-like-the-female-founders-conference.html"
+    },
+    {
+      "slug": "why-weddinglovely-releases-a-print-product-and-how-we-do-it",
+      "url": "/articles/why-weddinglovely-releases-a-print-product-and-how-we-do-it/",
+      "source": "pages/articles/why-weddinglovely-releases-a-print-product-and-how-we-do-it.html"
+    },
+    {
+      "slug": "work-relationship-status-single",
+      "url": "/articles/work-relationship-status-single/",
+      "source": "pages/articles/work-relationship-status-single.html"
+    },
+    {
+      "slug": "writing-clearly",
+      "url": "/articles/writing-clearly/",
+      "source": "pages/articles/writing-clearly.html"
+    }
+  ],
+  "pages": [
+    {
+      "slug": "about",
+      "url": "/about/",
+      "source": "pages/about.html"
+    },
+    {
+      "slug": "articles",
+      "url": "/articles/",
+      "source": "pages/articles.html"
+    },
+    {
+      "slug": "authorship",
+      "url": "/authorship/",
+      "source": "pages/authorship.html"
+    },
+    {
+      "slug": "contact",
+      "url": "/contact/",
+      "source": "pages/contact.html"
+    },
+    {
+      "slug": "design",
+      "url": "/design/",
+      "source": "pages/design.html"
+    },
+    {
+      "slug": "development",
+      "url": "/development/",
+      "source": "pages/development.html"
+    },
+    {
+      "slug": "entrepreneurship",
+      "url": "/entrepreneurship/",
+      "source": "pages/entrepreneurship.html"
+    },
+    {
+      "slug": "error",
+      "url": "/error/",
+      "source": "pages/error.html"
+    },
+    {
+      "slug": "howto",
+      "url": "/howto/",
+      "source": "pages/howto.html"
+    },
+    {
+      "slug": "index",
+      "url": "/",
+      "source": "pages/index.html"
+    },
+    {
+      "slug": "onspeaking",
+      "url": "/onspeaking/",
+      "source": "pages/onspeaking.html"
+    },
+    {
+      "slug": "outdoorsy",
+      "url": "/outdoorsy/",
+      "source": "pages/outdoorsy.html"
+    },
+    {
+      "slug": "personal",
+      "url": "/personal/",
+      "source": "pages/personal.html"
+    },
+    {
+      "slug": "speaking",
+      "url": "/speaking/",
+      "source": "pages/speaking.html"
+    },
+    {
+      "slug": "uses",
+      "url": "/uses/",
+      "source": "pages/uses.html"
+    },
+    {
+      "slug": "women-in-tech",
+      "url": "/women-in-tech/",
+      "source": "pages/women-in-tech.html"
+    },
+    {
+      "slug": "work",
+      "url": "/work/",
+      "source": "pages/work.html"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+---
+{
+  "date": "2015-09-24",
+  "featuredimage": "",
+  "featured": "",
+  "author": "Tracy Osborn",
+  "excerpt": "I spoke twice at DjangoCon US (not counting my tutorial/workshop!) as well as a quick Kickstarter campaign update.",
+  "title": "Videos from DjangoCon + Kickstarter campaign update!",
+  "external": "",
+  "category": "speaking, authorship",
+  "slug": "videos-from-djangocon-kickstarter-campaign-update"
+}
+---
+
+A bunch of awesome videos from DjangoCon have been posted! Unfortunately my tutorial was not recorded but I received nothing but awesome feedback from the students.
+
+I spoke on the authors panel:
+
+
+
+
+<figure class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ulv_ygVuhwI" frameborder="0" allowfullscreen></iframe>
+</figure>
+
+
+
+I also spoke briefly about the (still ongoing!) Hello Web App: Intermediate Concepts Kickstarter campaign:
+
+
+
+
+<figure class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/c27VZqTDWLw" frameborder="0" allowfullscreen></iframe>
+</figure>
+
+
+
+DjangoCon US raised the bar for conferences for me (both DjangoCon's really, DjangoCon EU and this one!) It was a really great time and I highly recommend everyone to go to next years.
+
+In other news!
+
+The Kickstarter Campaign is still running, **[you have 10 days left to pre-order your copy of Hello Web App: Intermediate Concepts!](https://www.kickstarter.com/projects/1868398473/hello-web-app-intermediate-concepts)**
+
+The campaign got funded SO FAST so I added a ton of stretch goals. Think I could get to $20,000? Wouldn't that be _absolutely amazing?_
+
+**Join the Hello Web App Kickstarter here!**
+
+[https://www.kickstarter.com/projects/1868398473/hello-web-app-intermediate-concepts](https://www.kickstarter.com/projects/1868398473/hello-web-app-intermediate-concepts)

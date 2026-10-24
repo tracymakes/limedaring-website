@@ -1,0 +1,44 @@
+---
+{
+  "date": "2010-07-27",
+  "featuredimage": "",
+  "featured": "",
+  "author": "Tracy Osborn",
+  "excerpt": "Hi, my name is Tracy. The wedding industry is huge, overpriced, and with insane profit margins. I’m looking to disrupt it with WeddingType",
+  "title": "Technical co-founder wanted for disrupting the wedding industry",
+  "external": "",
+  "category": "entrepreneurship",
+  "slug": "technical-co-founder-wanted-for-disrupting-the-wedding-industry"
+}
+---
+
+<figure>
+    <img src="/static/images/blog/tracy.jpeg" alt="" />
+</figure>
+
+
+
+Hi, my name is Tracy. The wedding industry is huge, overpriced, and with insane profit margins. I’m looking to disrupt it with WeddingType.
+
+In wedding invitations alone, there are two options: spend hundreds of dollars for custom designed invitations (expensive but pretty), or do-it-yourself (cheap but ugly). I want to build a web application catering to the price sensitive couples who have an aversion to Comic Sans.
+
+A do-it-yourself wedding invitation kit costs $45, while professional wedding invitations are hundreds or thousands of dollars. With WeddingType, the service will guide the user through a constrained flow of inputs which will populate a set of pre-designed templates with professional typography that they can print out and get hitched. The completely automated service will charge $25 and send the user a PDF by email.
+
+My goal is to get this out really fast and start making revenue from the start, then see how big we can grow it. From here, there are multiple ways of increasing value and revenue — licensing to wedding invitation template manufacturers, selling custom design solutions, offering templates through the site, etc. Large scale, could sell templates through the site, printing and mailing like Moo.com.
+
+![](/static/images/blog/weddingtype.png)
+
+I freelanced and worked at a startup for five years as the primary designer/jack-of-all-trades for everything relating to their web properties, including analytics, usability, design, HTML/CSS, and multivariate/AB testing. I need a technical partner who is enthusiastic about the business and a web programming whiz. Preferably in the Bay Area, and if everything goes right, we’ll apply to Y Combinator for the next Winter session.  
+
+
+Intrigued? I’d love to meet you, perhaps work on a small project together.
+
+### Find out more about me:
+
+  * [http://limedaring.com](https://tracy-osborn.squarespace.com/)
+  * [@limedaring](http://twitter.com/tracymakes)
+  * [http://www.linkedin.com/in/tracyosborn](http://www.linkedin.com/in/tracyosborn)
+
+Ping me at [tracy@limedaring.com](mailto:tracy@limedaring.com) if you’re interested in my idea and would like to meet for coffee to discuss!
+
+**The position has been filled! Keep track of updates at my startup, [WeddingLovely](http://weddinglovely.com/)**

@@ -1,0 +1,230 @@
+---
+import Base from '../layouts/Base.astro';
+import {posts,dateLabel} from '../lib/content';
+const {variant='work', production=false} = Astro.props;
+const homeUrl=production ? '/' : variant==='story' ? '/mockups/story/' : '/mockups/';
+const archiveUrl=production ? '/articles/' : '/mockups/archive/';
+const story=variant==='story';
+const picks=['why-i-shut-down-weddinglovely','how-i-run-a-marketplace-with-eleven-different-properties-and-5000-vendors','on-hiring-a-virtual-assistant'].map(slug=>posts.find(p=>p.slug===slug)!);
+---
+<Base description="Tracy Osborn is a designer, former startup founder, and general manager at TinySeed and MicroConf." title={production ? "Tracy Osborn — Designer & startup founder" : `Tracy Osborn — ${story?'Story first':'Work first'} homepage mockup`} bodyClass={story ? "homepage-mockup story-typography" : "homepage-mockup"} width="col-lg-10 col-lg-offset-1" noindex={!production} navigation={[[`${homeUrl}#work`,"Current work"],[archiveUrl,"Writing archive"]]}>
+  <Fragment slot="head">{story && <link rel="stylesheet" href="/static/home/fonts/display.css"/>}</Fragment>
+  <Fragment slot="preview-bar">{!production && <div class="mockup-switcher" aria-label="Homepage mockups">
+    <span>Homepage directions</span>
+    <a href="/mockups/" aria-current={!story?'page':undefined}>A · Work first</a>
+    <a href="/mockups/story/" aria-current={story?'page':undefined}>B · Story first</a>
+    <a href="/">Homepage ↗</a>
+  </div>}</Fragment>
+  <div slot="intro" class:list={['mockup-intro',{'story-intro':story}]}>
+    {story ? <>
+      <h1 class="sr-only">Tracy Osborn</h1>
+      <div><h2 class="intro-description">I’m a designer and former startup founder. I’m now the general manager at <a href="https://tinyseed.com/">TinySeed</a> and <a href="https://microconf.com/">MicroConf</a>.</h2></div>
+    </> : <>
+      <h1>Tracy Osborn</h1>
+      <div><p class="intro-description">is a designer, former founder, and general manager at <a href="https://tinyseed.com/">TinySeed</a> &amp; <a href="https://microconf.com/">MicroConf</a>.</p>
+      <p class="intro-note">Building things. Helping people. Figuring it out along the way.</p></div>
+    </>}
+  </div>
+  <div class:list={['mockup-content',{'story-first':story}]}>
+    {story ? <>
+      <div class="career-thread" id="work">
+        <section class="thread-entry"><div>
+          <h2>TinySeed <em class="type-amp">&amp;</em> MicroConf</h2><p class="role-note">General Manager</p>
+          <p>I joined TinySeed in 2019 to help build its accelerator. My role has grown since then, and I now lead operations across TinySeed and MicroConf.</p>
+          <p>TinySeed invests in bootstrapped software companies. MicroConf runs events and a community for independent founders.</p>
+          <p class="text-links"><a href="https://tinyseed.com/">TinySeed <span aria-hidden="true">↗</span></a><a href="https://microconf.com/">MicroConf <span aria-hidden="true">↗</span></a></p>
+        </div></section>
+        <section class="thread-entry"><div>
+          <h2>WeddingLovely</h2><p class="role-note">Founder, designer &amp; developer · 500 Startups alum</p>
+          <p>WeddingLovely was my startup: a directory of wedding vendors and a wedding planning app. I designed it, taught myself Python and Django to build it, and ran it for eight years.</p>
+          <p>I shut it down in 2018. I wrote about the business while I was running it, and later about why I decided to close it.</p>
+          <a class="quiet-image" href="/articles/case-study-weddinglovely/"><img src="/static/images/blog/weddinglovely.jpeg" width="750" height="425" alt="The WeddingLovely wedding planning website" loading="lazy"/></a>
+          <p class="text-links"><a href="/articles/case-study-weddinglovely/">WeddingLovely case study <span aria-hidden="true">→</span></a><a href="/articles/why-i-shut-down-weddinglovely/">Why I shut it down <span aria-hidden="true">→</span></a></p>
+        </div></section>
+        <section class="thread-entry"><div>
+          <h2>Hello Web Books</h2><p>I wrote and designed <a href="https://nostarch.com/hello-web-design">Hello Web Design</a> and the two <a href="https://hellowebbooks.com/">Hello Web App</a> books about building web apps with Python and Django.</p>
+          <p>They grew out of teaching myself to code and wanting a less intimidating way for other people to get started.</p>
+        </div></section>
+      </div>
+    </> : <>
+      <section id="work" class="current-work" aria-labelledby="work-heading">
+        <div class="section-heading"><p class="sm-header">What I’m working on</p><h2 id="work-heading">Helping independent founders<br class="desktop-break"/> build on their own terms.</h2></div>
+        <p class="section-lead">I lead operations across TinySeed and MicroConf, bringing together my background in design, product, and building a company.</p>
+        <div class="current-organizations">
+          <article><h3><a href="https://tinyseed.com/">TinySeed</a></h3><p>Funding, mentorship, and support for ambitious, capital-efficient SaaS founders.</p><a class="small-link" href="https://tinyseed.com/">Meet TinySeed <span aria-hidden="true">↗</span></a></article>
+          <article><h3><a href="https://microconf.com/">MicroConf</a></h3><p>Community, events, and resources for founders building without traditional venture capital.</p><a class="small-link" href="https://microconf.com/">MicroConf <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </section>
+      <hr class="chapter-divider"/>
+      <section class="founder-chapter" aria-labelledby="founder-heading">
+        <div><p class="sm-header">Before that, I was the founder</p><h2 id="founder-heading">WeddingLovely</h2>
+          <p>I founded, designed, and built a wedding vendor marketplace and planning app, taught myself Python and Django along the way, and joined 500 Startups.</p>
+          <p>After eight years, I shut it down in 2018. The experience of building a business—good parts, hard parts, and all—is still central to the work I do today.</p>
+          <p class="text-links"><a href="/articles/case-study-weddinglovely/">What I built <span aria-hidden="true">→</span></a><a href="/articles/why-i-shut-down-weddinglovely/">What I learned <span aria-hidden="true">→</span></a></p>
+        </div>
+        <figure><a href="/articles/case-study-weddinglovely/"><img src="/static/images/blog/weddinglovely.jpeg" width="750" height="425" alt="The WeddingLovely wedding planning website" loading="lazy"/></a><figcaption>A past business. A lot of lessons.</figcaption></figure>
+      </section>
+      <section class="books-footnote" aria-labelledby="books-heading"><img src="/static/home/hello-web-design-cover.webp" alt="Hello Web Design book cover" width="70" height="114" loading="lazy"/><div><p class="sm-header">Also on my bookshelf</p><h2 id="books-heading">Hello Web Books</h2><p>I wrote and designed <a href="https://nostarch.com/hello-web-design">Hello Web Design</a> and the <a href="https://hellowebbooks.com/">Hello Web App</a> books. An earlier chapter of my work, rooted in making design and development more approachable.</p></div></section>
+    </>}
+    <section class="archive-chapter" aria-labelledby="archive-heading">
+      <div class="archive-heading"><div>{!story && <p class="sm-header">Writing, kept here</p>}<h2 id="archive-heading">{story ? "Writing archive" : "Notes from the journey."}</h2></div><a class="small-link" href={archiveUrl}>All {posts.length} articles <span aria-hidden="true">→</span></a></div>
+      <p class="archive-description">{story ? "Most of these posts are from when I was running WeddingLovely and writing the books. I’ve kept them here, including the ones originally published elsewhere." : "An archive of building, bootstrapping, design, and learning as I went. A few places to start:"}</p>
+      <ul class="selected-writing">{picks.map(post=><li><span>{dateLabel(post.date)}</span><a href={post.url}>{post.title}<span aria-hidden="true"> →</span></a></li>)}</ul>
+    </section>
+    <section class="say-hello"><h2>{story ? "Email me" : "Say hello."}</h2>{!story && <p>I’ve always liked a good conversation.</p>}<a href="mailto:tracy@tracymakes.com">tracy@tracymakes.com <span aria-hidden="true">↗</span></a></section>
+  </div>
+  <footer slot="footer" class="mockup-footer"><a href={homeUrl}>Current work</a><a href={archiveUrl}>Writing archive</a><a href="mailto:tracy@tracymakes.com">Email</a>{!story && <span>Tracy Osborn</span>}</footer>
+</Base>
+<style is:global>
+  .homepage-mockup { color:#666; }
+  .homepage-mockup #content { width:100%;float:none;padding:0;margin-top:0; }
+  .mockup-switcher {display:flex;justify-content:center;align-items:center;gap:24px;flex-wrap:wrap;padding:12px 20px;border-bottom:1px solid #eee;font:400 12px/1.5 Lato,sans-serif;}
+  .mockup-switcher span {color:#888;}
+  .mockup-switcher a {color:#777;text-decoration:none;font-weight:400;}
+  .mockup-switcher a[aria-current=page] {color:#6b790d;text-decoration:underline;text-underline-offset:5px;}
+  .mockup-intro {display:grid;grid-template-columns:1fr 2fr;gap:35px;align-items:start;max-width:790px;margin:80px auto 70px;}
+  .mockup-intro h1 {font-family:Lora,Georgia,serif;font-size:1.9rem;font-style:italic;text-align:right;margin:1px 0;line-height:1.4;}
+  .mockup-intro .intro-description {font-family:Lora,Georgia,serif;font-style:italic;font-size:1.2rem;line-height:1.65;margin:0;}
+  .mockup-intro .intro-description a {color:inherit;font-weight:400;text-decoration:underline;text-decoration-color:#c3cc81;text-underline-offset:4px;}
+  .mockup-intro .intro-note {font-size:.85rem;line-height:1.65;margin:15px 0 0;color:#999;}
+  .mockup-content {max-width:900px;margin:auto;}
+  .mockup-content .sm-header {font-size:.75rem;letter-spacing:.14em;color:#888;margin:0 0 18px;}
+  .mockup-content h2 {font-family:Lora,Georgia,serif;font-weight:400;font-size:2rem;line-height:1.42;margin:0 0 22px;color:#333;}
+  .mockup-content p {font-size:1.08rem;line-height:1.8;}
+  .mockup-content a {text-underline-offset:4px;}
+  .current-work {padding-top:42px;border-top:1px solid #e8e8e3;}
+  .section-lead {max-width:680px;}
+  .current-organizations {display:grid;grid-template-columns:1fr 1fr;gap:65px;margin-top:35px;}
+  .current-organizations article {border-top:2px solid #d9dfae;padding-top:8px;}
+  .current-organizations h3 {font:400 1.55rem/1.4 Lora,Georgia,serif;margin:18px 0 12px;}
+  .current-organizations h3 a {color:#333;text-decoration:none;font-weight:400;}
+  .current-organizations p {font-size:1rem;margin:0 0 12px;}
+  .small-link {font-size:.83rem;}
+  .mockup-content hr.chapter-divider {width:145px;border-top:4px solid #eee;margin:68px auto;}
+  .founder-chapter {display:grid;grid-template-columns:1.35fr 1fr;gap:50px;align-items:center;}
+  .founder-chapter p {font-size:1rem;}
+  .founder-chapter figure {margin:25px 0 0;}
+  .founder-chapter img {width:100%;height:auto;border:1px solid #eee;}
+  .founder-chapter figcaption {font-size:.65rem;text-align:center;letter-spacing:.09em;line-height:1.7;margin-top:10px;}
+  .text-links {display:flex;flex-wrap:wrap;gap:24px;font-size:.88rem!important;margin-top:24px;}
+  .books-footnote {display:grid;grid-template-columns:70px 1fr;gap:28px;border-top:1px solid #eee;padding-top:35px;margin-top:58px;align-items:center;}
+  .books-footnote .sm-header {margin-bottom:9px;}
+  .books-footnote h2 {font-size:1.35rem;margin-bottom:8px;}
+  .books-footnote p:last-child {font-size:.95rem;margin:0;}
+  .books-footnote img {height:auto;width:70px;}
+  .archive-chapter {border-top:1px solid #e8e8e3;margin-top:65px;padding-top:42px;}
+  .archive-heading {display:flex;align-items:center;justify-content:space-between;gap:25px;}
+  .archive-heading h2 {font-size:1.7rem;margin-bottom:0;}
+  .archive-description {font-size:1rem!important;max-width:660px;}
+  .selected-writing {list-style:none;padding:0;margin:28px 0 0;}
+  .selected-writing li {display:grid;grid-template-columns:130px 1fr;gap:24px;padding:18px 0;border-top:1px solid #eee;margin:0;}
+  .selected-writing li>span {font-size:.76rem;color:#999;line-height:1.9;}
+  .selected-writing a {font:400 1.05rem/1.65 Lora,Georgia,serif;color:#555;text-decoration:none;}
+  .selected-writing a:hover {color:#7b8914;text-decoration:underline;}
+  .say-hello {text-align:center;padding:72px 0 10px;}
+  .say-hello h2 {font-size:1.75rem;font-style:italic;margin-bottom:7px;}
+  .say-hello p {font-size:1rem;margin:0 0 12px;}
+  .say-hello a {font-size:.95rem;}
+  .mockup-footer {max-width:900px;margin:65px auto 35px;padding:22px 20px;border-top:1px solid #eee;display:flex;justify-content:center;gap:28px;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;}
+  .mockup-footer a {color:#999;text-decoration:none;font-weight:400;}
+  .mockup-footer span {color:#bbb;}
+  .story-intro {margin-bottom:60px;}
+  .story-opening {border-top:1px solid #e8e8e3;padding:42px 0 32px;max-width:760px;}
+  .story-opening h2 {font-size:2.4rem;line-height:1.4;}
+  .story-opening p:last-child {max-width:640px;}
+  .career-thread {margin-top:18px;border-top:1px solid #e8e8e3;padding-top:42px;}
+  .thread-entry {max-width:700px;}
+  .thread-entry>div:last-child {padding:0 0 50px;}
+  .thread-entry h2 {font-size:1.65rem;margin-bottom:5px;}
+  .thread-entry p {font-size:1rem;}
+  .role-note {font-size:.8rem!important;color:#999;margin:5px 0 20px;}
+  .quiet-image {display:block;max-width:410px;margin-top:25px;}
+  .quiet-image img {width:100%;height:auto;border:1px solid #eee;}
+  .small-note {font-size:.88rem!important;color:#888;}
+  .thread-entry:last-child>div {padding-bottom:0;}
+  @media(min-width:1200px){.homepage-mockup .container {max-width:1200px;}}
+  @media(max-width:767px){
+    .mockup-switcher {gap:12px;font-size:11px;padding:10px 14px;}
+    .mockup-switcher>span {display:none;}
+    .mockup-intro {display:block;text-align:center;margin:45px auto;max-width:470px;}
+    .mockup-intro h1 {text-align:center;margin-bottom:16px;}
+    .mockup-intro .intro-description {font-size:1.12rem;}
+    .mockup-intro .intro-note {font-size:.8rem;}
+    .mockup-content {padding:0 12px;}
+    .mockup-content h2 {font-size:1.7rem;}
+    .desktop-break {display:none;}
+    .current-work,.story-opening {padding-top:30px;}
+    .current-organizations {gap:30px;margin-top:28px;}
+    .founder-chapter {grid-template-columns:1fr;gap:12px;}
+    .founder-chapter figure {max-width:460px;margin:5px 0 0;}
+    .mockup-content hr.chapter-divider {margin:45px auto;}
+    .books-footnote {margin-top:38px;gap:20px;}
+    .archive-chapter {margin-top:45px;padding-top:30px;}
+    .archive-heading {align-items:flex-start;flex-direction:column;gap:15px;}
+    .archive-heading h2 {font-size:1.6rem;}
+    .selected-writing li {grid-template-columns:1fr;gap:4px;padding:16px 0;}
+    .say-hello {padding-top:45px;}
+    .mockup-footer {gap:17px;flex-wrap:wrap;margin-top:40px;}
+    .mockup-footer span {display:none;}
+    .story-opening h2 {font-size:1.95rem;}
+    .thread-entry {padding-left:0;}
+    .thread-entry>div:last-child {padding-bottom:35px;}
+  }
+  @media(max-width:440px){.current-organizations {grid-template-columns:1fr;gap:24px;}.books-footnote {grid-template-columns:50px 1fr;gap:17px;}.books-footnote img {width:50px;}.books-footnote h2 {font-size:1.2rem;}}
+  /* A more expressive display face, with the original Lato for reading. */
+  .story-typography {font-kerning:normal;text-rendering:optimizeLegibility;}
+  .story-typography .story-intro {grid-template-columns:1fr 1.65fr;gap:52px;align-items:center;max-width:860px;margin:78px auto 76px;}
+  .story-typography .story-intro h1 {font-family:'Cormorant Garamond',Lora,Georgia,serif;font-size:clamp(3.4rem,5vw,4.6rem);font-style:normal;font-weight:400;line-height:.95;letter-spacing:-.045em;text-align:left;color:#35382c;}
+  .story-typography .story-intro h1 span,.story-typography .story-intro h1 em {display:block;}
+  .story-typography .story-intro h1 em {font-weight:400;}
+  .story-typography .story-intro .intro-description {font-family:Lora,Georgia,serif;font-size:1.44rem;font-style:normal;line-height:1.55;letter-spacing:-.018em;color:#55594d;}
+  .story-typography .story-intro .intro-description a {font-style:italic;text-decoration-thickness:1px;text-underline-offset:5px;}
+  .story-typography .career-thread {padding-top:49px;}
+  .story-typography .thread-entry {max-width:740px;}
+  .story-typography .thread-entry>div:last-child {padding-bottom:68px;}
+  .story-typography .thread-entry h2,.story-typography .archive-heading h2,.story-typography .say-hello h2 {font-family:'Cormorant Garamond',Lora,Georgia,serif;font-size:2.65rem;line-height:1.12;letter-spacing:-.025em;color:#35382c;margin-bottom:15px;font-weight:400;}
+  .story-typography .type-amp {color:#8a9a0f;font-weight:400;padding:0 .03em;}
+  .story-typography .thread-entry p {font-size:1.2rem;line-height:1.78;font-weight:300;max-width:44rem;}
+  .story-typography .role-note {font-size:.9rem!important;line-height:1.6;letter-spacing:.015em;margin:0 0 24px;color:#888d7e;}
+  .story-typography .text-links {font-size:1rem!important;gap:30px;margin-top:28px;}
+  .story-typography .text-links a {text-decoration-thickness:1px;text-underline-offset:5px;}
+  .story-typography .quiet-image {max-width:460px;margin-top:30px;}
+  .story-typography .archive-chapter {margin-top:70px;padding-top:48px;}
+  .story-typography .archive-heading h2 {margin-bottom:0;}
+  .story-typography .archive-description {font-size:1.2rem!important;line-height:1.78;font-weight:300;max-width:44rem;}
+  .story-typography .small-link {font-size:.96rem;}
+  .story-typography .selected-writing li {grid-template-columns:135px 1fr;padding:23px 0;}
+  .story-typography .selected-writing li>span {font-size:.85rem;font-variant-numeric:oldstyle-nums;}
+  .story-typography .selected-writing a {font-size:1.26rem;line-height:1.5;letter-spacing:-.015em;}
+  .story-typography .say-hello {padding-top:84px;}
+  .story-typography .say-hello h2 {font-size:3.25rem;font-style:italic;}
+  .story-typography .say-hello>a {font-size:1.14rem;}
+  @media(max-width:767px){
+    .story-typography .story-intro {display:block;margin:52px auto 50px;max-width:500px;}
+    .story-typography .story-intro h1 {font-size:3.7rem;text-align:center;line-height:1.12;margin:0 0 24px;}
+    .story-typography .story-intro h1 span,.story-typography .story-intro h1 em {display:inline;}
+    .story-typography .story-intro .intro-description {font-size:1.32rem;line-height:1.6;}
+    .story-typography .career-thread {padding-top:34px;}
+    .story-typography .thread-entry h2,.story-typography .archive-heading h2 {font-size:2.35rem;}
+    .story-typography .thread-entry p,.story-typography .archive-description {font-size:1.14rem!important;line-height:1.75;}
+    .story-typography .role-note {font-size:.86rem!important;}
+    .story-typography .thread-entry>div:last-child {padding-bottom:45px;}
+    .story-typography .thread-entry:last-child>div {padding-bottom:0;}
+    .story-typography .selected-writing li {grid-template-columns:1fr;gap:8px;}
+    .story-typography .selected-writing a {font-size:1.16rem;}
+    .story-typography .archive-chapter {margin-top:50px;padding-top:35px;}
+    .story-typography .say-hello {padding-top:55px;}
+  }
+  /* Short ochre strokes mark the chapters without dividing the whole page. */
+  .story-typography .career-thread,.story-typography .archive-chapter,.story-typography .selected-writing li,.story-typography .mockup-footer,.story-typography .mockup-switcher {border-top:0;border-bottom:0;}
+  .story-typography .career-thread,.story-typography .archive-chapter {padding-top:0;}
+  .story-typography .thread-entry::before,.story-typography .archive-chapter::before,.story-typography .say-hello::before {content:"";display:block;width:48px;height:3px;background:#c59b3d;margin:0 0 29px;border-radius:1px;}
+  .story-typography .say-hello {text-align:left;padding-top:64px;}
+  @media(max-width:767px){
+    .story-typography .thread-entry::before,.story-typography .archive-chapter::before,.story-typography .say-hello::before {width:42px;height:3px;margin-bottom:24px;}
+    .story-typography .say-hello {padding-top:45px;}
+  }
+  .story-typography .story-intro {display:block;max-width:720px;text-align:center;}
+  .story-typography .story-intro .intro-description {font-weight:400;}
+  @media(max-width:767px){.story-typography .story-intro {max-width:500px;}}
+</style>

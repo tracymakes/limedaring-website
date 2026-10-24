@@ -1,0 +1,25 @@
+---
+{
+  "date": "2010-05-18",
+  "featuredimage": "",
+  "featured": "",
+  "author": "Tracy Osborn",
+  "excerpt": "As of this Monday, I have officially left my position as Lead Graphic and Optimization Manager at Remilon to enter the wilds as one of the \"funemployed\". Working at Remilon was an invaluable experience, but it's time for me to spread my wings and try new things.",
+  "title": "Work relationship status: single",
+  "external": "",
+  "category": "personal",
+  "slug": "work-relationship-status-single"
+}
+---
+
+As of this Monday, I have officially left my position as Lead Graphic & Optimization Manager at [Remilon](http://remilon.com) to enter the wilds as one of the "funemployed". Working at Remilon was an invaluable experience, but it's time for me to spread my wings and try new things.
+
+One of my major goals of this summer is to expand my experience with working with fun projects, fun people, and new companies. I'm not looking for full-time work at the moment, rather, small part-time projects with companies, especially start-ups, around the Bay Area (but if you want me to work pro-bono in exchange for transportation/room/board, I'll fly anywhere in the world).
+
+Contact me at tracy@limedaring.com with project details (or just to say hello!).
+
+This is the most exciting time in my life, and I'm looking forward to the next few months.
+
+[♥ T](http://twitter.com/tracymakes)
+
+**EDIT**: I have started the search for a [cofounder for my startup idea](/blog/technical-co-founder-wanted-for-disrupting-the-wedding-industry) and will be putting freelancing on hold for the time being. However, I'm still available to be flown out to work on design (as mentioned above), but can only allocate a week at a time. If you're interested, send me an email and let me know!

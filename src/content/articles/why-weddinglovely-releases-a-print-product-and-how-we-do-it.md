@@ -1,0 +1,17 @@
+---
+{
+  "date": "2012-11-08",
+  "featuredimage": "",
+  "featured": "",
+  "excerpt": "I wrote over on the WeddingLovely Blog on why we release a print product (our bi-yearly WeddingLovely Lookbook) and how we do it with a very limited team and time.",
+  "author": "tracy@limedaring.com",
+  "title": "Why WeddingLovely releases a print product, and how we do it",
+  "external": "",
+  "category": "entrepreneurship",
+  "slug": "why-weddinglovely-releases-a-print-product-and-how-we-do-it"
+}
+---
+
+I wrote over on the WeddingLovely Blog on why we release a print product (our bi-yearly WeddingLovely Lookbook) and how we do it with a very limited team and time.
+
+[See the article over on the WeddingLovely Blog.](http://weddinglovely.com/blog/why-our-online-startup-releases-a-print-product-and-how-we-do-it/)

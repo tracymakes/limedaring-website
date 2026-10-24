@@ -1,0 +1,98 @@
+---
+{
+  "featuredimage": "/images/blog/2015/12/7/1.jpg",
+  "featured": "True",
+  "date": "2016-02-11",
+  "author": "Tracy Osborn",
+  "excerpt": "I'm moving to Toronto and looking for a job (!) and thought I'd deep dive into my two main projects to showcase my work. WeddingLovely is an online wedding vendor marketplace and wedding planning application, started in January 2011 by yours truly.",
+  "title": "Case study: WeddingLovely",
+  "external": "",
+  "category": "entrepreneurship",
+  "slug": "case-study-weddinglovely"
+}
+---
+
+_(I'm moving to Toronto and looking for a job (!) and thought I'd deep dive into my two main projects to showcase my work.)_
+
+![](/static/images/blog/weddinglovely.jpeg)
+
+[WeddingLovely](http://weddinglovely.com) is an online wedding vendor marketplace and wedding planning application, started in January 2011 by yours truly.
+
+In late 2011, I joined the [Designer Fund](http://designerfund.com) and [500 Startups](http://500.co), moving WeddingLovely from a bootstrapped model to funded model (with $50,000 in funding by 500). At the demo day, I decided not to raise anything additional, raising only an extra $25,000 in summer 2014.
+
+WeddingLovely is a collection of eleven different properties in three categories: the planning app, the vendor directories, and our weddings blog.
+
+## WeddingLovely Vendor Guides
+
+WeddingLovely started in 2011 with [WeddingInviteLove](http://weddinginvitelove.com), a small app I built to teach myself Python and Django. WeddingInviteLove was a wedding invitation designer directory — I wanted to support local and small-business designers working on invitation designs (one of the few kinds of physical design that will never be replaced with online equivalents).
+
+After being [featured on Swiss Miss](http://www.swiss-miss.com/2011/02/wedding-invite-love.html), the site started to grow and I launched similar sites in different vendor category: [planning](http://weddingplannerlove.com), [photography](http://weddingphotolove.com), [venues](http://weddingvenuelove.com), [videography](http://weddingvideolove.com), [musicians and DJs](http://weddingmusiclove.com), [florists](http://weddingflowerlove.com), and [bakeries](http://weddingcakelove.com).
+
+![](/static/images/blog/wcl.jpg)  
+
+The challenge with eight separate directories is running them from one system with the same templates (to keep development easy) but giving them a unique design. As you can see above, all eight individual directories have a separate color scheme but similar layouts.
+
+After launching the individual directories, I launched a general directory to show all listings in one place, the [WeddingLovely Vendor Guide](http://weddinglovely.com/vendors/):
+
+![](/static/images/blog/wl-vendorguide.jpeg)  
+
+Vendors can apply to join WeddingLovely's network of directories from an application on either the individual directories or through the main, general directory.
+
+![](/static/images/blog/pro.jpg)  
+
+Vendors get lovely profiles (if I do say so myself) that are shared across the entire network, including the ability to receive reviews.
+
+## WeddingLovely Planning Guide
+
+![](/static/images/blog/weddinglovely.jpeg)
+
+In 2012, after the launch of the individual directories but before the Vendor Guide launch, I built the planning application for couples. Primarily, our vendors were receiving most of their traffic through SEO on our directories, and I wanted a better way to direct couples to the vendors I worked with. I also find most wedding planning guides ridiculous ("Congrats on your engagement! Here's a list of 432 things you need to do by your wedding day.")
+  
+![](/static/images/blog/wl-inside.jpeg)
+
+The Planning Guide breaks down the biggest tasks involved in planning a wedding, such as finding a venue or photographer.
+
+![](/static/images/blog/wl-inside2.png)
+
+Most importantly, it also lists the vendors that we work with through WeddingLovely, and couples can favorite and message couples right from the app.
+
+![](/static/images/blog/wl-inside3.jpeg)
+
+Other features in the planning guide:
+
+  * Multiple users can work from one account, so users can invite their spouses, their bridal party, their planner, etc. to help them plan on their WeddingLovely account.
+  * Notes can be saved across the individual planning pages.
+  * Each planning page has a form to ask me questions directly. Not used very often but always fun when it is, as I can pass their questions over to a local planner that's listed with WeddingLovely.
+  * [And a few more things.](https://weddinglovely.com/features/)
+
+The Planning Guide is my favorite app I've ever designed and built from scratch.
+
+## The WeddingLovely Blog
+
+![](/static/images/blog/wl-blog.jpeg)
+
+Last but not least, WeddingLovely has has a [weddings blog](http://weddinglovely.com/blog/). The blog was started so I could attend the National Stationery Show as press, but has grown into a semi-significant blog in the industry. Currently receiving 75,000 views per month, I source content from my vendors and post 1-2 times daily.
+
+This is one of the most important pieces of WeddingLovely as it gives me an excuse to interact with my vendors and showcase their work, bringing WeddingLovely traffic, revenue (from affiliate and advertising links, the only place in WeddingLovely I allow advertising), as well as giving vendors good feelings about WeddingLovely when I showcase and share their work, leading to more upgrades.
+
+## Monetization
+
+On that note — WeddingLovely primarily brings in revenue through the [Certified Lovely Vendor](http://weddinglovely.com/certified/) program. Vendors can apply to join (with a $190/year application fee) and I review and approve/disapprove applications. This has been crucial for keeping WeddingLovely's vendor quality high.
+
+Vendors can also pay $270/year to move to an [e-commerce/online/destination profile](http://weddinglovely.com/online/), which lists their profile in every search result for their category (like wedding websites). There is no application process here.
+
+Last but not least, I sell sponsored posts and sidebar banner ads through the WeddingLovely Blog.
+
+The planning app used to be a paid product ($8/month), but I moved it to being a free app when I realized that traffic to vendors was more important.
+
+## Last thoughts
+
+It is a very large system — I've built a lot of things behind the scenes to make it so everything basically runs automatically.
+
+The planning and marketplace sides of WeddingLovely would probably grow faster with dedicated marketing and sales work, but grow naturally (slowly but surely) on their own. 2016 is already shaping up to be the biggest year yet even though I haven't had much time to work on WeddingLovely at all.
+
+I have a remote assistant I work with who 50% runs the blog (all the behind-the-scenes work), and I'm in the process of hiring another to take care of the rest, as well as all the other repeated tasks I do for WeddingLovely, like approving free and Certified Lovely Vendor applications.
+
+I'm not going to shut WeddingLovely down, even though I am looking for a full-time job, since it does largely run and grow by itself. Ideally, I'll be able to keep feature growth as well by eventually hiring a remote developer.
+
+That's my baby, WeddingLovely. Any questions? :)

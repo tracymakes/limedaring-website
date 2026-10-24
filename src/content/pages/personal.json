@@ -1,0 +1,7 @@
+{
+  "slug": "personal",
+  "title": "Tracy Osborn's Writing on Personal Stuff",
+  "bodyId": "contact",
+  "category": "personal",
+  "intro": "<div class=\"intro\">\n    <h1><a href=\"/\">Tracy Osborn</a></h1>\n    <div class=\"subheader\">\n        <h2>sometimes chats straight from the heart.</h2>\n    </div>\n    {% include 'includes/social-links.html' %}\n    <div class=\"hidden-sm-down\">\n        {% include 'includes/blog-sidebar.html' %}\n    </div>\n</div>"
+}

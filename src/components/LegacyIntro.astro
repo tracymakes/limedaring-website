@@ -1,0 +1,11 @@
+---
+import SocialLinks from './SocialLinks.astro';
+import BlogSidebar from './BlogSidebar.astro';
+import {defaultSubheader} from '../lib/content';
+const { page } = Astro.props;
+// Only these two legacy includes remain in migrated page fragments.
+const replacements = /({% include 'includes\/(?:social-links|blog-sidebar)\.html' %})/g;
+const fragment = page.intro || `<div class="intro"><h1><a href="/">Tracy Osborn</a></h1><div class="subheader">${page.subheader || defaultSubheader}</div></div>`;
+const pieces = fragment.split(replacements);
+---
+{pieces.map(piece => piece.includes("{% include 'includes/social-links") ? <SocialLinks/> : piece.includes("{% include 'includes/blog-sidebar") ? <BlogSidebar/> : <Fragment set:html={piece}/>)}

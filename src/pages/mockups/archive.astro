@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import {posts,categories} from '../../lib/content';
+const years=[...new Set(posts.map(p=>p.date.slice(0,4)))];
+---
+<Base title="Writing archive — Tracy Osborn" bodyClass="archive-preview" width="col-lg-8 col-lg-offset-2" noindex navigation={[["/mockups/","Current work"],["/mockups/archive/","Writing archive"]]}>
+  <div slot="preview-bar" class="archive-preview-bar">Archive mockup <a href="/mockups/">← Work first homepage</a><a href="/mockups/story/">Story first homepage</a></div>
+  <header slot="intro" class="archive-intro"><h1>Writing archive</h1><p>Notes on building businesses, learning design, teaching, and being a person along the way.</p><span>{posts.length} articles · {years.at(-1)}–{years[0]}</span></header>
+  <nav aria-label="Browse articles by topic" class="archive-topics">{categories.map(([slug,label])=><a href={`/${slug}/`}>{label}</a>)}</nav>
+  {years.map(year=><section class="archive-year" aria-labelledby={`year-${year}`}><h2 id={`year-${year}`}>{year}</h2><ul>{posts.filter(p=>p.date.startsWith(year)).map(post=><li><time datetime={post.date}>{new Date(post.date+'T12:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',timeZone:'UTC'})}</time><a href={post.url}>{post.title}</a></li>)}</ul></section>)}
+  <footer slot="footer" class="archive-end"><a href="/mockups/">← Back to current work</a><a href="/rss.xml">RSS feed</a></footer>
+</Base>
+<style is:global>
+  .archive-preview #content {width:100%;float:none;margin-top:0;padding:0;}
+  .archive-preview-bar {display:flex;justify-content:center;gap:24px;flex-wrap:wrap;border-bottom:1px solid #eee;padding:12px 20px;font-size:12px;color:#888;}
+  .archive-preview-bar a {font-weight:400;}
+  .archive-intro {margin:70px 0 35px;}
+  .archive-intro h1 {font:italic 400 2.3rem/1.4 Lora,Georgia,serif;}
+  .archive-intro p {font-size:1.1rem;line-height:1.8;max-width:550px;}
+  .archive-intro>span {font-size:.8rem;color:#999;}
+  .archive-topics {display:flex;flex-wrap:wrap;gap:10px 20px;padding:22px 0;border-top:1px solid #eee;border-bottom:1px solid #eee;font-size:.8rem;}
+  .archive-topics a {font-weight:400;}
+  .archive-year {display:grid;grid-template-columns:75px 1fr;gap:25px;padding:35px 0 0;}
+  .archive-year h2 {font:400 1.2rem/1.5 Lora,Georgia,serif;color:#999;margin:7px 0;}
+  .archive-year ul {list-style:none;margin:0;padding:0;}
+  .archive-year li {display:grid;grid-template-columns:55px 1fr;gap:15px;border-bottom:1px solid #eee;padding:12px 0;margin:0;}
+  .archive-year time {font-size:.75rem;color:#999;padding-top:3px;}
+  .archive-year a {font:400 1rem/1.65 Lora,Georgia,serif;color:#555;text-decoration:none;}
+  .archive-year a:hover {color:#7b8914;text-decoration:underline;}
+  .archive-end {display:flex;justify-content:center;gap:30px;margin:70px auto 40px;font-size:.8rem;}
+  @media(max-width:600px){.archive-preview-bar {gap:10px 16px;}.archive-intro {margin-top:40px;}.archive-year {grid-template-columns:1fr;gap:4px;padding-top:25px;}.archive-year li {grid-template-columns:45px 1fr;gap:12px;}}
+</style>

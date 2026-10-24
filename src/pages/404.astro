@@ -1,0 +1,8 @@
+---
+import Base from '../layouts/Base.astro';
+import LegacyIntro from '../components/LegacyIntro.astro';
+---
+<Base title="Error" bodyId="error" canonical="/error/">
+  <LegacyIntro slot="intro" page={{}}/>
+  <h1>Sorry!</h1><p>The page <b id="url"></b> could not be found.</p>
+</Base>

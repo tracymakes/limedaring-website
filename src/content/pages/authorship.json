@@ -1,0 +1,7 @@
+{
+  "slug": "authorship",
+  "title": "Tracy Osborn's Writing on Writing Books",
+  "bodyId": "",
+  "category": "authorship",
+  "intro": "<div class=\"intro\">\n    <h1><a href=\"/\">Tracy Osborn</a></h1>\n    <div class=\"subheader\">\n        <h2>likes to write books!</h2>\n    </div>\n    {% include 'includes/social-links.html' %}\n    <div class=\"hidden-sm-down\">\n        {% include 'includes/blog-sidebar.html' %}\n    </div>\n</div>"
+}

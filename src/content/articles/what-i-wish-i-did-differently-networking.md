@@ -1,0 +1,88 @@
+---
+{
+  "author": "Tracy Osborn",
+  "featuredimage": "/images/blog/2015/12/7/1.jpg",
+  "featured": "True",
+  "date": "2015-04-03",
+  "excerpt": "I launched my startup a little over four years ago, and as always, when looking back, it’s easy to pick out my mistakes. Hindsight is 20/20. But it’s also valuable to make note of places that I wish I did better, so hopefully I can avoid the same mistakes again. I’m shy and suffer from a lot of social anxiety, something I’ve tried very hard to overcome. My job and my career depend on meeting new people and networking, and it pleases me that most people wouldn’t be able to tell how much anxiety I get due to simply meeting new people.",
+  "title": "What I wish I did differently: networking",
+  "external": "",
+  "category": "entrepreneurship, personal",
+  "slug": "what-i-wish-i-did-differently-networking"
+}
+---
+
+<figure>
+    <img src="/static/images/blog/tracy-lee.jpeg" alt=""/>
+    <figcaption>Me and Tracy Lee at Startup Weekend in 2009.</figcaption>
+</figure>
+
+
+
+I launched my startup a little over four years ago, and as always, when looking back, it’s easy to pick out my mistakes. Hindsight is 20/20. But it’s also valuable to make note of places that I wish I did better, so hopefully I can avoid the same mistakes again.
+
+I’m shy and suffer from a lot of social anxiety, something I’ve tried very hard to overcome. My job and my career depend on meeting new people and networking, and it pleases me that most people wouldn’t be able to tell how much anxiety I get due to simply meeting new people.
+
+I’m where I am in my career due to the people I’ve connected with over the last ten years. Unfortunately, as my startup took off, my drive to meet more people and connect has plummeted — I would tell people that I had simply not enough time to run a startup as a solo-founder, but it was also because this was a convenient excuse so I didn’t have to try my anxiety.
+
+
+
+
+<figure>
+    <img src="/static/images/blog/standaristas.jpeg" alt=""/>
+    <figcaption>Photo by Jeremy Gillick.</figcaption>
+</figure>
+
+
+
+## Getting out of my shell: SXSW
+
+2008 was the year I attended [SXSW](http://sxsw.com/) for the first time. I went alone, and I would walk into the after-parties, freeze, and then run away, overwhelmed by anxiety. I was fortunate to connect with a few people at the conference during the sessions as well as during the flight home, and those four people were the beginnings of my network. I gradually got to meet more and more of the Bay Area tech scene from these folks, and my social anxiety started to fade.
+
+
+
+
+<figure>
+    <img src="/static/images/blog/ignite.jpeg" alt=""/>
+    <figcaption>Speaking at Ignite.</figcaption>
+</figure>
+
+
+
+## Meeting and making friends with other entrepreneurs
+
+Fast forward to 2010 — I just met my now-husband, who was accepted to [Y Combinator](http://ycombinator.com) that summer. I quit my job, and started the summer of networking. Today, I’m friends with the majority of Andrey’s YC class, who are some of the nicest and smartest people I’ve ever met. I was able to do contract design work for a few, including [Rapportive](http://rapportive.com). Being surrounded by such smart and motivated people working on their own startups encouraged me to start my own, which I eventually launched in January 2011.
+
+Small side-note: While networking is the technical term for all of this, I really should note that I look at it as making new, awesome friends.
+
+I continued to meet and make friends with amazing people who also helped me propell my business. Having connections to people who knew Enrique of the [Designer Fund](http://designerfund.com/), I pestered him until I was accepted into their batch of startups. Enrique then introduced me to [500 Startups](http://500.co/), and I was accepted into their Fall 2011 batch. Pretty much every good thing that has happened to me, I can tie to being friends with the right people.
+
+
+
+
+
+<figure>
+    <img src="/static/images/blog/sunfire.jpeg" alt=""/>
+    <figcaption>Office at Sunfire, photo by Julia Grace.</figcaption>
+</figure>
+
+
+
+## Three years of “focusing on the business” without making new connections — and losing old ones
+
+After 500 Startups, we decided to pass on fundraising (a big story for another time), and things started going downhill. The company was running out of money, and I thought I was doing the right thing by putting my forehead down and working hard, which only served to burn me out. I was accepted to work from [Sunfire Offices](http://techcrunch.com/2010/08/28/sunfire-offices/), an invite-only free coworking space, and I failed to make connections with those in my office — forgoing lunch invites to work at my desk instead; or staying home to work since I felt the hour commute each day wasn’t worth the time I lost working. Sunfire eventually disbanded, and it was only then I realized I didn’t know the names of many of those who worked a few feet away from me.
+
+500 Startups, too, was an opportunity in networking that I missed. I felt uncomfortable with the beer-pong and bar atmosphere that it seemed like the rest of my batch was into, as well as being generally uncomfortable working with another startup in my batch in the same vertical I was working in. It wasn’t until the very last day of the accelerator, demo day in NYC, that I connected with a few others in my batch, and much later, realized that there were others in the batch who were similar to me and that I could have connected with them. I’m more connected with my husband’s batchmates in Y Combinator than I am with my own batchmates in 500 Startups, and I consider that a failure.
+
+The last three years, really, were me saying that I was “focusing on my business” and using that as an excuse to stay home and not meet new people. I wish I tried more, because things might be different for myself and my business with an additional three years worth of new connections and new friends.
+
+First step to change: self-awareness of the problem!
+
+I'm definitely working overtime right now to fix the reclusiveness of the past few years. Know of anyone awesome I should meet? Want to grab coffee sometime? Email me at tracy@limedaring.com. ♥
+
+### Additional posts on this topic:
+
+  * [What I Wish I Did Differently: Blogging](http://www.limedaring.com/articles/what-i-wish-i-did-differently-blogging)
+  * [What I Wish I Did Differently: Self-Deprecation](http://www.limedaring.com/articles/blog-what-i-wish-i-did-differently-self-deprecation)
+
+_[Follow me on Twitter: @limedaring](http://twitter.com/tracymakes)_

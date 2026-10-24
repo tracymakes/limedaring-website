@@ -1,0 +1,192 @@
+[
+  {
+    "slug": "external-conference-proposal-rejections",
+    "originalUrl": "https://code.likeagirl.io/on-conference-proposal-rejections-205f7fead68",
+    "sourceUrl": "https://code.likeagirl.io/on-conference-proposal-rejections-205f7fead68",
+    "textSha256": "d06e0759d5e40f0fc60ae4a34b13602942b79c5163b2a28590e5f4dd004f7fdc",
+    "textLength": 5872,
+    "images": 1,
+    "videos": 0,
+    "htmlSha256": "1affdd5e7326809df9a97c33ec08ec5d58bacc42d562b915f6fd1ce2a58a6523"
+  },
+  {
+    "slug": "external-dangerous-thing",
+    "originalUrl": "https://medium.com/@limedaring/the-most-dangerous-thing-ive-ever-done-b121771105dd",
+    "sourceUrl": "https://medium.com/@limedaring/the-most-dangerous-thing-ive-ever-done-b121771105dd",
+    "textSha256": "af6d0adb5aa2715eff75658baa5b351ff190852815ea5006cf98e3e8a3fa6244",
+    "textLength": 9421,
+    "images": 11,
+    "videos": 0,
+    "htmlSha256": "11621bb8f72ea1accb940fcbe688281ca478d121fa56d5ffa94ced1b0e843653"
+  },
+  {
+    "slug": "external-django-form",
+    "originalUrl": "https://hellowebapp.com/news/tutorial-setting-up-a-contact-form-with-django/",
+    "sourceUrl": "https://hellowebbooks.com/news/tutorial-setting-up-a-contact-form-with-django/",
+    "textSha256": "3a6d6237193a9bea2872a43c7ba77fffc062bbe8a23de11d3a258d9196451e68",
+    "textLength": 9748,
+    "images": 3,
+    "videos": 0,
+    "htmlSha256": "bcbab6082b78f5983fa792de72b6c5576aadd32f6f27943deeaa81587b6489ec"
+  },
+  {
+    "slug": "external-hello-web-design-launch",
+    "originalUrl": "https://hellowebbooks.com/news/hello-web-design-launch/",
+    "sourceUrl": "https://hellowebbooks.com/news/hello-web-design-launch/",
+    "textSha256": "dc10641144aea447f6f70a0edb838c2ab1744658bd578314007caa4e859e0296",
+    "textLength": 1407,
+    "images": 3,
+    "videos": 1,
+    "htmlSha256": "287b2174f9054a91fe54a39d2f600a654abf1995302ecf44cfc6624e5001f5d2"
+  },
+  {
+    "slug": "external-hwa-economics",
+    "originalUrl": "https://hellowebapp.com/news/economics-of-self-publishing-on-kickstarter/",
+    "sourceUrl": "https://hellowebbooks.com/news/economics-of-self-publishing-on-kickstarter/",
+    "textSha256": "455f54e8642427f2a72afb746eb03cb7175ada9be45037186cfaf6c7fe235589",
+    "textLength": 6915,
+    "images": 9,
+    "videos": 0,
+    "htmlSha256": "bfa9eaacc607d6643f5b26bda5ad3b488c7c497c52968d8daa4610e450e66f8c"
+  },
+  {
+    "slug": "external-hwa-ks-regret",
+    "originalUrl": "https://hellowebapp.com/news/reviewing-hello-web-apps-kickstarter-campaign/",
+    "sourceUrl": "https://hellowebbooks.com/news/reviewing-hello-web-apps-kickstarter-campaign/",
+    "textSha256": "2afcd018b0bed573c7d4f2eaa03173a472e796ff0ede77c45c6d663e52097e10",
+    "textLength": 12960,
+    "images": 8,
+    "videos": 3,
+    "htmlSha256": "cfbcc3bc393a063d3982b9aef73c99b54defc01fafab33ba662a17d9c15c3340"
+  },
+  {
+    "slug": "external-hwa-self-published",
+    "originalUrl": "https://hellowebapp.com/news/how-i-launched-my-learn-to-code-book-and-made-nearly-5000-in-pre-orders/",
+    "sourceUrl": "https://hellowebbooks.com/news/how-i-launched-my-learn-to-code-book-and-made-nearly-5000-in-pre-orders/",
+    "textSha256": "24f04a8642c7771b148700ee7733a88fd87373a73e4d4127586a5002b72a3efb",
+    "textLength": 10024,
+    "images": 11,
+    "videos": 0,
+    "htmlSha256": "ae1b429163afa9012296a9bb9ebe6165beebddaf4f9f7d5daf77d72a8633143d"
+  },
+  {
+    "slug": "external-inbox-quiet",
+    "originalUrl": "https://hellowebbooks.com/news/does-your-inbox-feel-too-quiet-hidden-consequences-temporarily-breaking-your-email",
+    "sourceUrl": "https://hellowebbooks.com/news/does-your-inbox-feel-too-quiet-hidden-consequences-temporarily-breaking-your-email",
+    "textSha256": "9c8b55c40c5ea4df83d65f87ac462f55b855fd69d476601bfdfb6f847d1026ee",
+    "textLength": 7439,
+    "images": 2,
+    "videos": 0,
+    "htmlSha256": "1852c26afc018c002fc82cce9700a47e91968966c6b38784f5e7d81976b36ff4"
+  },
+  {
+    "slug": "external-mrr-stripe",
+    "originalUrl": "https://hellowebapp.com/news/calculating-mrr-with-stripe/",
+    "sourceUrl": "https://hellowebbooks.com/news/calculating-mrr-with-stripe/",
+    "textSha256": "709a20b02d65f66b73d0045baaa3b3be2a18f56e345300245e63a2d080373f1c",
+    "textLength": 4600,
+    "images": 1,
+    "videos": 0,
+    "htmlSha256": "df1b2bf833245941634c35a2213240c9071903dc0181215e7045d104c1f4340d"
+  },
+  {
+    "slug": "external-new-hello-web-books-website",
+    "originalUrl": "https://hellowebbooks.com/news/new-hello-web-books-website-backend-has-launched",
+    "sourceUrl": "https://hellowebbooks.com/news/new-hello-web-books-website-backend-has-launched",
+    "textSha256": "f506789dcb44770e9529bea77ffe7755bfd5533f75995201d693585b972c61b0",
+    "textLength": 2868,
+    "images": 4,
+    "videos": 0,
+    "htmlSha256": "820a6da4dcf778de48c1ab48e218abfc52b74bbb8a15e0753135c340c10b32f3"
+  },
+  {
+    "slug": "external-nondesigners-1",
+    "originalUrl": "https://medium.com/@limedaring/design-for-non-designers-part-1-6559ed93ff91",
+    "sourceUrl": "https://hellowebbooks.com/news/tutorial-design-for-nondesigners/",
+    "textSha256": "877b85fa831c1822987792ccf3a81c96a9698016649ad9d248fc785f0c181246",
+    "textLength": 8885,
+    "images": 13,
+    "videos": 0,
+    "htmlSha256": "aca157317ff63afd6908e84ee1f8549909fb780685c2fccabc4b3ae749201796"
+  },
+  {
+    "slug": "external-nondesigners-2",
+    "originalUrl": "https://blog.prototypr.io/design-for-non-designers-part-2-74d7ab3124f6",
+    "sourceUrl": "https://hellowebbooks.com/news/tutorial-design-for-non-designers-part-2/",
+    "textSha256": "2e613d31bead36714ac2af4019190e24f7f6ed4dab7b23c152d0778d583bbc36",
+    "textLength": 7546,
+    "images": 5,
+    "videos": 0,
+    "htmlSha256": "f5518b99b34be7701e0f12e93ddccd9146a6f28053ffd78bf221ba9ea41a3e38"
+  },
+  {
+    "slug": "external-nondesigners-3",
+    "originalUrl": "https://blog.prototypr.io/design-for-non-designers-part-3-49686371f92b",
+    "sourceUrl": "https://hellowebbooks.com/news/tutorial-design-for-non-designers-part-3/",
+    "textSha256": "e18259f6b2b7f3cbb432c75ab0699a1346009222f1d0a2cdbf5db1ec78ad298a",
+    "textLength": 6151,
+    "images": 5,
+    "videos": 0,
+    "htmlSha256": "c4fa5236c0c651ff6be5f3bd4b6d9c2f84ee51846d1e852443a5206c3bb23494"
+  },
+  {
+    "slug": "external-password-change",
+    "originalUrl": "https://hellowebapp.com/news/tutorial-password-change-views/",
+    "sourceUrl": "https://hellowebbooks.com/news/tutorial-password-change-views/",
+    "textSha256": "ea5d985b0864d22964f1a543d9056161ab369c8e938399c396f8a866c5dbfdc5",
+    "textLength": 2882,
+    "images": 2,
+    "videos": 0,
+    "htmlSha256": "9421edcac04ff8cd4e8a75fc8a206e2606696933790647105aee5f48f0d3fac9"
+  },
+  {
+    "slug": "external-product-hunt-launch",
+    "originalUrl": "https://hellowebbooks.com/news/product-hunt-recap/",
+    "sourceUrl": "https://hellowebbooks.com/news/product-hunt-recap/",
+    "textSha256": "3d63c67f89115beac35d19fd76e969385687c170836beb43017a91575df2d023",
+    "textLength": 6576,
+    "images": 7,
+    "videos": 1,
+    "htmlSha256": "eb148e1c45565f8e52307b1b35a63984ea5016dd9a49bb6a0729299ccaba1927"
+  },
+  {
+    "slug": "external-selling-weddinglovely",
+    "originalUrl": "https://medium.com/@limedaring/why-im-selling-weddinglovely-my-eight-year-old-company-with-62-000-revenue-in-2017-69fb56c8929f",
+    "sourceUrl": "https://medium.com/@limedaring/why-im-selling-weddinglovely-my-eight-year-old-company-with-62-000-revenue-in-2017-69fb56c8929f",
+    "textSha256": "85ed696a130b02c4b93fb3bd812f0cfedc10e58ae22dc4a2ca2dbb9cdc1c6b4e",
+    "textLength": 13083,
+    "images": 12,
+    "videos": 0,
+    "htmlSha256": "fdfbfede7fb70191fabd0d39ef4e6666569927bf6824801e8239e88c0487013f"
+  },
+  {
+    "slug": "external-shipping-fulfillment",
+    "originalUrl": "https://hellowebbooks.com/news/fulfillment-updates/",
+    "sourceUrl": "https://hellowebbooks.com/news/fulfillment-updates/",
+    "textSha256": "5e69abdc50e29f3fe73965406906c2625ffff3599722b82027b7a3425dde814d",
+    "textLength": 4975,
+    "images": 3,
+    "videos": 1,
+    "htmlSha256": "3516c2b578966afdf0b588e6b933e15a8f722685a57eae3cbb9d952478c2abfa"
+  },
+  {
+    "slug": "external-technical-writing",
+    "originalUrl": "https://medium.com/@tracymakes/five-tips-for-improving-your-technical-writing-and-documentation-47353723c8a7",
+    "sourceUrl": "https://tracyosborn.com/articles/writing-clearly/",
+    "textSha256": "dd389879883aad8b80e15b086a91784b7a9c742cef5b333406d77175bb38107a",
+    "textLength": 9047,
+    "images": 5,
+    "videos": 1,
+    "htmlSha256": "b0b073698eae8ccafbb4b2ebe68301d0d2429ded183afd87f1fc7c3559fd7f0a"
+  },
+  {
+    "slug": "external-third-kickstarter",
+    "originalUrl": "https://medium.com/hackerpreneur-magazine/overview-and-lessons-learned-from-running-my-third-kickstarter-campaign-ce4aec9af271",
+    "sourceUrl": "https://medium.com/hackerpreneur-magazine/overview-and-lessons-learned-from-running-my-third-kickstarter-campaign-ce4aec9af271",
+    "textSha256": "19e17ad9b016cecd3e5c5fb627dc6ac65f062bff7523dda526d1fac33a80bfee",
+    "textLength": 10950,
+    "images": 4,
+    "videos": 1,
+    "htmlSha256": "8192d2985f2c15e643ca7b5a26c34a637a29e09ac095afff79f6e1066b386bb5"
+  }
+]

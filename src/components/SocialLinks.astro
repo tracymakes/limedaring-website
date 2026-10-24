@@ -1,0 +1,10 @@
+---
+const { email = 'tracy@limedaring.com', rss = true } = Astro.props;
+---
+<ul class="list-inline social-media">
+  <li><a href="//twitter.com/tracymakes" aria-label="Twitter"><i class="fa fa-twitter"></i></a></li>
+  <li><a href="//facebook.com/tracy.osborn" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
+  <li><a href="//github.com/tracymakes" aria-label="GitHub"><i class="fa fa-github"></i></a></li>
+  <li><a href={`mailto:${email}`} aria-label="Email"><i class="fa fa-envelope"></i></a></li>
+  {rss && <li><a href="/rss.xml" aria-label="RSS feed"><i class="fa fa-rss"></i></a></li>}
+</ul>

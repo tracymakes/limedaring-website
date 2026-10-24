@@ -1,0 +1,20 @@
+---
+{
+  "date": "2015-06-04",
+  "featuredimage": "",
+  "featured": "",
+  "author": "Tracy Osborn",
+  "comments": "true",
+  "excerpt": "Thanks to Joni Trythall and the lovely folks at Lincoln Loop for interviewing me! I spoke about the process of writing Hello Web App, running a Kickstarter, and my advice for new programmers.",
+  "external": "",
+  "title": "Interviewed by Lincoln Loop",
+  "category": "personal",
+  "slug": "interviewed-by-lincoln-loop"
+}
+---
+
+Thanks to Joni Trythall and the lovely folks at [Lincoln Loop](https://lincolnloop.com) for interviewing me! I spoke about the process of writing [Hello Web App](http://hellowebapp.com), running a Kickstarter, and my advice for new programmers.
+
+![](/static/images/blog/loop.png)
+
+[See the interview here](https://lincolnloop.com/blog/loop-letters-tracy-osborn/)

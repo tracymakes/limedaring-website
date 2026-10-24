@@ -1,0 +1,32 @@
+---
+{
+  "author": "Tracy Osborn",
+  "comments": "true",
+  "excerpt": "For the last year, I've been writing Hello Web App, a book teaching web app development with Python and Django aimed at non-programmers. It's been a really fun and long process — from running a Kickstarter campaign (which I made a huge mistake with the estimated launch date, that's a long story that'll come later, to finishing up the book, to rewriting (and rewriting, and rewriting) the content, to designing the book (100% me), getting editors and reviewers, testing... a lot more posts and writing will be on this topic soon.",
+  "title": "Hello Web App will be released May 4th! Pre-orders now open",
+  "category": "authorship",
+  "date": "2015-04-06",
+  "external": "",
+  "featured": "False",
+  "featuredimage": "",
+  "slug": "hello-web-app-will-be-released-may-4th-pre-orders-now-open"
+}
+---
+
+<figure>
+    <img src="/static/images/blog/hwa-books2.jpg" alt=""/>
+</figure>
+
+
+
+For the last year, I've been writing [Hello Web App, a book teaching web app development with Python and Django aimed at non-programmers](http://hellowebapp.com).
+
+It's been a really fun and long process — from running a [Kickstarter campaign](https://www.kickstarter.com/projects/1868398473/hello-web-app-intro-to-building-web-apps-with-djan) (which I made a huge mistake with the estimated launch date, that's a long story that'll come later, to finishing up the book, to rewriting (and rewriting, and rewriting) the content, to designing the book (100% me), getting editors and reviewers, testing... a lot more posts and writing will be on this topic soon.
+
+BUT most importantly, it's available for pre-order now:
+
+* [Gumroad](http://gumroad.com/limedaring) — $14.95 eBook package (Fully designed PDF, .mobi, .ePub), $29.95 eBook + paperback package, $79 eBook + paperback + videos package.
+* [Leanpub](http://leanpub.com/hellowebapp) — $14.95 eBook package (PDF designed by Leanpub, not me.)
+* [Amazon](http://www.amazon.com/Hello-Web-App-Learn-Build-ebook/dp/B00U5MMZ2E/ref=asap_bc?ie=UTF8) — $9.95 Kindle-only (paperback coming soon.)
+
+For more info or to get a free sample of the book, check out [HelloWebApp.com](http://hellowebapp.com).

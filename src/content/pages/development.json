@@ -1,0 +1,7 @@
+{
+  "slug": "development",
+  "title": "Tracy Osborn's Writing on Development",
+  "bodyId": "contact",
+  "category": "development",
+  "intro": "<div class=\"intro\">\n    <h1><a href=\"/\">Tracy Osborn</a></h1>\n    <div class=\"subheader\">\n        <h2>thinks that learning to code was one of the best things she's ever done.</h2>\n    </div>\n    {% include 'includes/social-links.html' %}\n    <div class=\"hidden-sm-down\">\n        {% include 'includes/blog-sidebar.html' %}\n    </div>\n</div>"
+}

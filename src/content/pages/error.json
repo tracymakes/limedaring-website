@@ -1,0 +1,6 @@
+{
+  "slug": "error",
+  "title": "Error",
+  "bodyId": "",
+  "content": "<h1>Sorry!</h1>\n<p>The page <b id=\"url\"></b> could not be found.</p>"
+}

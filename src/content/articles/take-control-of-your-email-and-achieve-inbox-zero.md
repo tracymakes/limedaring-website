@@ -1,0 +1,131 @@
+---
+{
+  "date": "2011-06-23",
+  "featuredimage": "",
+  "featured": "",
+  "author": "Tracy Osborn",
+  "excerpt": "Ahh, the mythical inbox zero. Are you overwhelmed by email? Hundreds of emails a day and you simply can't respond to all of them? You might believe you're overwhelmed, but instead, you've stopped taking charge of your email and let it overtake you. I'm a blogger, active in social media, and most importantly, a startup founde (and sole employee, wearing the designer, salesperson, marketing, and developer hats all at once), and I try to never forget to respond to an email. Here's how I've arranged my email so I achieve inbox-zero every day.",
+  "title": "Take control of your email and achieve inbox zero",
+  "external": "",
+  "category": "instruction, entrepreneurship",
+  "slug": "take-control-of-your-email-and-achieve-inbox-zero"
+}
+---
+
+<figure>
+    <img src="/static/images/blog/inboxzero.png" alt=""/>
+</figure>
+
+
+
+Ahh, the mythical inbox zero.
+
+Are you overwhelmed by email? Hundreds of emails a day and you simply can't respond to all of them? You might _believe_ you're overwhelmed, but instead, you've stopped taking charge of your email and let it overtake you.
+
+I'm a [blogger](http://blog.weddingtype.com/), [active](http://twitter.com/tracymakes) in [social media](http://twitter.com/weddingtype), and most importantly, [a startup founder](http://weddinginvitelove.com/) (and sole employee, wearing the designer, salesperson, marketing, and developer hats all at once), and I try to **never** forget to respond to an email. Here's how I've arranged my email so I achieve inbox-zero every day.
+
+(I wish I was awesome enough to think of all these myself, but [@shazow](http://twitter.com/shazow) takes the credit for teaching me most of these.)
+
+### Use Gmail
+
+![](/static/images/blog/gmail.png)
+
+[Gmail](http://gmail.com/) is the best email provider out there, due to their superior spam filtering (absolutely crucial) as well as the amount of tools they provide for email management.
+
+This doesn't mean you have to have a @gmail.com email address — I use Gmail for both my @limedaring.com and @weddingtype.com email addresses. [It's simple to set up Gmail so you can receive and send email using a different domain](http://mail.google.com/support/bin/answer.py?hl=en&ctx=mail&answer=22370).
+
+Note: I know priority inbox exists, but I've found this system to be superior and faster for going through your emails once you have it set up.
+
+### Be aggressive about what you receive.
+
+![](/static/images/blog/unsub.png)
+
+Is there a newsletter that you immediately delete it without reading every time it arrives? Unsubscribe from every piece of random email that you don't read as soon as you get one. No unsubscribe link? Mark as spam and move on. Be honest with yourself — when I look at most people's overwhelmed inboxes, it seems like half of them are random newsletters.
+
+### Label and remove from inbox all other newsletters and unimportant emails.
+
+![](/static/images/blog/labels.png)
+
+Inbox is empty (so I've taken care of important stuff), unimportant are filtered out.
+
+Any pleasure reads and newsletters that aren't important first thing in the day should be filtered from your inbox into a custom label. Get it out of your inbox and therefore out of the "unread" count — we're trying to make it so your unread count is **only** unread important emails.
+
+![](/static/images/blog/unread.jpg)
+
+Open the email you want to filter, and under "More actions", choose "Filter messages like these".  Create a filter that accurately grabs all current and past emails (check with "Test Search") then choose "Skip the Inbox (Archive it)" and "Apply the Label" with a label that describes the type of email.
+
+Some of the emails I use this for: Newsletters, Twitter notifications, email groups, etc. Essentially, if you don't **need** to read it, move it out of the inbox and into a waiting area where you can read at your own leisure.
+
+### Multiple inboxes + stars.
+
+![](/static/images/blog/multiple-inboxes.png)
+
+I normally have the extra inboxes showing 15 at a time, but I changed it to five just for the screenshot.
+
+Now that unimportant, repeating emails are filtered, the goal is to go through the entire inbox of items every morning, and sort them if needed.
+
+Gmail allows you to star items as needed, and combining this with multiple inboxes is a huge timesaver.
+
+![](/static/images/blog/multiple-inboxes2.png)
+
+Pick panel titles that are descriptive. Donated goods is an inbox I set up for just this week to keep track of a promotion I'm running.
+
+  1. First, head to Gmail Labs (click the gear in the top right of Gmail, and head to "Labs") and scroll until you see "Multiple Inboxes" and enable it.
+  2. Set up a system for starring. In Gmail settings in the first tab, there is a section known as "Stars". Hover your mouse over the stars for their names (important for filters). Then choose which stars you will use for which filters: "yellow-star" as to-dos, "blue-star" as important documents, etc.
+  3. Since you've enabled multiple inboxes, head to the "Multiple Inboxes" tab in Gmail settings. There, you can add extra panes to Gmail, and assign them a search query ("has:yellow-star") and a title ("To-do:").
+  4. Now that your inboxes are set up, when you start reading your newest batch of email in the morning (the normal inbox), star appropriately and archive anything that you need to act on or keep but you aren't going to do anything with immediately. On the Gmail home page, those archived and starred emails should appear in the lower panes so they're still accessible, but not cluttering up your email anymore.
+
+### Use the to-do inbox liberally.
+
+![](/static/images/blog/to-do.png)
+
+When you check your main inbox, respond to as many short things as possible, but don't get bogged down with big responses. If there are any emails that require more than a minute of attention and response time, immediately star it with whichever star is your "to-do" star and archive. It'll pop into your separate inbox, where, once you finished going through your incoming mail, you can pay attention to it.
+
+The main reason this is important is so you can get an overview of your email and the tasks you need to do before diving into any of the tasks. If there is an important email hidden under some mostly-but-not-as-important emails, you'll see it before you've started taking major time to respond to others. You'll quickly know everything you need to do when you first check your email, then you prioritize which emails to act on first. 
+
+**Pro tip:** You can also send emails to yourself with tasks and mark as To-do, turning that pane into a complete to-do list.
+
+### Keyboard shortcuts.
+
+![](/static/images/blog/shortcuts.png)
+
+Now that stars and multiple inboxes are set up, activate and learn basic Gmail keyboard shortcuts. Head back to Labs and activate "Custom keyboard shortcuts". The basic ones I use every day are:
+
+  * "j": Next email in the inbox.
+  * "k": Previous email in the inbox.
+  * "[": Archive current email and go to the next email in the inbox (most used).
+  * "]": Archive current email and go to the previous email in the inbox.
+
+Now when you're opening your email for the first time in the morning, click the top one, read quickly, and decide whether to archive it immediately or star it and archive it for later (or unsubscribe or set up a new filter). Start clearing out your inbox by starring as needed, responding quickly to other emails, and clicking "[" as needed to move through your emails as fast as possible.
+
+### Use canned responses to respond to and write emails quickly.
+
+![](/static/images/blog/canned.png)
+
+I manually approve every account on [WeddingInviteLove](http://weddinginvitelove.com/), meaning I send a lot of account approved (and unapproved) emails every week. To make things faster, I have basic templates I've set up where the majority of the email is filled in, with spots to add personal details if needed. A serious time-saver, if you find yourself writing the same email over and over.
+
+![](/static/images/blog/canned2.png)
+
+Yet another Google Labs feature, under "Canned Responses".
+
+### Last and most important step.
+
+Once you have everything set up correctly and you're facing your inbox of 3000 unread emails, start at the top. Use keyboard shortcuts to go through the emails quickly, unsubscribing from things you forgot to from before, responding to things that only need 30 seconds of attention, starring things that need more, and archiving anything important but needing no response. Do this as long as you wish. 
+
+Once you're exhausted, select everything in your inbox and **mark as read and archive all**. 
+
+If there is something important in there, it's already buried so deep that you won't find it anyways. If someone wants a response, **they will email you again**, and at that point, your inbox should be way less scary and you can actually respond promptly.
+
+**DON'T** ignore this step. It's imperative that you start from a blank slate so it's easier to not fall behind.
+
+### Bonus: Use [Rapportive](http://rapportive.com/) for information on those emailing you.
+
+![](/static/images/blog/rapportive2.png)
+
+One of the best Gmail plugins out there (disclaimer: I freelanced with [Rapportive](http://rapportive.com/) and designed their website back in the day.) Don't know who's emailing you? Let Rapportive pull up their picture, company, Twitter/Facebook profiles, and other information. Doesn't help you go through your email, but makes your important emails hold more data. Great for at-a-glance information.
+
+Any other tips? I've love to hear about them — comment, or email me at [tracy@limedaring.com](mailto:tracy@limedaring.com) (and you already know I'll respond to you ;) ).
+
+Hacker News discussion here: [http://news.ycombinator.com/item?id=2702089](http://news.ycombinator.com/item?id=2702089)
+
+_Enjoy this post? [Follow me on Twitter](http://twitter.com/tracymakes) for more tips (scattered between jokes, funny pictures, and entrepreneurship insights)._

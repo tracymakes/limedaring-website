@@ -1,0 +1,12 @@
+---
+import { postLink, truncate } from '../lib/content';
+const { post, first = false } = Astro.props;
+---
+<li class:list={{'first-post':first}}>
+  {first && post.featuredimage && <div class="thumbnail"><a href={post.url}><img src={`/static/${post.featuredimage.replace(/^\//,'')}`} alt={post.title}/></a></div>}
+  <h2><a href={postLink(post)}>{post.title}</a>{post.external && <> <i class="fa fa-external-link" style="color: #999; font-size: 1rem; padding-left: 5px;"></i></>}</h2>
+  {post.headline && !post.imported && <p>{post.headline}</p>}
+  {post.excerpt && <p class="excerpt">{first ? post.excerpt : truncate(post.excerpt,30)}</p>}
+  {first && <p class="readmore"><a href={postLink(post)}>Read more</a></p>}
+  <hr/>
+</li>

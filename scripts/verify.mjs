@@ -31,12 +31,12 @@ for(const entry of [...manifest.pages,...manifest.articles]){
  if(fs.existsSync(legacyFile)){
   const old=load(fs.readFileSync(legacyFile,'utf8'));
   const selector=entry.url.startsWith('/articles/')?'.post-body':entry.url==='/articles/'||['authorship','design','development','entrepreneurship','howto','onspeaking','outdoorsy','personal','women-in-tech'].includes(entry.slug)?null:'#content';
-  if(selector && entry.url!=='/' && !imported.has(entry.slug)){
+  if(selector && !['/','/about/'].includes(entry.url) && !imported.has(entry.slug)){
    expect(text(old,selector).replace(/\.\.\./g,'…')===text($,selector).replace(/\.\.\./g,'…'),`Text changed ${entry.url}`);
    for(const tag of ['img','iframe','video','audio'])expect(JSON.stringify(assetSignature(old,`${selector} ${tag}`))===JSON.stringify(assetSignature($,`${selector} ${tag}`)),`${tag} changed ${entry.url}`);
    if(selector==='.post-body')expect(JSON.stringify(assetSignature(old,'.post-body a'))===JSON.stringify(assetSignature($,'.post-body a')),`Article links changed ${entry.url}`);
   }
-  if(entry.url!=='/' && !entry.url.startsWith('/articles/') && !archivePages.some(p=>p.slug===entry.slug))expect(text(old,'.intro')===text($,'.intro'),`Introduction changed ${entry.url}`);
+  if(!['/','/about/'].includes(entry.url) && !entry.url.startsWith('/articles/') && !archivePages.some(p=>p.slug===entry.slug))expect(text(old,'.intro')===text($,'.intro'),`Introduction changed ${entry.url}`);
  }
  for(const el of $('[href], [src]').toArray()){
   const value=$(el).attr('href')||$(el).attr('src');
@@ -47,6 +47,17 @@ for(const entry of [...manifest.pages,...manifest.articles]){
   if(target.endsWith('/')||!path.extname(target))destination=path.join(destination,'index.html');
   if(!fs.existsSync(destination))warnings.push(`${entry.url}: missing existing target ${value}`);
  }
+}
+// The approved About page replaces the legacy biography at the same URL.
+const about=load(fs.readFileSync('dist/about/index.html','utf8'));
+expect(about('.about-opening').length===1,'Approved About page missing');
+expect(!about('.about-preview-bar,.about-draft-notes').length,'Draft controls appear on live About page');
+expect(!about('meta[name=robots]').attr('content')?.includes('noindex'),'About page must be indexable');
+expect(about('.about-outdoors img').attr('src')==='/static/home/whitney-retouched.jpg','Approved hiking image missing');
+for(const file of files('dist').filter(f=>f.endsWith('.html')&&!f.includes('/mockups/'))){
+ const $=load(fs.readFileSync(file,'utf8'));
+ expect($('#site-menu a[href="/about/"]').length===1,`About navigation missing ${file}`);
+ expect(!$('#site-menu a[href^="mailto:"]').length,`Email still in main menu ${file}`);
 }
 // The approved homepage and archive replace their legacy presentation.
 const home=load(fs.readFileSync('dist/index.html','utf8'));

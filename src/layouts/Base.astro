@@ -2,7 +2,7 @@
 import SiteNavigation from '../components/SiteNavigation.astro';
 import SocialLinks from '../components/SocialLinks.astro';
 import {site, defaultDescription} from '../lib/content';
-const {title='Tracy Osborn', description=defaultDescription, bodyId='', bodyClass='', width='col-lg-10 col-lg-offset-1', canonical=Astro.url.pathname, post, highlight=false, noindex=false, editorial=false, navigation=[['/#work','Current work'],['/articles/','Writing archive']]} = Astro.props;
+const {title='Tracy Osborn', description=defaultDescription, bodyId='', bodyClass='', width='col-lg-10 col-lg-offset-1', canonical=Astro.url.pathname, post, highlight=false, noindex=false, editorial=false, navigationEmail=false, navigation=[['/#work','Current work'],['/about/','About'],['/articles/','Writing archive']]} = Astro.props;
 const footerNavigation = [['about','About'],['articles','Writing'],['work','Work'],['uses','Uses'],['speaking','Speaking']];
 ---
 <!doctype html>
@@ -40,7 +40,7 @@ const footerNavigation = [['about','About'],['articles','Writing'],['work','Work
 <body id={bodyId} class:list={[bodyClass,{"editorial-site":editorial}]}>
   <slot name="preview-bar"/>
   <div class="container text-center">
-    <SiteNavigation navigation={navigation}/>
+    <SiteNavigation navigation={navigation} showEmail={navigationEmail}/>
   </div>
   <div class="container"><div class="row"><div class={width}>
     <slot name="intro"/>

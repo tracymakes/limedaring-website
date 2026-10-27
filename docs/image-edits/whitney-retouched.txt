@@ -1,0 +1,7 @@
+Asset: public/static/home/whitney-retouched.jpg
+Original: public/static/images/blog/whitney.jpeg (unchanged)
+Method: built-in image_gen image edit; output converted to JPEG for the website.
+Use: local About-page mockup only. AI-retouched variant, not a pixel-preserving photo adjustment.
+
+Final prompt:
+Use case: lighting-weather. Edit target: the provided real hiking photograph near Mount Whitney, to be used on the photographer's personal About page. Perform a restrained, natural photographic tonal restoration: lift deep foreground and mountain shadows enough to reveal existing rock and scree detail; recover bright sky highlights where possible; gently improve local contrast, clarity, neutral white balance, and color separation; reduce low-light noise without smoothing rock texture. Keep the moody storm clouds and very small warm sunset opening. Preserve the exact scene, terrain silhouettes, lake shape and position, foreground rock layout, camera viewpoint, framing and original landscape aspect ratio. Do not add or remove scenery, people, plants, sunbeams or objects. No invented dramatic sunset, no new weather, no teal-orange grading, no HDR halos, no oversaturation, no illustration. The result should look like a thoughtfully developed version of this same photograph, with readable midtones and a believable dark stormy atmosphere.

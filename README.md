@@ -67,3 +67,7 @@ The scripts `fetch-external.mjs`, `fetch-design-sources.mjs`, `import-external.m
 The approved story-first homepage now serves at `/`. Its current-work and writing links point to production URLs, with no mockup controls or no-index metadata. The signature, centered introduction, Cormorant Garamond headings, Lato reading text, olive links, and slim ochre strokes carry through `/articles/`, the topic archives, and individual article pages. All 84 articles remain at their existing URLs with their original bodies, images, and source attribution. `public/static/home/editorial.css` holds shared archive and reading styles; display fonts are self-hosted with their license.
 
 The earlier no-index previews remain at `/mockups/`, `/mockups/story/`, and `/mockups/archive/` for reference and stay out of the sitemap. `scripts/homepage-sources.json` records the role information and user direction. `npm run verify` checks complete archive coverage, production navigation, preserved article bodies/assets, and existing URLs.
+
+## About page
+
+The approved About page serves at `/about/` through `src/components/AboutPage.astro`. It keeps the portrait credit and uses the approved AI-retouched hiking image; the original remains unchanged. `/mockups/about/` retains the source notes as a no-index preview. The main navigation now includes Current work, About, and Writing archive, with Email retained in footer/contact areas.

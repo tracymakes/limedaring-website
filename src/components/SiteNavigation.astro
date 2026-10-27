@@ -1,6 +1,6 @@
 ---
-const {navigation} = Astro.props;
-const links=[...navigation,['mailto:tracy@limedaring.com','Email']];
+const {navigation,showEmail=true} = Astro.props;
+const links=showEmail ? [...navigation,['mailto:tracy@limedaring.com','Email']] : navigation;
 ---
 <nav id="main-nav" class="site-navigation" aria-label="Main navigation">
   <a class="site-logo" href="/"><img src="/static/images/sigs.png" alt="Tracy Osborn — home" class="logo-sig"/></a>

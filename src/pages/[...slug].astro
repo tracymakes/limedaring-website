@@ -1,4 +1,5 @@
 ---
+import AboutPage from '../components/AboutPage.astro';
 import HomeMockup from '../components/HomeMockup.astro';
 import WritingArchive from '../components/WritingArchive.astro';
 import Base from '../layouts/Base.astro';
@@ -11,7 +12,7 @@ export function getStaticPaths() {
 const {page} = Astro.props;
 const width = page.contentsize?.match(/class="(.*?)"/)?.[1];
 ---
-{page.slug==='index' ? <HomeMockup variant="story" production/> : page.slug==='articles' || page.category ? <WritingArchive page={page}/> : <Base title={page.title} bodyId={page.slug==='error'?'error':page.bodyId} width={width}>
+{page.slug==='index' ? <HomeMockup variant="story" production/> : page.slug==='about' ? <AboutPage production/> : page.slug==='articles' || page.category ? <WritingArchive page={page}/> : <Base title={page.title} bodyId={page.slug==='error'?'error':page.bodyId} width={width}>
   <LegacyIntro slot="intro" page={page}/>
   <PageContent page={page}/>
 </Base>}

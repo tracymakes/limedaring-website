@@ -9,7 +9,7 @@
     "verify": "node scripts/verify.mjs"
   },
   "dependencies": {
-    "astro": "^7.4.0",
+    "astro": "^7.4.7",
     "cheerio": "^1.2.0",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.3.3"
